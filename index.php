@@ -1,3 +1,6 @@
+<?php
+  require 'config/config.php';
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -351,7 +354,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -475,7 +478,16 @@
                     <span class="icon flaticon-home"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Houses</h6>
-                      <p class="text mb-0">22 Properties</p>
+                      <?php
+                        // SQL query to find total count
+                        $sql = "SELECT COUNT(*) FROM properties WHERE `category` = 'house'";
+                        $result = $conn->query($sql);
+  
+                        // Display data on web
+                        while($row = mysqli_fetch_array($result)) {
+                        
+                      ?>
+                      <p class="text mb-0"><?php echo $row['count(*)']. "Properties"; } ?></p>
                     </div>
                   </div>
                 </a>
