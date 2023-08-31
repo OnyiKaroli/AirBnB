@@ -517,7 +517,7 @@
                     </div>
                     <div class="pd-list">
                       <p class="text mb10">10425 Tabor St</p>
-                      <p class="text mb10">Los Angeles</p>
+                      <p class="text mb10">Nairobi</p>
                       <p class="text mb-0">California</p>
                     </div>
                   </div>
@@ -891,7 +891,7 @@
               <h4 class="title fz17 mb30">Walkscore</h4>
               <div class="row">
                 <div class="col-md-12">
-                  <h4 class="fw400 mb20">10425 Tabor St Los Angeles CA 90034 Kenya</h4>
+                  <h4 class="fw400 mb20">10425 Tabor St Nairobi CA 90034 Kenya</h4>
                   <div class="walkscore d-sm-flex align-items-center mb20">
                     <span class="icon mr15 mb10-sm flaticon-walking"></span>
                     <div class="details">
@@ -1478,11 +1478,11 @@
           <select class="selectpicker" data-width="100%">
             <option>All Cities</option>
             <option data-tokens="California">California</option>
-            <option data-tokens="Chicago">Chicago</option>
-            <option data-tokens="LosAngeles">Los Angeles</option>
+            <option data-tokens="Kisumu">Kisumu</option>
+            <option data-tokens="LosAngeles">Nairobi</option>
             <option data-tokens="Manhattan">Manhattan</option>
             <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">New York</option>
+            <option data-tokens="NewYork">Naivasha</option>
             <option data-tokens="SanDiego">San Diego</option>
             <option data-tokens="SanFrancisco">San Francisco</option>
             <option data-tokens="Texas">Texas</option>
@@ -2002,10 +2002,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Discover</h6>
                     <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
+                      <li><a href="">Mombasa</a></li>
+                      <li><a href="">Nairobi</a></li>
+                      <li><a href="">Kisumu</a></li>
+                      <li><a href="">Naivasha</a></li>
                     </ul>
                   </div>
                 </div>

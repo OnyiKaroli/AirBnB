@@ -1,9 +1,9 @@
-<section class="footer-style1 pt60 pb-0">
+<section class="footer-style1 at-home2 pb-0">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index.html"><img class="mb40" src="images/header-logo.svg" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">

@@ -327,7 +327,7 @@
                 </div>
                 <div class="single-contant ml30 ml0-xs">
                   <h2 class="title mb-0 text-white">All london Real Estate</h2>
-                  <p class="fz15 text-white"> 1611 Michigan Ave, Miami Beach, FL 33139</p>
+                  <p class="fz15 text-white"> 1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                   <div class="agent-meta mb15 d-md-flex align-items-center">
                     <a class="text text-white fz15 pe-2 bdrr1" href=""><i class="fas fa-star fz10 review-color2 pr10"></i>5.0 • 49 Reviews</a>
                     <a class="text text-white fz15 pe-2 ps-2 bdrr1" href=""><i class="flaticon-call pe-1"></i>+848 032 03 01</a>
@@ -1062,10 +1062,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Discover</h6>
                     <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
+                      <li><a href="">Mombasa</a></li>
+                      <li><a href="">Nairobi</a></li>
+                      <li><a href="">Kisumu</a></li>
+                      <li><a href="">Naivasha</a></li>
                     </ul>
                   </div>
                 </div>

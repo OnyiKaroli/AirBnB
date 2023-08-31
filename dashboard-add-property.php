@@ -488,11 +488,11 @@
                                 <div class="location-area">
                                   <select class="selectpicker" multiple>
                                     <option>California</option>
-                                    <option>Chicago</option>
-                                    <option>Los Angeles</option>
+                                    <option>Kisumu</option>
+                                    <option>Nairobi</option>
                                     <option>Manhattan</option>
                                     <option>New Jersey</option>
-                                    <option>New York</option>
+                                    <option>Naivasha</option>
                                     <option>San Diego</option>
                                     <option>San Francisco</option>
                                     <option>Texas</option>

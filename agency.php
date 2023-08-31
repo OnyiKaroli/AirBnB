@@ -372,11 +372,11 @@
                         <select class="selectpicker">
                           <option>All Cities</option>
                           <option data-tokens="California">California</option>
-                          <option data-tokens="Chicago">Chicago</option>
-                          <option data-tokens="LosAngeles">Los Angeles</option>
+                          <option data-tokens="Kisumu">Kisumu</option>
+                          <option data-tokens="LosAngeles">Nairobi</option>
                           <option data-tokens="Manhattan">Manhattan</option>
                           <option data-tokens="NewJersey">New Jersey</option>
-                          <option data-tokens="NewYork">New York</option>
+                          <option data-tokens="NewYork">Naivasha</option>
                           <option data-tokens="SanDiego">San Diego</option>
                           <option data-tokens="SanFrancisco">San Francisco</option>
                           <option data-tokens="Texas">Texas</option>
@@ -415,7 +415,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>
@@ -430,7 +430,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>
@@ -445,7 +445,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>
@@ -460,7 +460,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>
@@ -475,7 +475,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>
@@ -490,7 +490,7 @@
               <div class="agency-details pt40">
                 <h6 class="fw400"><i class="fas fa-star review-color2 pr10 fz10"></i>4.6</h6>
                 <h6 class="agency-title mb-1">All American Real Estate</h6>
-                <p class="fz15">1611 Michigan Ave, Miami Beach, FL 33139</p>
+                <p class="fz15">1611 Michigan Ave, Mombasa Beach, FL 33139</p>
                 <div class="d-grid">
                   <a href="page-agency-single.html" class="ud-btn btn-white2">View Listings<i class="fal fa-arrow-right-long"></i></a>
                 </div>

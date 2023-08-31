@@ -311,11 +311,11 @@
                     <select class="selectpicker" data-live-search="true" data-width="100%">
                       <option>All Cities</option>
                       <option data-tokens="California">California</option>
-                      <option data-tokens="Chicago">Chicago</option>
-                      <option data-tokens="LosAngeles">Los Angeles</option>
+                      <option data-tokens="Kisumu">Kisumu</option>
+                      <option data-tokens="LosAngeles">Nairobi</option>
                       <option data-tokens="Manhattan">Manhattan</option>
                       <option data-tokens="NewJersey">New Jersey</option>
-                      <option data-tokens="NewYork">New York</option>
+                      <option data-tokens="NewYork">Naivasha</option>
                       <option data-tokens="SanDiego">San Diego</option>
                       <option data-tokens="SanFrancisco">San Francisco</option>
                       <option data-tokens="Texas">Texas</option>
@@ -918,7 +918,7 @@
                   <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.png" alt=""></div>
                   <div class="feature-content">
                     <div class="top-area">
-                      <h6 class="title mb-1">Los Angeles</h6>
+                      <h6 class="title mb-1">Nairobi</h6>
                       <p class="text">12 Properties</p>
                     </div>
                     <div class="bottom-area">
@@ -932,7 +932,7 @@
                   <div class="feature-img"><img class="w-100" src="images/listings/city-listing-2.png" alt=""></div>
                   <div class="feature-content">
                     <div class="top-area">
-                      <h6 class="title mb-1">Miami</h6>
+                      <h6 class="title mb-1">Mombasa</h6>
                       <p class="text">12 Properties</p>
                     </div>
                     <div class="bottom-area">
@@ -946,7 +946,7 @@
                   <div class="feature-img"><img class="w-100" src="images/listings/city-listing-3.png" alt=""></div>
                   <div class="feature-content">
                     <div class="top-area">
-                      <h6 class="title mb-1">New York</h6>
+                      <h6 class="title mb-1">Naivasha</h6>
                       <p class="text">12 Properties</p>
                     </div>
                     <div class="bottom-area">
@@ -960,7 +960,7 @@
                   <div class="feature-img"><img class="w-100" src="images/listings/city-listing-4.png" alt=""></div>
                   <div class="feature-content">
                     <div class="top-area">
-                      <h6 class="title mb-1">Chicago</h6>
+                      <h6 class="title mb-1">Kisumu</h6>
                       <p class="text">12 Properties</p>
                     </div>
                     <div class="bottom-area">

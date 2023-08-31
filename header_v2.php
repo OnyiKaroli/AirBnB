@@ -11,7 +11,7 @@
             <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
                 <li class="visible_list"><a class="list-item" href="index"><span class="title">Home</span></a></li>
                 <li class="megamenu_style"><a  class="list-item" href="listing"><span class="title">Listing</span></a></li>
-                <li class="visible_list"><a class="list-item" href="agency"><span class="title">Agencies</span></a></li>
+                <li class="visible_list"><a class="list-item" href="agents"><span class="title">Agents</span></a></li>
                 <li class="visible_list"><a class="list-item" href="about"><span class="title">About</span></a></li>
                 <li class="visible_list"><a class="list-item" href="blog"><span class="title">Blog</span></a></li>
                 <li class="visible_list"><a class="list-item" href="contact"><span class="title">Contact Us</span></a></li>

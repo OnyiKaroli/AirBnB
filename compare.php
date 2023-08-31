@@ -395,15 +395,15 @@
                   </tr>
                   <tr>
                     <th class="text-end" scope="row">City</th>
-                    <td>New York</td>
-                    <td>Chicago</td>
-                    <td>New York</td>
+                    <td>Naivasha</td>
+                    <td>Kisumu</td>
+                    <td>Naivasha</td>
                   </tr>
                   <tr>
                     <th class="text-end" scope="row">State/county</th>
-                    <td>New York</td>
-                    <td>New York</td>
-                    <td>New York</td>
+                    <td>Naivasha</td>
+                    <td>Naivasha</td>
+                    <td>Naivasha</td>
                   </tr>
                   <tr>
                     <th class="text-end" scope="row">Zip/Postal Code</th>
@@ -615,10 +615,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Discover</h6>
                     <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
+                      <li><a href="">Mombasa</a></li>
+                      <li><a href="">Nairobi</a></li>
+                      <li><a href="">Kisumu</a></li>
+                      <li><a href="">Naivasha</a></li>
                     </ul>
                   </div>
                 </div>

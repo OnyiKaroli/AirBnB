@@ -315,11 +315,11 @@
           <select class="selectpicker" data-width="100%">
             <option>All Cities</option>
             <option data-tokens="California">California</option>
-            <option data-tokens="Chicago">Chicago</option>
-            <option data-tokens="LosAngeles">Los Angeles</option>
+            <option data-tokens="Kisumu">Kisumu</option>
+            <option data-tokens="LosAngeles">Nairobi</option>
             <option data-tokens="Manhattan">Manhattan</option>
             <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">New York</option>
+            <option data-tokens="NewYork">Naivasha</option>
             <option data-tokens="SanDiego">San Diego</option>
             <option data-tokens="SanFrancisco">San Francisco</option>
             <option data-tokens="Texas">Texas</option>
@@ -568,7 +568,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="breadcumb-style1">
-              <h2 class="title">New York Homes for Sale</h2>
+              <h2 class="title">Naivasha Homes for Sale</h2>
               <div class="breadcumb-list">
                 <a href="">Home</a>
                 <a href="">For Rent</a>
@@ -712,11 +712,11 @@
           <select class="selectpicker" data-width="100%">
             <option>All Cities</option>
             <option data-tokens="California">California</option>
-            <option data-tokens="Chicago">Chicago</option>
-            <option data-tokens="LosAngeles">Los Angeles</option>
+            <option data-tokens="Kisumu">Kisumu</option>
+            <option data-tokens="LosAngeles">Nairobi</option>
             <option data-tokens="Manhattan">Manhattan</option>
             <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">New York</option>
+            <option data-tokens="NewYork">Naivasha</option>
             <option data-tokens="SanDiego">San Diego</option>
             <option data-tokens="SanFrancisco">San Francisco</option>
             <option data-tokens="Texas">Texas</option>

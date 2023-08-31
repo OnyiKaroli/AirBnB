@@ -547,10 +547,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Discover</h6>
                     <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
+                      <li><a href="">Mombasa</a></li>
+                      <li><a href="">Nairobi</a></li>
+                      <li><a href="">Kisumu</a></li>
+                      <li><a href="">Naivasha</a></li>
                     </ul>
                   </div>
                 </div>

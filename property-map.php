@@ -316,11 +316,11 @@
           <select class="selectpicker" data-width="100%">
             <option>All Cities</option>
             <option data-tokens="California">California</option>
-            <option data-tokens="Chicago">Chicago</option>
-            <option data-tokens="LosAngeles">Los Angeles</option>
+            <option data-tokens="Kisumu">Kisumu</option>
+            <option data-tokens="LosAngeles">Nairobi</option>
             <option data-tokens="Manhattan">Manhattan</option>
             <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">New York</option>
+            <option data-tokens="NewYork">Naivasha</option>
             <option data-tokens="SanDiego">San Diego</option>
             <option data-tokens="SanFrancisco">San Francisco</option>
             <option data-tokens="Texas">Texas</option>
@@ -567,7 +567,7 @@
         <div class="row wow fadeInUp" data-wow-delay="300ms">
           <div class="col-xl-5">
             <div class="half_map_area_content mt30">
-              <h4 class="mb-1">New York Homes for Sale</h4>
+              <h4 class="mb-1">Naivasha Homes for Sale</h4>
               <div class="row align-items-center mb10">
                 <div class="col-sm-6">
                   <div class="text-center text-sm-start">

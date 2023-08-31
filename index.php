@@ -226,11 +226,11 @@
                     <select class="selectpicker" data-live-search="true" data-width="100%">
                       <option>All Cities</option>
                       <option data-tokens="California">California</option>
-                      <option data-tokens="Chicago">Chicago</option>
-                      <option data-tokens="LosAngeles">Los Angeles</option>
+                      <option data-tokens="Kisumu">Kisumu</option>
+                      <option data-tokens="LosAngeles">Nairobi</option>
                       <option data-tokens="Manhattan">Manhattan</option>
                       <option data-tokens="NewJersey">New Jersey</option>
-                      <option data-tokens="NewYork">New York</option>
+                      <option data-tokens="NewYork">Naivasha</option>
                       <option data-tokens="SanDiego">San Diego</option>
                       <option data-tokens="SanFrancisco">San Francisco</option>
                       <option data-tokens="Texas">Texas</option>
@@ -374,13 +374,7 @@
                 <div class="advance-style2 mt80 mt0-md mb60 mx-auto animate-up-1">
                   <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Buy</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Rent</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Sold</button>
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Search House</button>
                     </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
@@ -414,7 +408,7 @@
                           </div>
                           <div class="col-md-4 col-lg-3">
                             <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
-                              <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
+                              <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span><a href="listing"> Advanced</a></button>
                               <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
                           </div>
@@ -422,43 +416,6 @@
                       </div>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div class="advance-content-style2">
-                        <div class="row align-items-center justify-content-start justify-content-md-center">
-                          <div class="col-md-5 col-lg-6">
-                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
-                              <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
-                                <div class="box-search">
-                                  <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                          <div class="col-md-3 col-lg-3 ps-md-0">
-                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
-                              <div class="bootselect-multiselect">
-                                <select class="selectpicker" data-width="100%">
-                                  <option data-tokens="Apartments">Apartments</option>
-                                  <option data-tokens="Bungalow">Bungalow</option>
-                                  <option data-tokens="Houses">Houses</option>
-                                  <option data-tokens="Loft">Loft</option>
-                                  <option data-tokens="Office">Office</option>
-                                  <option data-tokens="TownHome">TownHome</option>
-                                  <option data-tokens="Villa">Villa</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
-                              <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
-                              <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                       <div class="advance-content-style2">
                         <div class="row align-items-center justify-content-start justify-content-md-center">
                           <div class="col-md-5 col-lg-6">
@@ -580,7 +537,7 @@
           <div class="col-lg-9">
             <div class="main-title2">
               <h2 class="title">Discover Our Featured Listings</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+              <p class="paragraph">Explore Our Handpicked Gems</p>
             </div>
           </div>
           <div class="col-lg-3">
@@ -623,6 +580,7 @@
                 <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
+                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
                     <div class="list-price">$82,000 / <span>mo</span></div>
                   </div>
                   <div class="list-content">
@@ -649,6 +607,7 @@
                 <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-3.jpg" alt="">
+                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
                     <div class="list-price">$63,000 / <span>mo</span></div>
                   </div>
                   <div class="list-content">
@@ -684,7 +643,7 @@
           <div class="col-lg-9">
             <div class="main-title2">
               <h2 class="title">Explore Cities</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+              <p class="paragraph">Uncover Urban Adventures</p>
             </div>
           </div>
         </div>
@@ -696,7 +655,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Los Angeles</h6>
+                      <h6 class="title mb-1">Nairobi</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -707,7 +666,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Miami</h6>
+                      <h6 class="title mb-1">Mombasa</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -718,7 +677,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">New York</h6>
+                      <h6 class="title mb-1">Naivasha</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -729,7 +688,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Chicago</h6>
+                      <h6 class="title mb-1">Kisumu</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -740,7 +699,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Los Angeles</h6>
+                      <h6 class="title mb-1">Nanyuki</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -751,40 +710,7 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Miami</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">New York</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Chicago</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Chicago</h6>
+                      <h6 class="title mb-1">Nyali</h6>
                       <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
@@ -803,8 +729,8 @@
           <div class="row">
             <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
               <div class="main-title text-center">
-                <h2 class="title">See how Aveden can help</h2>
-                <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+                <h2 class="title">See how to list your property</h2>
+                <p class="paragraph">In three easy steps you can list your property</p>
               </div>
             </div>
           </div>
@@ -813,9 +739,9 @@
               <div class="iconbox-style3 text-center">
                 <div class="icon"><img class="w-100" src="images/icon/property-buy-2.svg" alt=""></div>
                 <div class="iconbox-content">
-                  <h4 class="title">Buy a property</h4>
-                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Find a home<i class="fal fa-arrow-right-long"></i></a>
+                  <h4 class="title">Create an Account</h4>
+                  <p class="text">Fill in the sign up form with the correct details.</p>
+                  <a href="register" class="ud-btn btn-thm3">Register<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -823,9 +749,9 @@
               <div class="iconbox-style3 active text-center">
                 <div class="icon"><img class="w-100" src="images/icon/property-sell-2.svg" alt=""></div>
                 <div class="iconbox-content">
-                  <h4 class="title">Sell a property</h4>
-                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Place an ad<i class="fal fa-arrow-right-long"></i></a>
+                  <h4 class="title">Your listing gets approved</h4>
+                  <p class="text">Once our agents have reviewed your application, you'll be contacted</p>
+                  <a href="login" class="ud-btn btn-thm3">Login<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -833,9 +759,9 @@
               <div class="iconbox-style3 text-center">
                 <div class="icon"><img class="w-100" src="images/icon/property-rent-2.svg" alt=""></div>
                 <div class="iconbox-content">
-                  <h4 class="title">Rent a property</h4>
-                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Find a rental<i class="fal fa-arrow-right-long"></i></a>
+                  <h4 class="title">All Done!</h4>
+                  <p class="text">Your listing is now visible and ready for booking</p>
+                  <a href="listing" class="ud-btn btn-thm3">Book<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -855,10 +781,6 @@
               </div>
               <div class="img-box-8 position-relative">
                 <img class="img-1 spin-right" src="images/about/element-1.png" alt="">
-              </div>
-              <div class="img-box-9 d-flex justify-content-center align-items-center">
-                <a class="popup-iframe popup-youtube" href="https://www.youtube.com/watch?v=1WdiUn9JaX0"><i class="fas fa-circle-play mr15"></i></a>
-                <h6 class="fz14 mb-0">Watch Video</h6>
               </div>
               <div class="img-box-10 position-relative">
                 <div class="listing-style1 mini-style bounce-y">
@@ -902,7 +824,7 @@
                   </ul>
                   <p class="text mb-0">Stores around the world</p>
                 </div>
-                <a href="page-property-single-v1.html" class="ud-btn btn-thm">See More<i class="fal fa-arrow-right-long"></i></a>
+                <a href="#" class="ud-btn btn-thm">See More<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -999,8 +921,8 @@
         <div class="row wow fadeInUp" data-wow-delay="300ms">
           <div class="col-lg-9">
             <div class="main-title2">
-              <h2 class="title">Our Exclusive Agetns</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+              <h2 class="title">Our Exclusive Agents</h2>
+              <p class="paragraph">Our guys on the ground are always ready to help</p>
             </div>
           </div>
         </div>
@@ -1185,9 +1107,9 @@
           <div class="row">
             <div class="col-lg-7 col-xl-5 wow fadeInUp" data-wow-delay="500ms">
               <div class="cta-style2">
-                <h2 class="cta-title">Start Listing or Buying a Property With Aveden</h2>
-                <p class="cta-text">Talk to our experts or Browse through more properties.</p>
-                <a href="page-property-single-v1.html" class="ud-btn btn-dark mt10">Learn More<i class="fal fa-arrow-right-long"></i></a>
+                <h2 class="cta-title">Start Listing or Booking a Property With Aveden</h2>
+                <p class="cta-text">Find out more about Aveden.</p>
+                <a href="about" class="ud-btn btn-dark mt10">Learn More<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -1196,134 +1118,9 @@
     </section>
 
     <!-- Our Footer --> 
-    <section class="footer-style1 at-home2 pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index.html"><img class="mb40" src="images/header-logo.svg" alt=""></a>
-              <div class="row mb-4 mb-lg-5">
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Total Free Customer Care</p>
-                    <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Nee Live Support?</p>
-                    <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="app-widget">
-                <h5 class="title text-white mb10">Apps</h5>
-                <div class="row mb-4 mb-lg-5">
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-apple fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Download on the</p>
-                          <h6 class="app-title text-white fz14">Apple Store</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-google-play fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Get in on</p>
-                          <h6 class="app-title text-white fz14">Google Play</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="social-widget">
-                <h6 class="text-white mb20">Follow us on social media</h6>
-                <div class="social-style1">
-                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <div class="mailchimp-widget mb-4 mb-lg-5">
-                <h6 class="title text-white mb20">Keep Yourself Up to Date</h6>
-                <div class="mailchimp-style1">
-                  <input type="email" class="form-control" placeholder="Your Email">
-                  <button type="submit">Subscribe</button>
-                </div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Popular Search</h6>
-                    <div class="link-list">
-                      <a href="">Apartment for Rent</a>
-                      <a href="">Apartment Low to hide</a>
-                      <a href="">Offices for Buy</a>
-                      <a href="">Offices for Rent</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Quick Links</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Terms of Use</a></li>
-                      <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Pricing Plans</a></li>
-                      <li><a href="">Our Services</a></li>
-                      <li><a href="">Contact Support</a></li>
-                      <li><a href="">Careers</a></li>
-                      <li><a href="">FAQs</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Discover</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container white-bdrt1 py-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="text-center text-lg-start">
-              <p class="copyright-text text-gray ff-heading">© Homez - All rights reserved</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="text-center text-lg-end">
-              <p class="footer-menu ff-heading text-gray"><a class="text-gray" href="#">Privacy</a> · <a class="text-gray" href="#">Terms</a> · <a class="text-gray" href="#">Sitemap</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php
+      include 'footer_v2.php';
+    ?>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
 </div>

@@ -382,11 +382,11 @@
                         <select class="selectpicker">
                           <option>All Cities</option>
                           <option data-tokens="California">California</option>
-                          <option data-tokens="Chicago">Chicago</option>
-                          <option data-tokens="LosAngeles">Los Angeles</option>
+                          <option data-tokens="Kisumu">Kisumu</option>
+                          <option data-tokens="LosAngeles">Nairobi</option>
                           <option data-tokens="Manhattan">Manhattan</option>
                           <option data-tokens="NewJersey">New Jersey</option>
-                          <option data-tokens="NewYork">New York</option>
+                          <option data-tokens="NewYork">Naivasha</option>
                           <option data-tokens="SanDiego">San Diego</option>
                           <option data-tokens="SanFrancisco">San Francisco</option>
                           <option data-tokens="Texas">Texas</option>
@@ -679,10 +679,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Discover</h6>
                     <ul class="ps-0">
-                      <li><a href="">Miami</a></li>
-                      <li><a href="">Los Angeles</a></li>
-                      <li><a href="">Chicago</a></li>
-                      <li><a href="">New York</a></li>
+                      <li><a href="">Mombasa</a></li>
+                      <li><a href="">Nairobi</a></li>
+                      <li><a href="">Kisumu</a></li>
+                      <li><a href="">Naivasha</a></li>
                     </ul>
                   </div>
                 </div>
