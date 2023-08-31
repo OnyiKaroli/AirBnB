@@ -47,92 +47,7 @@
   <?php
     include 'header_v2.php';
   ?>
-  <!-- Signup Modal -->
-  <div class="signup-modal">
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Welcome to Aveden</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="log-reg-form">
-              <div class="navtab-style2">
-                <nav>
-                  <div class="nav nav-tabs mb20" id="nav-tab" role="tablist">
-                    <button class="nav-link active fw600" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Sign In</button>
-                    <button class="nav-link fw600" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">New Account</button>
-                  </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent2">
-                  <div class="tab-pane fade show active fz15" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="form-style1">
-                      <div class="mb25">
-                        <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="Enter Email">
-                      </div>
-                      <div class="mb15">
-                        <label class="form-label fw600 dark-color">Password</label>
-                        <input type="text" class="form-control" placeholder="Enter Password">
-                      </div>
-              <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                <label class="custom_checkbox fz14 ff-heading">Remember me
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <a class="fz14 ff-heading" href="#">Lost your password?</a>
-              </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
-                      </div>
-                      <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-white" type="button"><i class="fab fa-google"></i> Continue Google</button>
-                      </div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-fb" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-apple" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
-                      </div>
-                      <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade fz15" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="form-style1">
-                      <div class="mb25">
-                        <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="Enter Email">
-                      </div>
-                      <div class="mb20">
-                        <label class="form-label fw600 dark-color">Password</label>
-                        <input type="text" class="form-control" placeholder="Enter Password">
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-thm" type="button">Create account <i class="fal fa-arrow-right-long"></i></button>
-                      </div>
-                      <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-white" type="button"><i class="fab fa-google"></i> Continue Google</button>
-                      </div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-fb" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-apple" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
-                      </div>
-                      <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
@@ -197,123 +112,9 @@
   <div class="hiddenbar-body-ovelay"></div>
 
   <!-- Mobile Nav  -->
-  <div id="page" class="mobilie_header_nav stylehome1">
-    <div class="mobile-menu">
-      <div class="header innerpage-style">
-        <div class="menu_and_widgets">
-          <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
-            <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.mobile-menu -->
-    <nav id="menu" class="">
-      <ul>
-        <li><span>Home</span>
-          <ul>
-            <li><a href="index">Home V1</a></li>
-            <li><a href="index2.html">Home V2</a></li>
-            <li><a href="index3.html">Home V3</a></li>
-            <li><a href="index4.html">Home V4</a></li>
-            <li><a href="index5.html">Home V5</a></li>
-            <li><a href="index6.html">Home V6</a></li>
-            <li><a href="index7.html">Home V7</a></li>
-            <li><a href="index8.html">Home V8</a></li>
-            <li><a href="index9.html">Home V9</a></li>
-            <li><a href="index10.html">Home V10</a></li>
-          </ul>
-        </li>
-        <li><span>Property Listign</span>
-          <ul>
-            <li><span>Listing Grid</span>
-              <ul>
-                <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-              </ul>
-            </li>
-            <li><span>List Style</span>
-              <ul>
-                <li><a href="page-property-list.html">Style V1</a></li>
-                <li><a href="page-property-list-all.html">All List</a></li>
-              </ul>
-            </li>
-            <li><span>Listing Single</span>
-              <ul>
-                <li><a href="page-property-single-v1.html">Single V1</a></li>
-                <li><a href="page-property-single-v2.html">Single V2</a></li>
-                <li><a href="page-property-single-v3.html">Single V3</a></li>
-                <li><a href="page-property-single-v4.html">Single V4</a></li>
-                <li><a href="page-property-single-v5.html">Single V5</a></li>
-                <li><a href="page-property-single-v6.html">Single V6</a></li>
-                <li><a href="page-property-single-v7.html">Single V7</a></li>
-                <li><a href="page-property-single-v8.html">Single V8</a></li>
-                <li><a href="page-property-single-v9.html">Single V9</a></li>
-                <li><a href="page-property-single-v10.html">Single V10</a></li>
-              </ul>
-            </li>
-            <li><span>Map Style</span>
-              <ul>
-                <li><a href="page-property-header-map-style.html">Map Header</a></li>
-                <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><span>User Dashboard</span>
-          <ul>
-            <li><a href="page-dashboard.html">Dashboard</a></li>
-            <li><a href="page-dashboard-message.html">Message</a></li>
-            <li><a href="dashboard-add-property.php">New Property</a></li>
-            <li><a href="page-dashboard-properties.html">My Properties</a></li>
-            <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-            <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-            <li><a href="page-dashboard-review.html">Reviews</a></li>
-            <li><a href="page-dashboard-package.html">My Package</a></li>
-            <li><a href="page-dashboard-profile.html">My Profile</a></li>
-          </ul>
-        </li>
-        <li><span>Blog</span>
-          <ul>
-            <li><a href="page-blog-v1.html">List V1</a></li>
-            <li><a href="page-blog-v2.html">List V2</a></li>
-            <li><a href="page-blog-v3.html">List V3</a></li>
-            <li><a href="page-blog-single.html">Single</a></li>
-          </ul>
-        </li>
-        <li><span>Pages</span>
-          <ul>
-            <li><a href="page-about.html">About</a></li>
-            <li><a href="page-contact.html">Contact</a></li>
-            <li><a href="page-compare.html">Compare</a></li>
-            <li><a href="page-pricing.html">Pricing</a></li>
-            <li><a href="page-faq.html">Faq</a></li>
-            <li><a href="page-login.html">Login</a></li>
-            <li><a href="page-register.html">Register</a></li>
-            <li><a href="page-error.html">404</a></li>
-            <li><a href="page-invoice.html">Invoices</a></li>
-            <li><a href="page-ui-element.html">UI Elements</a></li>
-          </ul>
-        </li>
-        <li class="px-3 mobile-menu-btn">
-          <a href="dashboard-add-property.php" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
-        </li>
-        <!-- Only for Mobile View -->
-      </ul>
-    </nav>
-  </div>
+  <?php
+    include 'mobile_header.php';
+  ?>
 
   <div class="body_content">
     <!-- UI Elements Sections -->
@@ -338,19 +139,19 @@
       <div class="container">
         <div class="row wow fadeInUp" data-wow-delay="300ms">
           <div class="col-lg-6">
-            <h2>We're on a Mission to Change <br class="d-none d-lg-block"> View of Real Estate Field.</h2>
+            <h2>We're on a Mission to Create <br class="d-none d-lg-block"> a world where anyone can belong.</h2>
           </div>
           <div class="col-lg-6">
-            <p class="text mb25">It doesn’t matter how organized you are — a surplus of toys will always ensure your house is a mess waiting to happen. Fortunately, getting kids on board with the idea of ditching their stuff is a lot easier than it sounds.</p>
-            <p class="text mb55">Maecenas quis viverra metus, et efficitur ligula. Nam congue augue et ex congue, sed luctus lectus congue. Integer convallis condimentum sem. Duis elementum tortor eget condimentum tempor. Praesent sollicitudin lectus ut pharetra pulvinar.</p>
+            <p class="text mb25">At Aveden, we believe in the transformative power of travel and the remarkable connections it fosters. Founded [year of founding], our journey began with a simple yet revolutionary idea: to provide a platform where people can find unique accommodations and experiences, anywhere in the world.</p>
+            <p class="text mb55">Our mission is to create a world where anyone can belong anywhere, transcending traditional notions of travel and hospitality. Whether you're a wanderer seeking a cozy nook in a bustling city or an adventurer yearning for an unforgettable escape, we're here to make your travel dreams a reality.</p>
             <div class="row">
               <div class="col-sm-6">
                 <div class="why-chose-list style3">
                   <div class="list-one mb30">
                     <span class="list-icon flex-shrink-0 flaticon-garden mb20"></span>
                     <div class="list-content flex-grow-1">
-                      <h6 class="mb-1">Modern Villa</h6>
-                      <p class="text mb-0 fz14">Nullam sollicitudin blandit <br class="d-none d-sm-block"> Nullam maximus.</p>
+                      <h6 class="mb-1">Modern Houses</h6>
+                      <p class="text mb-0 fz14">House built with current trends <br class="d-none d-sm-block"> put in considerations.</p>
                     </div>
                   </div>
                 </div>
@@ -361,7 +162,7 @@
                     <span class="list-icon flex-shrink-0 flaticon-secure-payment mb20"></span>
                     <div class="list-content flex-grow-1">
                       <h6 class="mb-1">Secure Payment</h6>
-                      <p class="text mb-0 fz14">Nullam sollicitudin blandit <br class="d-none d-sm-block"> Nullam maximus.</p>
+                      <p class="text mb-0 fz14">We provide safe and fast<br class="d-none d-sm-block"> methods of payment.</p>
                     </div>
                   </div>
                 </div>
