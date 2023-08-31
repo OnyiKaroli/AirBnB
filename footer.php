@@ -14,7 +14,7 @@
                 <div class="col-auto">
                   <div class="contact-info">
                     <p class="info-title">Nee Live Support?</p>
-                    <h6 class="info-mail"><a href="mailto:hi@homez.com">hi@homez.com</a></h6>
+                    <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
                   </div>
                 </div>
               </div>

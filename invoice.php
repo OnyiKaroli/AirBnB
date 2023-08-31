@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="advanced search, agency, agent, classified, directory, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
-<meta name="description" content="Homez - Real Estate HTML Template">
+<meta name="description" content="Aveden - Where Every Stay is a Journey">
 <meta name="CreativeLayers" content="ATFN">
 <!-- css file -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,7 +21,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
-<title>Homez - Real Estate HTML Template</title>
+<title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -75,7 +75,7 @@
                     </div>
                     <div class="invoice_address">
                       <h6 class="mb20">Supplier</h6>
-                      <h6 class="fw400">Realton LLC</h6>
+                      <h6 class="fw400">Aveden LLC</h6>
                       <p class="body-light-color ff-heading">2301 Ravenswood Rd Madison,<br class="d-none d-lg-block">WI 53711</p>
                     </div>
                   </div>

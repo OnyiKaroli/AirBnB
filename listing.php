@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="advanced search, agency, agent, classified, directory, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
-<meta name="description" content="Homez - Real Estate HTML Template">
+<meta name="description" content="Aveden - Where Every Stay is a Journey">
 <meta name="CreativeLayers" content="ATFN">
 <!-- css file -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,7 +21,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
-<title>Homez - Real Estate HTML Template</title>
+<title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -53,7 +53,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Welcome to Realton</h5>
+            <h5 class="modal-title" id="exampleModalToggleLabel">Welcome to Aveden</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -137,7 +137,7 @@
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
       <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Realton</h4>
+      <h4 class="title">Welcome to Aveden</h4>
     </div>
     <div class="hsidebar-content">
       <div class="hiddenbar_navbar_content">
@@ -163,7 +163,7 @@
             <div class="col-auto">
               <div class="contact-info">
                 <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@homez.com">hi@homez.com</a></h6>
+                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
           </div>
@@ -522,7 +522,7 @@
           <ul>
             <li><a href="page-dashboard.html">Dashboard</a></li>
             <li><a href="page-dashboard-message.html">Message</a></li>
-            <li><a href="page-dashboard-add-property.html">New Property</a></li>
+            <li><a href="dashboard-add-property.php">New Property</a></li>
             <li><a href="page-dashboard-properties.html">My Properties</a></li>
             <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
             <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
@@ -554,7 +554,7 @@
           </ul>
         </li>
         <li class="px-3 mobile-menu-btn">
-          <a href="page-dashboard-add-property.html" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
+          <a href="dashboard-add-property.php" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
         </li>
         <!-- Only for Mobile View -->
       </ul>
@@ -868,7 +868,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -894,7 +894,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -920,7 +920,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -946,7 +946,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -972,7 +972,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Northwest Office Space</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -998,7 +998,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">House on the beverly hills</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -1024,7 +1024,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa called Elvado</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
@@ -1050,7 +1050,7 @@
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">House on the Northridge</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
+                    <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
                       <a href=""><span class="flaticon-shower"></span>4 bath</a>
