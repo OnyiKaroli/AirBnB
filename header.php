@@ -14,7 +14,9 @@
                 <li class="visible_list"><a class="list-item" href="index.php"><span class="title">Home</span></a></li>
                 <li class="megamenu_style"><a  class="list-item" href="listing.php"><span class="title">Listing</span></a></li>
                 <li class="visible_list"><a class="list-item" href="agency.php"><span class="title">Agencies</span></a></li>
+                <li class="visible_list"><a class="list-item" href="about.php"><span class="title">About</span></a></li>
                 <li class="visible_list"><a class="list-item" href="blog.php"><span class="title">Blog</span></a></li>
+                <li class="visible_list"><a class="list-item" href="contact.php"><span class="title">Contact Us</span></a></li>
               </ul>
             </div>
           </div>

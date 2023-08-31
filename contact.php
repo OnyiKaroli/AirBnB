@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
-<link rel="stylesheet" href="css/slider.css">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
@@ -44,150 +43,9 @@
   <div class="preloader"></div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav nav-innerpage-style style2 main-menu">
-    <!-- Ace Responsive Menu -->
-    <nav class="posr"> 
-      <div class="container posr menu_bdrt1">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-auto">
-            <a class="header-logo" href="index.php"><img src="images/header-logo2.svg" alt="Header Logo"></a>
-          </div>
-          <div class="col-auto">
-            <!-- Responsive Menu Structure-->
-            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Home</span></a>
-                <!-- Level Two-->
-                <ul>
-                  <li><a href="index.php">Home V1</a></li>
-                  <li><a href="index2.html">Home V2</a></li>
-                  <li><a href="index3.html">Home V3</a></li>
-                  <li><a href="index4.html">Home V4</a></li>
-                  <li><a href="index5.html">Home V5</a></li>
-                  <li><a href="index6.html">Home V6</a></li>
-                  <li><a href="index7.html">Home V7</a></li>
-                  <li><a href="index8.html">Home V8</a></li>
-                  <li><a href="index9.html">Home V9</a></li>
-                  <li><a href="index10.html">Home V10</a></li>
-                </ul>
-              </li>
-              <li class="megamenu_style"> <a  class="list-item" href="#"><span class="title">Listing</span></a>
-                <ul class="row dropdown-megamenu">
-                  <li class="col mega_menu_list">
-                    <h4 class="title">Grid View</h4>
-                    <ul>
-                      <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                      <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                      <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                      <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                      <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                      <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                      <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                      <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                      <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-                    </ul>
-                  </li>
-                    <li class="col mega_menu_list">
-                      <h4 class="title">Map Style</h4>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-                      </ul>
-                    </li>
-                  <li class="col mega_menu_list">
-                    <h4 class="title">List View</h4>
-                    <ul>
-                      <li><a href="page-property-list.html">List v1</a></li>
-                      <li><a href="page-property-list-all.html">List All Style</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Property</span></a>
-                <ul>
-                    <li> <a href="#"><span class="title">Agents</span></a>
-                      <ul>
-                        <li><a href="page-agents.html">Agents</a></li>
-                        <li><a href="page-agent-single.html">Agent Single</a></li>
-                        <li><a href="page-agency.html">Agency</a></li>
-                        <li><a href="page-agency-single.html">Agency Single</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Dashboard</span></a>
-                      <ul>
-                        <li><a href="page-dashboard.html">Dashboard</a></li>
-                        <li><a href="page-dashboard-message.html">Message</a></li>
-                        <li><a href="page-dashboard-add-property.html">New Property</a></li>
-                        <li><a href="page-dashboard-properties.html">My Properties</a></li>
-                        <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-                        <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-                        <li><a href="page-dashboard-review.html">Reviews</a></li>
-                        <li><a href="page-dashboard-package.html">My Package</a></li>
-                        <li><a href="page-dashboard-profile.html">My Profile</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Map Style</span></a>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Half Map Style v1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Half Map Style v2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Half Map Style v3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Half Map Style v4</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Single Style</span></a>
-                      <ul>
-                        <li><a href="page-property-single-v1.html">Single V1</a></li>
-                        <li><a href="page-property-single-v2.html">Single V2</a></li>
-                        <li><a href="page-property-single-v3.html">Single V3</a></li>
-                        <li><a href="page-property-single-v4.html">Single V4</a></li>
-                        <li><a href="page-property-single-v5.html">Single V5</a></li>
-                        <li><a href="page-property-single-v6.html">Single V6</a></li>
-                        <li><a href="page-property-single-v7.html">Single V7</a></li>
-                        <li><a href="page-property-single-v8.html">Single V8</a></li>
-                        <li><a href="page-property-single-v9.html">Single V9</a></li>
-                        <li><a href="page-property-single-v10.html">Single V10</a></li>
-                      </ul>
-                    </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Blog</span></a>
-                <ul>
-                  <li><a href="page-blog-v1.html">List V1</a></li>
-                  <li><a href="page-blog-v2.html">List V2</a></li>
-                  <li><a href="page-blog-v3.html">List V3</a></li>
-                  <li><a href="page-blog-single.html">Single</a></li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Pages</span></a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-contact.html">Contact</a></li>
-                  <li><a href="page-compare.html">Compare</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-login.html">Login</a></li>
-                  <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-error.html">404</a></li>
-                  <li><a href="page-invoice.html">Invoices</a></li>
-                  <li><a href="page-ui-element.html">UI Elements</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
-              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="page-dashboard-add-property.html">Add Property<i class="fal fa-arrow-right-long"></i></a>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php
+    include 'header_v2.php';
+  ?>
   <!-- Signup Modal -->
   <div class="signup-modal">
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -217,13 +75,13 @@
                         <label class="form-label fw600 dark-color">Password</label>
                         <input type="text" class="form-control" placeholder="Enter Password">
                       </div>
-              <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                <label class="custom_checkbox fz14 ff-heading">Remember me
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <a class="fz14 ff-heading" href="#">Lost your password?</a>
-              </div>
+                      <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
+                        <label class="custom_checkbox fz14 ff-heading">Remember me
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                        <a class="fz14 ff-heading" href="#">Lost your password?</a>
+                      </div>
                       <div class="d-grid mb20">
                         <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
                       </div>
@@ -457,244 +315,101 @@
   </div>
 
   <div class="body_content">
-    <!-- UI Elements Sections -->
-    <section class="breadcumb-section2 p-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcumb-style1">
-              <h2 class="title">About Us</h2>
-              <div class="breadcumb-list">
-                <a href="">Home</a>
-                <a href="">For Rent</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Our Contact With Map -->
+    <section class="p-0">
+      <iframe class="home8-map contact-page" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
     </section>
-
-    <!-- Our About Area -->
-    <section class="our-about pb90">
+    <section>
       <div class="container">
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-6">
-            <h2>We're on a Mission to Change <br class="d-none d-lg-block"> View of Real Estate Field.</h2>
-          </div>
-          <div class="col-lg-6">
-            <p class="text mb25">It doesn’t matter how organized you are — a surplus of toys will always ensure your house is a mess waiting to happen. Fortunately, getting kids on board with the idea of ditching their stuff is a lot easier than it sounds.</p>
-            <p class="text mb55">Maecenas quis viverra metus, et efficitur ligula. Nam congue augue et ex congue, sed luctus lectus congue. Integer convallis condimentum sem. Duis elementum tortor eget condimentum tempor. Praesent sollicitudin lectus ut pharetra pulvinar.</p>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="why-chose-list style3">
-                  <div class="list-one mb30">
-                    <span class="list-icon flex-shrink-0 flaticon-garden mb20"></span>
-                    <div class="list-content flex-grow-1">
-                      <h6 class="mb-1">Modern Villa</h6>
-                      <p class="text mb-0 fz14">Nullam sollicitudin blandit <br class="d-none d-sm-block"> Nullam maximus.</p>
+        <div class="row d-flex align-items-end">
+          <div class="col-lg-5 position-relative">
+            <div class="home8-contact-form default-box-shadow1 bdrs12 bdr1 p30 mb30-md bgc-white">
+              <h4 class="form-title mb25">Have questions? Get in touch!</h4>
+              <form class="form-style1">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb20">
+                      <label class="heading-color ff-heading fw600 mb10">First Name</label>
+                      <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="mb20">
+                      <label class="heading-color ff-heading fw600 mb10">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb20">
+                      <label class="heading-color ff-heading fw600 mb10">Email</label>
+                      <input type="email" class="form-control" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb10">
+                      <label class="heading-color ff-heading fw600 mb10">Textarea</label>
+                      <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-grid">
+                      <a class="ud-btn btn-thm" href="page-contact.html">Submit<i class="fal fa-arrow-right-long"></i></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="why-chose-list style3">
-                  <div class="list-one mb30">
-                    <span class="list-icon flex-shrink-0 flaticon-secure-payment mb20"></span>
-                    <div class="list-content flex-grow-1">
-                      <h6 class="mb-1">Secure Payment</h6>
-                      <p class="text mb-0 fz14">Nullam sollicitudin blandit <br class="d-none d-sm-block"> Nullam maximus.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
+          </div>
+          <div class="col-lg-5 offset-lg-2">
+            <h2 class="mb30 text-capitalize">We’d love to hear <br class="d-none d-lg-block">from you.</h2>
+            <p class="text">We are here to answer any question you may have. As a partner of corporates, realton has more than 9,000 offices of all sizes and all potential of session.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Banner -->
-    <section class="our-about pt-0">
-      <div class="container">
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-12">
-            <div class="about-page-img">
-              <img class="w-100" src="images/about/about-page-banner.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Funfact -->
-    <section class="pt-0">
-      <div class="container">
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-md-4">
-            <div class="funfact_one text-center">
-              <div class="details">
-                <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">4</div></li>
-                  <li><span>M</span></li>
-                </ul>
-                <p class="text mb-0">Awward Winning</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="funfact_one text-center">
-              <div class="details">
-                <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">12</div></li>
-                  <li><span>K</span></li>
-                </ul>
-                <p class="text mb-0">Property Ready</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="funfact_one text-center">
-              <div class="details">
-                <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">20</div></li>
-                  <li><span>M</span></li>
-                </ul>
-                <p class="text mb-0">Happy Customer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Agents -->
-    <section class="pt-0 pb80 pb50-md">
-      <div class="container">
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-9 mx-auto text-center">
-            <div class="main-title2">
-              <h2 class="title">Our Exclusive Agents</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
-            </div>
-          </div>
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-1.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-2.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-3.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-4.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-5.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section class="pt-0">
-      <div class="cta-banner3 bgc-thm-light mx-auto maxw1600 pt100 pt60-lg pb90 pb60-lg bdrs24 position-relative overflow-hidden mx20-lg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-5 pl30-md pl15-xs wow fadeInRight" data-wow-delay="500ms">
-              <div class="mb30">
-                <h2 class="title text-capitalize">Let’s find the right <br class="d-none d-md-block"> selling option for you</h2>
-              </div>
-              <div class="why-chose-list style2">
-                <div class="list-one d-flex align-items-start mb30">
-                  <span class="list-icon flex-shrink-0 flaticon-security"></span>
-                  <div class="list-content flex-grow-1 ml20">
-                    <h6 class="mb-1">Property Management</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  </div>
-                </div>
-                <div class="list-one d-flex align-items-start mb30">
-                  <span class="list-icon flex-shrink-0 flaticon-keywording"></span>
-                  <div class="list-content flex-grow-1 ml20">
-                    <h6 class="mb-1">Mortgage Services</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  </div>
-                </div>
-                <div class="list-one d-flex align-items-start mb30">
-                  <span class="list-icon flex-shrink-0 flaticon-investment"></span>
-                  <div class="list-content flex-grow-1 ml20">
-                    <h6 class="mb-1">Currency Services</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                  </div>
-                </div>
-              </div>
-              <a href="page-property-single-v1.html" class="ud-btn btn-dark">Learn More<i class="fal fa-arrow-right-long"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Partners --> 
-    <section class="our-partners p-0">
+    <!-- Explore Apartment -->
+    <section class="pt0 pb90 pb10-md">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow fadeInUp" data-wow-delay="100ms">
+          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
-              <h6>Trusted by the world’s best</h6>
+              <h2 class="title">Visit Our Office</h2>
+              <p class="paragraph">Realton has more than 9,000 offices of all sizes and all potential of session.</p>
             </div>
           </div>
-          <div class="col-lg-12">
-            <div class="dots_none nav_none slider-dib-sm slider-6-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/1.png" alt="1.png"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay="00ms">
+            <div class="iconbox-style8 text-center">
+              <div class="icon"><img src="images/icon/paris.svg" alt=""></div>
+              <div class="iconbox-content">
+                <h4 class="title">Paris</h4>
+                <p class="text mb-1">1301 2nd Ave, Seattle, WA 98101</p>
+                <h6 class="mb10">(315) 905-2321</h6>
+                <a class="text-decoration-underline" href="">Open Google Map</a>
               </div>
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/2.png" alt="2.png"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+            <div class="iconbox-style8 active text-center">
+              <div class="icon"><img src="images/icon/london.svg" alt=""></div>
+              <div class="iconbox-content">
+                <h4 class="title">Paris</h4>
+                <p class="text mb-1">1301 2nd Ave, Seattle, WA 98101</p>
+                <h6 class="mb10">(315) 905-2321</h6>
+                <a class="text-decoration-underline" href="">Open Google Map</a>
               </div>
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/3.png" alt="3.png"></div>
-              </div>
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/4.png" alt="4.png"></div>
-              </div>
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/5.png" alt="5.png"></div>
-              </div>
-              <div class="item">
-                <div class="partner_item"><img class="wa m-auto" src="images/partners/6.png" alt="6.png"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
+            <div class="iconbox-style8 text-center">
+              <div class="icon"><img src="images/icon/new-york.svg" alt=""></div>
+              <div class="iconbox-content">
+                <h4 class="title">Paris</h4>
+                <p class="text mb-1">1301 2nd Ave, Seattle, WA 98101</p>
+                <h6 class="mb10">(315) 905-2321</h6>
+                <a class="text-decoration-underline" href="">Open Google Map</a>
               </div>
             </div>
           </div>
@@ -703,7 +418,7 @@
     </section>
 
     <!-- Our CTA --> 
-    <section class="our-cta">
+    <section class="our-cta pt-0">
       <div class="cta-banner bgc-f7 mx-auto maxw1600 pt120 pb120 pt60-md pb60-md bdrs12 position-relative mx20-lg">
         <div class="img-box-5">
           <img class="img-1 spin-right" src="images/about/element-1.png" alt="">
@@ -871,7 +586,6 @@
 <script src="js/jquery.mmenu.all.js"></script>
 <script src="js/ace-responsive-menu.js"></script>
 <script src="js/jquery-scrolltofixed-min.js"></script>
-<script src="js/owl.js"></script>
 <script src="js/wow.min.js"></script>
 <!-- Custom script for all pages --> 
 <script src="js/script.js"></script>

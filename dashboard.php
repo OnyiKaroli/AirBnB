@@ -46,182 +46,9 @@
   <div class="preloader"></div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
-    <!-- Ace Responsive Menu -->
-    <nav class="posr"> 
-      <div class="container-fluid pr30 pr15-xs pl30 posr menu_bdrt1">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-6 col-lg-auto">
-            <div class="text-center text-lg-start d-flex align-items-center">
-              <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                <a href="index.php" class="logo"><img src="images/header-logo2.svg" alt=""></a>
-              </div>
-              <div class="fz20 ms-2 ms-xl-5">
-                <a href="#" class="dashboard_sidebar_toggle_icon text-thm1 vam"><img src="images/dark-nav-icon.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="d-none d-lg-block col-lg-auto">
-            <!-- Responsive Menu Structure-->
-            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Home</span></a>
-                <!-- Level Two-->
-                <ul>
-                  <li><a href="index.php">Home V1</a></li>
-                  <li><a href="index2.html">Home V2</a></li>
-                  <li><a href="index3.html">Home V3</a></li>
-                  <li><a href="index4.html">Home V4</a></li>
-                  <li><a href="index5.html">Home V5</a></li>
-                  <li><a href="index6.html">Home V6</a></li>
-                  <li><a href="index7.html">Home V7</a></li>
-                  <li><a href="index8.html">Home V8</a></li>
-                  <li><a href="index9.html">Home V9</a></li>
-                  <li><a href="index10.html">Home V10</a></li>
-                </ul>
-              </li>
-              <li class="megamenu_style"> <a  class="list-item" href="#"><span class="title">Listing</span></a>
-                <ul class="row dropdown-megamenu">
-                  <li class="col mega_menu_list">
-                    <h4 class="title">Grid View</h4>
-                    <ul>
-                      <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                      <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                      <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                      <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                      <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                      <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                      <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                      <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                      <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-                    </ul>
-                  </li>
-                    <li class="col mega_menu_list">
-                      <h4 class="title">Map Style</h4>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-                      </ul>
-                    </li>
-                  <li class="col mega_menu_list">
-                    <h4 class="title">List View</h4>
-                    <ul>
-                      <li><a href="page-property-list.html">List v1</a></li>
-                      <li><a href="page-property-list-all.html">List All Style</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Property</span></a>
-                <ul>
-                  <li> <a href="#"><span class="title">Agents</span></a>
-                    <ul>
-                      <li><a href="page-agents.html">Agents</a></li>
-                      <li><a href="page-agent-single.html">Agent Single</a></li>
-                      <li><a href="page-agency.html">Agency</a></li>
-                      <li><a href="page-agency-single.html">Agency Single</a></li>
-                    </ul>
-                  </li>
-                  <li> <a href="#"><span class="title">Dashboard</span></a>
-                    <ul>
-                      <li><a href="page-dashboard.html">Dashboard</a></li>
-                      <li><a href="page-dashboard-message.html">Message</a></li>
-                      <li><a href="page-dashboard-add-property.html">New Property</a></li>
-                      <li><a href="page-dashboard-properties.html">My Properties</a></li>
-                      <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-                      <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-                      <li><a href="page-dashboard-review.html">Reviews</a></li>
-                      <li><a href="page-dashboard-package.html">My Package</a></li>
-                      <li><a href="page-dashboard-profile.html">My Profile</a></li>
-                    </ul>
-                  </li>
-                    <li> <a href="#"><span class="title">Map Style</span></a>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Half Map Style v1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Half Map Style v2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Half Map Style v3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Half Map Style v4</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Single Style</span></a>
-                      <ul>
-                        <li><a href="page-property-single-v1.html">Single V1</a></li>
-                        <li><a href="page-property-single-v2.html">Single V2</a></li>
-                        <li><a href="page-property-single-v3.html">Single V3</a></li>
-                        <li><a href="page-property-single-v4.html">Single V4</a></li>
-                        <li><a href="page-property-single-v5.html">Single V5</a></li>
-                        <li><a href="page-property-single-v6.html">Single V6</a></li>
-                        <li><a href="page-property-single-v7.html">Single V7</a></li>
-                        <li><a href="page-property-single-v8.html">Single V8</a></li>
-                        <li><a href="page-property-single-v9.html">Single V9</a></li>
-                        <li><a href="page-property-single-v10.html">Single V10</a></li>
-                      </ul>
-                    </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Blog</span></a>
-                <ul>
-                  <li><a href="page-blog-v1.html">List V1</a></li>
-                  <li><a href="page-blog-v2.html">List V2</a></li>
-                  <li><a href="page-blog-v3.html">List V3</a></li>
-                  <li><a href="page-blog-single.html">Single</a></li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Pages</span></a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-contact.html">Contact</a></li>
-                  <li><a href="page-compare.html">Compare</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-login.html">Login</a></li>
-                  <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-error.html">404</a></li>
-                  <li><a href="page-invoice.html">Invoices</a></li>
-                  <li><a href="page-ui-element.html">UI Elements</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-auto">
-            <div class="text-center text-lg-end header_right_widgets">
-              <ul class="mb0 d-flex justify-content-center justify-content-sm-end p-0">
-                <li class="d-none d-sm-block"><a class="text-center mr15" href="page-login.html"><span class="flaticon-email"></span></a></li>
-                <li class="d-none d-sm-block"><a class="text-center mr20 notif" href="#"><span class="flaticon-bell"></span></a></li>
-                <li class=" user_setting">
-                  <div class="dropdown">
-                    <a class="btn" href="#" data-bs-toggle="dropdown">
-                      <img src="images/resource/user.png" alt="user.png"> 
-                    </a>
-                    <div class="dropdown-menu">
-                      <div class="user_setting_content">
-                        <p class="fz15 fw400 ff-heading mb20">MAIN</p>
-                        <a class="dropdown-item" href="page-dashboard.html"><i class="flaticon-discovery mr10"></i>Dashboard</a>
-                        <a class="dropdown-item" href="page-dashboard-message.html"><i class="flaticon-chat-1 mr10"></i>Message</a>
-                        <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
-                        <a class="dropdown-item" href="page-dashboard-add-property.html"><i class="flaticon-new-tab mr10"></i>Add New Property</a>
-                        <a class="dropdown-item" href="page-dashboard-properties.html"><i class="flaticon-home mr10"></i>My Properties</a>
-                        <a class="dropdown-item" href="page-dashboard-favorites.html"><i class="flaticon-like mr10"></i>My Favorites</a>
-                        <a class="dropdown-item" href="page-dashboard-categories.html"><i class="flaticon-search-2 mr10"></i>Saved Search</a>
-                        <a class="dropdown-item" href="page-dashboard-review.html"><i class="flaticon-review mr10"></i>Reviews</a>
-                        <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
-                        <a class="dropdown-item active" href="page-dashboard-package.html"><i class="flaticon-protection mr10"></i>My Package</a>
-                        <a class="dropdown-item" href="page-dashboard-profile.html"><i class="flaticon-user mr10"></i>My Profile</a>
-                        <a class="dropdown-item" href="page-login.html"><i class="flaticon-exit mr10"></i>Logout</a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php
+    include 'header_v2.php';
+  ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
@@ -392,11 +219,11 @@
   </div>
 
   <div class="dashboard_content_wrapper">
-    <div class="dashboard dashboard_wrapper pr30 pr0-md">
+    <div class="dashboard dashboard_wrapper pr30 pr0-xl">
       <div class="dashboard__sidebar d-none d-lg-block">
         <div class="dashboard_sidebar_list">
           <div class="sidebar_list_item">
-            <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
+            <a href="page-dashboard.html" class="items-center -is-active"><i class="flaticon-discovery mr15"></i>Dashboard</a>
           </div>
           <div class="sidebar_list_item ">
             <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
@@ -412,14 +239,14 @@
             <a href="page-dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>My Favorites</a>
           </div>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-save-search.html" class="items-center"><i class="flaticon-search-2 mr15"></i>Saved Search</a>
+            <a href="page-dashboard-savesearch.html" class="items-center"><i class="flaticon-search-2 mr15"></i>Saved Search</a>
           </div>
           <div class="sidebar_list_item ">
             <a href="page-dashboard-review.html" class="items-center"><i class="flaticon-review mr15"></i>Reviews</a>
           </div>
           <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-package.html" class="items-center -is-active"><i class="flaticon-protection mr15"></i>My Package</a>
+            <a href="page-dashboard-package.html" class="items-center"><i class="flaticon-protection mr15"></i>My Package</a>
           </div>
           <div class="sidebar_list_item ">
             <a href="page-dashboard-profile.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
@@ -437,16 +264,16 @@
                 <div class="dropdown">
                   <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars pr10"></i> Dashboard Navigation</button>
                   <ul id="myDropdown" class="dropdown-content">
-                    <li><a href="page-dashboard.html"><i class="flaticon-discovery mr10"></i>Dashboard</a></li>
+                    <li class="active"><a href="page-dashboard.html"><i class="flaticon-discovery mr10"></i>Dashboard</a></li>
                     <li><a href="page-dashboard-message.html"><i class="flaticon-chat-1 mr10"></i>Message</a></li>
                     <li><p class="fz15 fw400 ff-heading mt30 pl30">MANAGE LISTINGS</p></li>
                     <li><a href="page-dashboard-add-property.html"><i class="flaticon-new-tab mr10"></i>Add New Property</a></li>
                     <li><a href="page-dashboard-properties.html"><i class="flaticon-home mr10"></i>My Properties</a></li>
                     <li><a href="page-dashboard-favorites.html"><i class="flaticon-like mr10"></i>My Favorites</a></li>
-                    <li><a href="page-dashboard-categories.html"><i class="flaticon-search-2 mr10"></i>Saved Search</a></li>
+                    <li><a href="page-dashboard-savesearch.html"><i class="flaticon-search-2 mr10"></i>Saved Search</a></li>
                     <li><a href="page-dashboard-review.html"><i class="flaticon-review mr10"></i>Reviews</a></li>
                     <li><p class="fz15 fw400 ff-heading mt30 pl30">MANAGE ACCOUNT</p></li>
-                    <li class="active"><a href="page-dashboard-package.html"><i class="flaticon-protection mr10"></i>My Package</a></li>
+                    <li><a href="page-dashboard-package.html"><i class="flaticon-protection mr10"></i>My Package</a></li>
                     <li><a href="page-dashboard-profile.html"><i class="flaticon-user mr10"></i>My Profile</a></li>
                     <li><a class="" href="page-login.html"><i class="flaticon-exit mr10"></i>Logout</a></li>
                   </ul>
@@ -455,85 +282,112 @@
             </div>
             <div class="col-lg-12">
               <div class="dashboard_title_area">
-                <h2>My Package</h2>
+                <h2>Howdy, Ali!</h2>
                 <p class="text">We are glad to see you again!</p>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-sm-6 col-xxl-3">
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">All Properties</div>
+                  <div class="title">583</div>
+                </div>
+                <div class="icon text-center"><i class="flaticon-home"></i></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xxl-3">
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">Total Views</div>
+                  <div class="title">192</div>
+                </div>
+                <div class="icon text-center"><i class="flaticon-search-chart"></i></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xxl-3">
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">Total Visitor Reviews</div>
+                  <div class="title">438</div>
+                </div>
+                <div class="icon text-center"><i class="flaticon-review"></i></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xxl-3">
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">Total Favorites</div>
+                  <div class="title">67</div>
+                </div>
+                <div class="icon text-center"><i class="flaticon-like"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <div class="packages_table table-responsive">
-                  <table class="table-style3 table">
-                    <thead class="t-head">
-                      <tr>
-                        <th scope="col">Current Package</th>
-                        <th scope="col">Properties remaining</th>
-                        <th scope="col">Featured remaining</th>
-                        <th scope="col">Renewal remaining</th>
-                        <th scope="col">Storage Space</th>
-                        <th scope="col">Expiry Date</th>
-                      </tr>
-                    </thead>
-                    <tbody class="t-body">
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th class="active" scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Free</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>2 MB / 20 MB</td>
-                        <td>December 31, 2022</td>
-                      </tr>
-                    </tbody>
-                  </table>                  
+                <div class="navtab-style1">
+                  <div class="d-sm-flex align-items-center justify-content-between">
+                    <h4 class="title fz17 mb20">View statistics</h4>
+                    <ul class="nav nav-tabs border-bottom-0 mb30" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link fw600 active" id="hourly-tab" data-bs-toggle="tab" href="#hourly" role="tab" aria-controls="hourly" aria-selected="true">Hours</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Monthly</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="hourly" role="tabpanel" aria-labelledby="hourly-tab">
+                      <canvas class="chart-container" id="doublebar-chart"></canvas>
+                    </div>
+                    <div class="tab-pane fade w-100" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
+                      <canvas class="canvas w-100" id="myChartweave"></canvas>
+                    </div>
+                    <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                      <div class="chart pt20">
+                        <canvas class="w-100" id="myChart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <h4 class="title fz17 mb25">Recent Activities</h4>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-home flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Your listing <span class="fw600">House on the beverly hills</span> has been approved</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Dollie Horton left a review on <span class="fw600">House on the Northridge</span></p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-like flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Someone favorites your <span class="fw600">Triple Story House for Rent</span> listing</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Someone favorites your <span class="fw600">Triple Story House for Rent</span> listing</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-home flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Your listing <span class="fw600">House on the beverly hills</span> has been approved</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Dollie Horton left a review on <span class="fw600">House on the Northridge</span></p>
+                </div>
+                <div class="d-grid">
+                  <a href="" class="ud-btn btn-white2">Veiw More<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -567,7 +421,9 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/bootstrap-select.min.js"></script> 
 <script src="js/jquery.mmenu.all.js"></script> 
-<script src="js/ace-responsive-menu.js"></script>
+<script src="js/ace-responsive-menu.js"></script> 
+<script src="js/chart.min.js"></script>
+<script src="js/chart-custome.js"></script>
 <script src="js/jquery-scrolltofixed-min.js"></script>
 <script src="js/dashboard-script.js"></script>
 <!-- Custom script for all pages --> 

@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="css/flaticon.css">
 <link rel="stylesheet" href="css/bootstrap-select.min.css">
 <link rel="stylesheet" href="css/ud-custom-spacing.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
@@ -43,150 +43,9 @@
   <div class="preloader"></div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav nav-innerpage-style bdrb1 style2 main-menu">
-    <!-- Ace Responsive Menu -->
-    <nav class="posr"> 
-      <div class="container posr menu_bdrt1">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-auto">
-            <a class="header-logo" href="index.php"><img src="images/header-logo2.svg" alt="Header Logo"></a>
-          </div>
-          <div class="col-auto">
-            <!-- Responsive Menu Structure-->
-            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Home</span></a>
-                <!-- Level Two-->
-                <ul>
-                  <li><a href="index.php">Home V1</a></li>
-                  <li><a href="index2.html">Home V2</a></li>
-                  <li><a href="index3.html">Home V3</a></li>
-                  <li><a href="index4.html">Home V4</a></li>
-                  <li><a href="index5.html">Home V5</a></li>
-                  <li><a href="index6.html">Home V6</a></li>
-                  <li><a href="index7.html">Home V7</a></li>
-                  <li><a href="index8.html">Home V8</a></li>
-                  <li><a href="index9.html">Home V9</a></li>
-                  <li><a href="index10.html">Home V10</a></li>
-                </ul>
-              </li>
-              <li class="megamenu_style"> <a  class="list-item" href="#"><span class="title">Listing</span></a>
-                <ul class="row dropdown-megamenu">
-                  <li class="col mega_menu_list">
-                    <h4 class="title">Grid View</h4>
-                    <ul>
-                      <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                      <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                      <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                      <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                      <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                      <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                      <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                      <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                      <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-                    </ul>
-                  </li>
-                    <li class="col mega_menu_list">
-                      <h4 class="title">Map Style</h4>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-                      </ul>
-                    </li>
-                  <li class="col mega_menu_list">
-                    <h4 class="title">List View</h4>
-                    <ul>
-                      <li><a href="page-property-list.html">List v1</a></li>
-                      <li><a href="page-property-list-all.html">List All Style</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Property</span></a>
-                <ul>
-                    <li> <a href="#"><span class="title">Agents</span></a>
-                      <ul>
-                        <li><a href="page-agents.html">Agents</a></li>
-                        <li><a href="page-agent-single.html">Agent Single</a></li>
-                        <li><a href="page-agency.html">Agency</a></li>
-                        <li><a href="page-agency-single.html">Agency Single</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Dashboard</span></a>
-                      <ul>
-                        <li><a href="page-dashboard.html">Dashboard</a></li>
-                        <li><a href="page-dashboard-message.html">Message</a></li>
-                        <li><a href="page-dashboard-add-property.html">New Property</a></li>
-                        <li><a href="page-dashboard-properties.html">My Properties</a></li>
-                        <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-                        <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-                        <li><a href="page-dashboard-review.html">Reviews</a></li>
-                        <li><a href="page-dashboard-package.html">My Package</a></li>
-                        <li><a href="page-dashboard-profile.html">My Profile</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Map Style</span></a>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Half Map Style v1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Half Map Style v2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Half Map Style v3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Half Map Style v4</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Single Style</span></a>
-                      <ul>
-                        <li><a href="page-property-single-v1.html">Single V1</a></li>
-                        <li><a href="page-property-single-v2.html">Single V2</a></li>
-                        <li><a href="page-property-single-v3.html">Single V3</a></li>
-                        <li><a href="page-property-single-v4.html">Single V4</a></li>
-                        <li><a href="page-property-single-v5.html">Single V5</a></li>
-                        <li><a href="page-property-single-v6.html">Single V6</a></li>
-                        <li><a href="page-property-single-v7.html">Single V7</a></li>
-                        <li><a href="page-property-single-v8.html">Single V8</a></li>
-                        <li><a href="page-property-single-v9.html">Single V9</a></li>
-                        <li><a href="page-property-single-v10.html">Single V10</a></li>
-                      </ul>
-                    </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Blog</span></a>
-                <ul>
-                  <li><a href="page-blog-v1.html">List V1</a></li>
-                  <li><a href="page-blog-v2.html">List V2</a></li>
-                  <li><a href="page-blog-v3.html">List V3</a></li>
-                  <li><a href="page-blog-single.html">Single</a></li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Pages</span></a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-contact.html">Contact</a></li>
-                  <li><a href="page-compare.html">Compare</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-login.html">Login</a></li>
-                  <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-error.html">404</a></li>
-                  <li><a href="page-invoice.html">Invoices</a></li>
-                  <li><a href="page-ui-element.html">UI Elements</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
-              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="page-dashboard-add-property.html">Add Property<i class="fal fa-arrow-right-long"></i></a>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php
+    include 'header_v2.php';
+  ?>
   <!-- Signup Modal -->
   <div class="signup-modal">
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -456,263 +315,312 @@
   </div>
 
   <div class="body_content">
-    <!-- UI Elements Sections -->
-    <section class="breadcumb-section">
+    <!-- Blog Section Area -->
+    <section class="our-blog pt50">
       <div class="container">
+        <div class="row wow fadeInUp" data-wow-delay="100ms">
+          <div class="col-lg-12">
+            <h2 class="blog-title">7 Simple Ways to Keep Your Kids' Toys From Taking Over Your Home</h2>
+            <div class="blog-single-meta">
+              <div class="post-author d-sm-flex align-items-center">
+                <img class="mr10" src="images/blog/author-1.png" alt=""><a class="pr15 bdrr1" href="">Leslie Alexander</a><a class="ml15 pr15 bdrr1" href="">Home Improvement</a><a class="ml15" href="">December 2, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto maxw1600 mt60 wow fadeInUp" data-wow-delay="300ms">
         <div class="row">
           <div class="col-lg-12">
-            <div class="breadcumb-style1">
-              <h2 class="title">Agents</h2>
-              <div class="breadcumb-list">
-                <a href="">Home</a>
-                <a href="">For Rent</a>
+            <div class="large-thumb"><img class="w-100" src="images/blog/blog-single-1.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="roww wow fadeInUp" data-wow-delay="500ms">
+          <div class="col-xl-8 offset-xl-2">
+            <div class="ui-content mt40 mb60">
+              <h4 class="mb10">1. Reduce the clutter</h4>
+              <p class="mb25 ff-heading">It doesn’t matter how organized you are — a surplus of toys will always ensure your house is a mess waiting to happen. Fortunately, getting kids on board with the idea of ditching their stuff is a lot easier than it sounds.</p>
+              <p class="ff-heading">The trick is to make it an opportunity for them to define themselves and their interests. Encourage kids to make a pile of ”baby toys” to donate, and have them set aside any toys that no longer interest them, such as action figures from a forgotten TV show. Separating these toys will help them appreciate how much they’ve grown and rediscover the toys they love.</p>
+            </div>
+            <div class="blockquote-style1 mb60">
+              <blockquote class="blockquote">
+                <p class="fst-italic fz15 fw500 ff-heading">Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue.</p>
+                <h6 class="quote-title">Luis Pickford</h6>
+              </blockquote>
+            </div>
+            <div class="ui-content">
+              <h4 class="title">2. Choose toys wisely</h4>
+            </div>
+            <div class="row">
+              <div class="col-auto">
+                <div class="ui-content">
+                  <div class="list-style1">
+                    <ul>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Become a UI/UX designer.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>You will be able to start earning money Figma skills.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Build a UI project from beginning to end.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Work with colors & fonts.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>You will create your own UI Kit.</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+              <div class="col-auto">
+                <div class="ui-content">
+                  <div class="list-style1">
+                    <ul>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Build & test a complete mobile app.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Learn to design mobile apps & websites.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Design 3 different logos.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Create low-fidelity wireframe.</li>
+                      <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Downloadable exercise files.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt40">
+              <img src="images/blog/blog-single-2.jpg" alt="" class="bdrs12 post-img-2 w-100">
+            </div>
+            <div class="ui-content mt40 mb30">
+              <h4 class="mb10">3.Leave some toys out of reach</h4>
+              <div class="custom_bsp_grid">
+                <ul class="list-style-type-bullet p-0 ml20">
+                  <li>We do not require any previous experience or pre-defined skills to take this course. A great orientation would be enough to master UI/UX design.</li>
+                  <li>A computer with a good internet connection.</li>
+                  <li>Adobe Photoshop (OPTIONAL)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bdrt1 bdrb1 d-block d-sm-flex justify-content-between pt50 pt30-sm pb50 pb30-sm">
+              <div class="blog_post_share d-flex align-items-center mb10-sm">
+                <span class="mr30">Share this post</span>
+                <a class="mr20" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="mr20" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="mr20" href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="bsp_tags d-flex">
+                <a class="mr10" href="#">Figma</a>
+                <a class="mr10" href="#">Sketch</a>
+                <a href="#">HTML5</a>
+              </div>
+            </div>
+            <div class="bsp_comments bdrb1 d-block d-sm-flex justify-content-between pt30 pb45 pb30-sm">
+              <div class="mbp_first d-flex">
+                <div class="flex-shrink-0"> <img src="images/blog/comments-1.png" class="mr-3" alt="comments-1.png"> </div>
+                <div class="flex-grow-1 ml30">
+                  <h6 class="mb0">Brooklyn Simmons</h6>
+                  <div class="text fz13 mb20">Medical Assistant</div>
+                  <p class="text">Etiam vitae leo et diam pellentesque porta. Sed eleifend ultricies risus, vel rutrum erat commodo ut. Praesent finibus congue euismod.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mbp_pagination_tab bdrb1">
+              <div class="row justify-content-between pt45 pt30-sm pb45 pb30-sm">
+                <div class="col-md-6">
+                  <div class="pag_prev">
+                    <a href="">
+                      <h6><span class="fas fa-chevron-left pe-2"></span> Previous Post</h6>
+                      <p class="fz13 text mb-0">Given Set was without from god divide rule Hath</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="pag_next">
+                    <a href="" class="text-end">
+                      <h6>Next Post<span class="fas fa-chevron-right ps-2"></span></h6>
+                      <p class="fz13 text mb-0">Tree earth fowl given moveth deep lesser After</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_single_content mb50">
+              <div class="mbp_pagination_comments">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="total_review d-flex align-items-center justify-content-between mb20 mt60">
+                      <h6 class="fz17 mb15"><i class="fas fa-star fz12 pe-2"></i>5.0 · 3 reviews</h6>
+                      <div class="page_control_shorting d-flex align-items-center justify-content-center justify-content-sm-end">
+                        <div class="pcs_dropdown mb15"><span>Sort by</span>
+                          <select class="selectpicker show-tick">
+                            <option>Newest</option>
+                            <option>Best Seller</option>
+                            <option>Best Match</option>
+                            <option>Price Low</option>
+                            <option>Price High</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mbp_first position-relative d-flex align-items-center justify-content-start mb30-sm">
+                      <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
+                      <div class="ml20">
+                        <h6 class="mt-0 mb-0">Bessie Cooper</h6>
+                        <div><span class="fz14">12 March 2022</span>
+                          <div class="blog-single-review">
+                            <ul class="mb0 ps-0">
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text mt20 mb20">Every single thing we tried with John was delicious! Found some awesome places we would definitely go back to on our trip. John was also super friendly and passionate about Beşiktaş and Istanbul.</p>
+                    <ul class="mb20 ps-0">
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-3.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-4.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-5.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-6.jpg" alt="review-img"></li>
+                    </ul>
+                    <div class="review_cansel_btns d-flex bdrb1 pb30">
+                      <a href="#"><i class="fas fa-thumbs-up"></i>Helpful</a>
+                      <a href="#"><i class="fas fa-thumbs-down"></i>Not helpful</a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mbp_first position-relative d-flex align-items-center justify-content-start mt30 mb30-sm">
+                      <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
+                      <div class="ml20">
+                        <h6 class="mt-0 mb-0">Darrell Steward</h6>
+                        <div><span class="fz14">12 March 2022</span>
+                          <div class="blog-single-review">
+                            <ul class="mb0 ps-0">
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                              <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text mt20 mb20">Every single thing we tried with John was delicious! Found some awesome places we would definitely go back to on our trip. John was also super friendly and passionate about Beşiktaş and Istanbul.</p>
+                    <ul class="mb20 ps-0">
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-3.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-4.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-5.jpg" alt="review-img"></li>
+                      <li class="list-inline-item mb5-xs"><img class="bdrs6" src="images/blog/blog-single-6.jpg" alt="review-img"></li>
+                    </ul>
+                    <div class="review_cansel_btns d-flex bdrb1 pb30">
+                      <a href="#"><i class="fas fa-thumbs-up"></i>Helpful</a>
+                      <a href="#"><i class="fas fa-thumbs-down"></i>Not helpful</a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="position-relative bdrb1 pt30 pb20">
+                      <a href="page-property-single-v1.html" class="ud-btn btn-white2">Show all 134 reviews<i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bsp_reveiw_wrt">
+              <h6 class="fz17">Leave A Review</h6>
+              <form class="comments_form mt30">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-4">
+                      <label class="fw600 ff-heading mb-2">Email</label>
+                      <input type="email" class="form-control" placeholder="creativelayers088">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <label class="fw600 ff-heading mb-2">Title</label>
+                      <input type="text" class="form-control" placeholder="Enter Title">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="widget-wrapper sideborder-dropdown mb-4">
+                      <label class="fw600 ff-heading mb-2">Rating</label>
+                      <div class="form-style2 input-group">
+                        <select class="selectpicker" data-live-search="true" data-width="100%">
+                          <option>Rating</option>
+                          <option data-tokens="Five Star">Five Star</option>
+                          <option data-tokens="Four Star">Four Star</option>
+                          <option data-tokens="Three Star">Three Star</option>
+                          <option data-tokens="Two Star">Two Star</option>
+                          <option data-tokens="One Star">One Star</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-4">
+                      <label class="fw600 ff-heading mb-2">Review</label>
+                      <textarea class="pt15" rows="6" placeholder="Write a Review"></textarea>
+                    </div>
+                    <a href="page-property-single-v1.html" class="ud-btn btn-white2">Submit Review<i class="fal fa-arrow-right-long"></i></a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Agent Section Area -->
-    <section class="our-agents pt-0">
+    <!-- Explore Apartment -->
+    <section class="pb90 pb20-md pt-0">
       <div class="container">
-        <div class="row align-items-center mb20">
-          <div class="col-md-9">
-            <div class="agent-page-meta dropdown-lists">
-              <div class="d-sm-flex">
-                <div class="position-relative mb10 mr10">
-                  <input type="text" class="form-control" placeholder="Enter agent name">
-                </div>
-                <div class="position-relative mb10 mr10">
-                  <button type="button" class="open-btn box-shadow-0 dropdown-toggle" data-bs-toggle="dropdown">All Categories <i class="fa fa-angle-down ms-2"></i></button>
-                  <div class="dropdown-menu">
-                    <div class="widget-wrapper bdrb1 pb25 mb0 pl20">
-                      <div class="checkbox-style1">
-                        <label class="custom_checkbox">Apartments
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="custom_checkbox">Apartments
-                          <input type="checkbox" checked="checked">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="custom_checkbox">Office
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="custom_checkbox">Villa
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="custom_checkbox">Townhome
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="text-end mt10 pr10">
-                      <button type="button" class="done-btn box-shadow-0 ud-btn btn-thm dropdown-toggle">Done</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="position-relative mb10">
-                  <button type="button" class="open-btn mb15 drop_btn" data-bs-toggle="dropdown">All Cities <i class="fa fa-angle-down ms-2"></i></button>
-                  <div class="drop_content">
-                    <div class="widget-wrapper bdrb1 pb25 mb0 p20">
-                      <div class="bootselect-multiselect">
-                        <select class="selectpicker">
-                          <option>All Cities</option>
-                          <option data-tokens="California">California</option>
-                          <option data-tokens="Chicago">Chicago</option>
-                          <option data-tokens="LosAngeles">Los Angeles</option>
-                          <option data-tokens="Manhattan">Manhattan</option>
-                          <option data-tokens="NewJersey">New Jersey</option>
-                          <option data-tokens="NewYork">New York</option>
-                          <option data-tokens="SanDiego">San Diego</option>
-                          <option data-tokens="SanFrancisco">San Francisco</option>
-                          <option data-tokens="Texas">Texas</option>
-                        </select>
-                      </div>                     
-                    </div>
-                    <div class="text-end mt10 pr10">
-                      <button type="button" class="done-btn box-shadow-0 ud-btn btn-thm drop_btn">Done</button>
-                    </div>
-                  </div>
-                </div>
-              </div>                   
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="page_control_shorting text-start text-md-end mb20">
-              <div class="pcs_dropdown pr10"><span>Sort by</span>
-                <select class="selectpicker show-tick">
-                  <option>Newest</option>
-                  <option>Best Seller</option>
-                  <option>Best Match</option>
-                  <option>Price Low</option>
-                  <option>Price High</option>
-                </select>
-              </div>
+        <div class="row">
+          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="00ms">
+            <div class="main-title text-start text-md-center">
+              <h2 class="title">Related Posts</h2>
+              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
             </div>
           </div>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 wow fadeInUp" data-wow-delay="100ms">
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-1.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
+        <div class="row wow fadeInUp" data-wow-delay="300ms">
+          <div class="col-sm-6 col-lg-4">
+            <div class="blog-style1">
+              <div class="blog-img"><img class="w-100" src="images/blog/blog-1.jpg" alt=""></div>
+              <div class="blog-content">
+                <div class="date">
+                  <span class="month">July</span>
+                  <span class="day">28</span>
+                </div>
+                <a class="tag" href="">Living Room</a>
+                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-2.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
+          <div class="col-sm-6 col-lg-4">
+            <div class="blog-style1">
+              <div class="blog-img"><img class="w-100" src="images/blog/blog-2.jpg" alt=""></div>
+              <div class="blog-content">
+                <div class="date">
+                  <span class="month">July</span>
+                  <span class="day">28</span>
+                </div>
+                <a class="tag" href="">Living Room</a>
+                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-3.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
+          <div class="col-sm-6 col-lg-4">
+            <div class="blog-style1">
+              <div class="blog-img"><img class="w-100" src="images/blog/blog-3.jpg" alt=""></div>
+              <div class="blog-content">
+                <div class="date">
+                  <span class="month">July</span>
+                  <span class="day">28</span>
+                </div>
+                <a class="tag" href="">Living Room</a>
+                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-4.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-5.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-6.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-7.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-8.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-9.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-10.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-11.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-12.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-13.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-14.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-15.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
-          <div class="mbp_pagination text-center">
-            <ul class="page_navigation">
-              <li class="page-item">
-                <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">...</a></li>
-              <li class="page-item"><a class="page-link" href="#">20</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
-              </li>
-            </ul>
-            <p class="mt10 pagination_page_count text-center">1 – 20 of 300+ property available</p>
           </div>
         </div>
       </div>
@@ -851,15 +759,15 @@
   </div>
 </div>
 <!-- Wrapper End --> 
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/jquery-migrate-3.0.0.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
-<script src="js/jquery.mmenu.all.js"></script>
-<script src="js/ace-responsive-menu.js"></script>
-<script src="js/jquery-scrolltofixed-min.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="js/jquery-3.6.4.min.js"></script> 
+<script src="js/jquery-migrate-3.0.0.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-select.min.js"></script> 
+<script src="js/jquery.mmenu.all.js"></script> 
+<script src="js/ace-responsive-menu.js"></script> 
+<script src="js/jquery-scrolltofixed-min.js"></script> 
+<script src="js/wow.min.js"></script> 
 <!-- Custom script for all pages --> 
 <script src="js/script.js"></script>
 </body>

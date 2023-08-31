@@ -38,155 +38,14 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="bgc-f7">
+<body>
 <div class="wrapper ovh">
   <div class="preloader"></div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav nav-innerpage-style main-menu">
-    <!-- Ace Responsive Menu -->
-    <nav class="posr"> 
-      <div class="container posr menu_bdrt1">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-auto">
-            <a class="header-logo" href="index.php"><img src="images/header-logo2.svg" alt="Header Logo"></a>
-          </div>
-          <div class="col-auto">
-            <!-- Responsive Menu Structure-->
-            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Home</span></a>
-                <!-- Level Two-->
-                <ul>
-                  <li><a href="index.php">Home V1</a></li>
-                  <li><a href="index2.html">Home V2</a></li>
-                  <li><a href="index3.html">Home V3</a></li>
-                  <li><a href="index4.html">Home V4</a></li>
-                  <li><a href="index5.html">Home V5</a></li>
-                  <li><a href="index6.html">Home V6</a></li>
-                  <li><a href="index7.html">Home V7</a></li>
-                  <li><a href="index8.html">Home V8</a></li>
-                  <li><a href="index9.html">Home V9</a></li>
-                  <li><a href="index10.html">Home V10</a></li>
-                </ul>
-              </li>
-              <li class="megamenu_style"> <a  class="list-item" href="#"><span class="title">Listing</span></a>
-                <ul class="row dropdown-megamenu">
-                  <li class="col mega_menu_list">
-                    <h4 class="title">Grid View</h4>
-                    <ul>
-                      <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                      <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                      <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                      <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                      <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                      <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                      <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                      <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                      <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-                    </ul>
-                  </li>
-                    <li class="col mega_menu_list">
-                      <h4 class="title">Map Style</h4>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-                      </ul>
-                    </li>
-                  <li class="col mega_menu_list">
-                    <h4 class="title">List View</h4>
-                    <ul>
-                      <li><a href="page-property-list.html">List v1</a></li>
-                      <li><a href="page-property-list-all.html">List All Style</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Property</span></a>
-                <ul>
-                    <li> <a href="#"><span class="title">Agents</span></a>
-                      <ul>
-                        <li><a href="page-agents.html">Agents</a></li>
-                        <li><a href="page-agent-single.html">Agent Single</a></li>
-                        <li><a href="page-agency.html">Agency</a></li>
-                        <li><a href="page-agency-single.html">Agency Single</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Dashboard</span></a>
-                      <ul>
-                        <li><a href="page-dashboard.html">Dashboard</a></li>
-                        <li><a href="page-dashboard-message.html">Message</a></li>
-                        <li><a href="page-dashboard-add-property.html">New Property</a></li>
-                        <li><a href="page-dashboard-properties.html">My Properties</a></li>
-                        <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-                        <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-                        <li><a href="page-dashboard-review.html">Reviews</a></li>
-                        <li><a href="page-dashboard-package.html">My Package</a></li>
-                        <li><a href="page-dashboard-profile.html">My Profile</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Map Style</span></a>
-                      <ul>
-                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
-                        <li><a href="page-property-half-map-v1.html">Half Map Style v1</a></li>
-                        <li><a href="page-property-half-map-v2.html">Half Map Style v2</a></li>
-                        <li><a href="page-property-half-map-v3.html">Half Map Style v3</a></li>
-                        <li><a href="page-property-half-map-v4.html">Half Map Style v4</a></li>
-                      </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Single Style</span></a>
-                      <ul>
-                        <li><a href="page-property-single-v1.html">Single V1</a></li>
-                        <li><a href="page-property-single-v2.html">Single V2</a></li>
-                        <li><a href="page-property-single-v3.html">Single V3</a></li>
-                        <li><a href="page-property-single-v4.html">Single V4</a></li>
-                        <li><a href="page-property-single-v5.html">Single V5</a></li>
-                        <li><a href="page-property-single-v6.html">Single V6</a></li>
-                        <li><a href="page-property-single-v7.html">Single V7</a></li>
-                        <li><a href="page-property-single-v8.html">Single V8</a></li>
-                        <li><a href="page-property-single-v9.html">Single V9</a></li>
-                        <li><a href="page-property-single-v10.html">Single V10</a></li>
-                      </ul>
-                    </li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Blog</span></a>
-                <ul>
-                  <li><a href="page-blog-v1.html">List V1</a></li>
-                  <li><a href="page-blog-v2.html">List V2</a></li>
-                  <li><a href="page-blog-v3.html">List V3</a></li>
-                  <li><a href="page-blog-single.html">Single</a></li>
-                </ul>
-              </li>
-              <li class="visible_list"> <a class="list-item" href="#"><span class="title">Pages</span></a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-contact.html">Contact</a></li>
-                  <li><a href="page-compare.html">Compare</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-login.html">Login</a></li>
-                  <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-error.html">404</a></li>
-                  <li><a href="page-invoice.html">Invoices</a></li>
-                  <li><a href="page-ui-element.html">UI Elements</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
-              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="page-dashboard-add-property.html">Add Property<i class="fal fa-arrow-right-long"></i></a>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php
+    include 'header_v2.php';
+  ?>
   <!-- Signup Modal -->
   <div class="signup-modal">
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -216,13 +75,13 @@
                         <label class="form-label fw600 dark-color">Password</label>
                         <input type="text" class="form-control" placeholder="Enter Password">
                       </div>
-              <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                <label class="custom_checkbox fz14 ff-heading">Remember me
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <a class="fz14 ff-heading" href="#">Lost your password?</a>
-              </div>
+                      <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
+                        <label class="custom_checkbox fz14 ff-heading">Remember me
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                        <a class="fz14 ff-heading" href="#">Lost your password?</a>
+                      </div>
                       <div class="d-grid mb20">
                         <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
                       </div>
@@ -462,7 +321,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="breadcumb-style1">
-              <h2 class="title">Blog</h2>
+              <h2 class="title">Agents</h2>
               <div class="breadcumb-list">
                 <a href="">Home</a>
                 <a href="">For Rent</a>
@@ -473,171 +332,246 @@
       </div>
     </section>
 
-    <!-- Blog Section Area -->
-    <section class="our-blog pt-0">
+    <!-- Agent Section Area -->
+    <section class="our-agents pt-0">
       <div class="container">
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-8">
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-10.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
+        <div class="row align-items-center mb20">
+          <div class="col-md-9">
+            <div class="agent-page-meta dropdown-lists">
+              <div class="d-sm-flex">
+                <div class="position-relative mb10 mr10">
+                  <input type="text" class="form-control" placeholder="Enter agent name">
                 </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">7 Simple Ways to Keep Your Kids' Toys From Taking Over Your Home</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
-            </div>
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-11.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
+                <div class="position-relative mb10 mr10">
+                  <button type="button" class="open-btn box-shadow-0 dropdown-toggle" data-bs-toggle="dropdown">All Categories <i class="fa fa-angle-down ms-2"></i></button>
+                  <div class="dropdown-menu">
+                    <div class="widget-wrapper bdrb1 pb25 mb0 pl20">
+                      <div class="checkbox-style1">
+                        <label class="custom_checkbox">Apartments
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="custom_checkbox">Apartments
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="custom_checkbox">Office
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="custom_checkbox">Villa
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="custom_checkbox">Townhome
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="text-end mt10 pr10">
+                      <button type="button" class="done-btn box-shadow-0 ud-btn btn-thm dropdown-toggle">Done</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">10 Spring Cleaning Projects to Tackle This Weekend</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
-            </div>
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-12.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
+                <div class="position-relative mb10">
+                  <button type="button" class="open-btn mb15 drop_btn" data-bs-toggle="dropdown">All Cities <i class="fa fa-angle-down ms-2"></i></button>
+                  <div class="drop_content">
+                    <div class="widget-wrapper bdrb1 pb25 mb0 p20">
+                      <div class="bootselect-multiselect">
+                        <select class="selectpicker">
+                          <option>All Cities</option>
+                          <option data-tokens="California">California</option>
+                          <option data-tokens="Chicago">Chicago</option>
+                          <option data-tokens="LosAngeles">Los Angeles</option>
+                          <option data-tokens="Manhattan">Manhattan</option>
+                          <option data-tokens="NewJersey">New Jersey</option>
+                          <option data-tokens="NewYork">New York</option>
+                          <option data-tokens="SanDiego">San Diego</option>
+                          <option data-tokens="SanFrancisco">San Francisco</option>
+                          <option data-tokens="Texas">Texas</option>
+                        </select>
+                      </div>                     
+                    </div>
+                    <div class="text-end mt10 pr10">
+                      <button type="button" class="done-btn box-shadow-0 ud-btn btn-thm drop_btn">Done</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">Spring Cleaning 101: Make It Fast, Easy and Effective</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
+              </div>                   
             </div>
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-13.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">9 Easy-to-Ambitious DIY Projects to Improve Your Home</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
-            </div>
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-14.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">Looking for a New Place? Use This Time to Create Your Wishlist</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
-            </div>
-            <div class="blog-style1 list-style bgc-white d-block d-md-flex align-items-xl-center">
-              <div class="blog-img flex-shrink-0">
-                <img class="w-100" src="images/blog/blog-15.jpg" alt="">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-              </div>
-              <div class="blog-content pl30 pb20 flex-grow-1">
-                <a class="tag" href="">Home Improvement</a>
-                <h4 class="title mt-1 mb20"><a href="page-blog-single.html">5 Ways to Make Your Home Office Work (Even if It's Your Kitchen)</a></h4>
-                <p class="text mb0">When it's time to move to a smaller home, these tips will help you save the memories while.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="mbp_pagination text-center">
-                <ul class="page_navigation">
-                  <li class="page-item">
-                    <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">...</a></li>
-                  <li class="page-item"><a class="page-link" href="#">20</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
-                  </li>
-                </ul>
-                <p class="mt10 pagination_page_count text-center">1 – 20 of 300+ property available</p>
+          </div>
+          <div class="col-md-3">
+            <div class="page_control_shorting text-start text-md-end mb20">
+              <div class="pcs_dropdown pr10"><span>Sort by</span>
+                <select class="selectpicker show-tick">
+                  <option>Newest</option>
+                  <option>Best Seller</option>
+                  <option>Best Match</option>
+                  <option>Price Low</option>
+                  <option>Price High</option>
+                </select>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="blog-sidebar">
-              <div class="sidebar-widget mb30">
-                <div class="search_area">
-                  <input type="text" class="form-control" placeholder="What are you looking for?">
-                  <label><span class="flaticon-search"></span></label>
-                </div>
-              </div>
-              <div class="sidebar-widget mb30">
-                <h6 class="widget-title">Categories</h6>
-                <div class="category-list mt20">
-                  <a href="">Houses</a>
-                  <a href="">Apartments</a>
-                  <a href="">Office</a>
-                  <a href="">Villa</a>
-                  <a href="">Townhome</a>
-                </div>
-              </div>
-              <div class="sidebar-widget mb30">
-                <h6 class="widget-title">Latest Posts</h6>
-                <div class="list-news-style d-flex align-items-center mt20 mb20">
-                  <div class="news-img flex-shrink-0"><img src="images/blog/blog-s-3.jpg" alt=""></div>
-                  <div class="news-content flex-shrink-1 ms-3">
-                    <p class="new-text mb0 fz14">8 Tips for Achieving <br class="d-none d-xl-block">Maximum Coziness</p>
-                    <a class="body-light-color" href="">2 Jul 2022</a>
-                  </div>
-                </div>
-                <div class="list-news-style d-flex align-items-center mb20">
-                  <div class="news-img flex-shrink-0"><img src="images/blog/blog-s-4.jpg" alt=""></div>
-                  <div class="news-content flex-shrink-1 ms-3">
-                    <p class="new-text mb0 fz14">A 3-Step Downsizing <br class="d-none d-xl-block">Plan</p>
-                    <a class="body-light-color" href="">2 Jul 2022</a>
-                  </div>
-                </div>
-                <div class="list-news-style d-flex align-items-center">
-                  <div class="news-img flex-shrink-0"><img src="images/blog/blog-s-5.jpg" alt=""></div>
-                  <div class="news-content flex-shrink-1 ms-3">
-                    <p class="new-text mb0 fz14">How to Plan an Outdoor<br class="d-none d-xl-block">Movie Night</p>
-                    <a class="body-light-color" href="">2 Jul 2022</a>
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar-widget mb30 pb20">
-                <h6 class="widget-title">Popular Tags</h6>
-                <div class="tag-list mt20">
-                  <a href="">For Sale</a>
-                  <a href="">House</a>
-                  <a href="">Realton</a>
-                  <a href="">Apartments</a>
-                  <a href="">Villa</a>
-                </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 wow fadeInUp" data-wow-delay="100ms">
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-1.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Arlene McCoy</h6>
+                <p class="text fz15">Broker</p>
               </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-2.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Esther Howard</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-3.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Cody Fisher</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-4.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Bessie Cooper</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-5.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Guy Hawkins</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-6.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Arlene McCoy</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-7.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Esther Howard</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-8.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Cody Fisher</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-9.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Bessie Cooper</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-10.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Guy Hawkins</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-11.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Arlene McCoy</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-12.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Esther Howard</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-13.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Cody Fisher</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-14.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Bessie Cooper</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature-style2 mb30">
+              <div class="feature-img"><img class="bdrs12" src="images/team/agent-15.jpg" alt=""></div>
+              <div class="feature-content pt20">
+                <h6 class="title mb-1">Guy Hawkins</h6>
+                <p class="text fz15">Broker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
+          <div class="mbp_pagination text-center">
+            <ul class="page_navigation">
+              <li class="page-item">
+                <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">20</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+              </li>
+            </ul>
+            <p class="mt10 pagination_page_count text-center">1 – 20 of 300+ property available</p>
           </div>
         </div>
       </div>

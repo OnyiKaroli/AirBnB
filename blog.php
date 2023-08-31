@@ -44,7 +44,7 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header.php';
+    include 'header_v2.php';
   ?>
   <!-- Signup Modal -->
   <div class="signup-modal">
