@@ -205,7 +205,7 @@
       <ul>
         <li><span>Home</span>
           <ul>
-            <li><a href="index.php">Home V1</a></li>
+            <li><a href="index">Home V1</a></li>
             <li><a href="index2.html">Home V2</a></li>
             <li><a href="index3.html">Home V3</a></li>
             <li><a href="index4.html">Home V4</a></li>
@@ -1906,7 +1906,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index.php"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">

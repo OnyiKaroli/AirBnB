@@ -460,7 +460,7 @@
       <ul>
         <li><span>Home</span>
           <ul>
-            <li><a href="index.php">Home V1</a></li>
+            <li><a href="index">Home V1</a></li>
             <li><a href="index2.html">Home V2</a></li>
             <li><a href="index3.html">Home V3</a></li>
             <li><a href="index4.html">Home V4</a></li>

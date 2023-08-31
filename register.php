@@ -41,6 +41,10 @@
 <body class="bgc-f7">
 <div class="wrapper ovh">
   <div class="preloader"></div>
+<?php
+  include 'header_v2.php';
+?>
+
   <div class="body_content">
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">

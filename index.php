@@ -15,10 +15,11 @@
 <link rel="stylesheet" href="css/fontawesome.css">
 <link rel="stylesheet" href="css/flaticon.css">
 <link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/slider.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/ud-custom-spacing.css">
+<link rel="stylesheet" href="css/style.css">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
@@ -45,9 +46,154 @@
   <div class="preloader"></div>
   
   <!-- Main Header Nav -->
-  <?php
-    include 'header.php';
-  ?>
+  <header class="header-nav nav-homepage-style at-home2 stricky main-menu">
+    <!-- Ace Responsive Menu -->
+    <nav class="posr"> 
+      <div class="container maxw1600 posr">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="logos mr35">
+                <a class="header-logo logo1" href="index.html"><img src="images/header-logo.svg" alt="Header Logo"></a>
+                <a class="header-logo logo2" href="index.html"><img src="images/header-logo2.svg" alt="Header Logo"></a>
+              </div>
+              <!-- Responsive Menu Structure-->
+              <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                <li class="visible_list"> <a class="list-item" href="#"><span class="title">Home</span></a>
+                  <!-- Level Two-->
+                  <ul>
+                    <li><a href="index.html">Home V1</a></li>
+                    <li><a href="index2.html">Home V2</a></li>
+                    <li><a href="index3.html">Home V3</a></li>
+                    <li><a href="index4.html">Home V4</a></li>
+                    <li><a href="index5.html">Home V5</a></li>
+                    <li><a href="index6.html">Home V6</a></li>
+                    <li><a href="index7.html">Home V7</a></li>
+                    <li><a href="index8.html">Home V8</a></li>
+                    <li><a href="index9.html">Home V9</a></li>
+                    <li><a href="index10.html">Home V10</a></li>
+                  </ul>
+                </li>
+                <li class="megamenu_style"> <a  class="list-item" href="#"><span class="title">Listing</span></a>
+                  <ul class="row dropdown-megamenu">
+                    <li class="col mega_menu_list">
+                      <h4 class="title">Grid View</h4>
+                      <ul>
+                        <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
+                        <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
+                        <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
+                        <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
+                        <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
+                        <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
+                        <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
+                        <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
+                        <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
+                      </ul>
+                    </li>
+                    <li class="col mega_menu_list">
+                      <h4 class="title">Map Style</h4>
+                      <ul>
+                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
+                        <li><a href="page-property-half-map-v1.html">Map V1</a></li>
+                        <li><a href="page-property-half-map-v2.html">Map V2</a></li>
+                        <li><a href="page-property-half-map-v3.html">Map V3</a></li>
+                        <li><a href="page-property-half-map-v4.html">Map V4</a></li>
+                      </ul>
+                    </li>
+                    <li class="col mega_menu_list">
+                      <h4 class="title">List View</h4>
+                      <ul>
+                        <li><a href="page-property-list.html">List v1</a></li>
+                        <li><a href="page-property-list-all.html">List All Style</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="visible_list"> <a class="list-item" href="#"><span class="title">Property</span></a>
+                  <ul>
+                    <li> <a href="#"><span class="title">Agents</span></a>
+                      <ul>
+                        <li><a href="page-agents.html">Agents</a></li>
+                        <li><a href="page-agent-single.html">Agent Single</a></li>
+                        <li><a href="page-agency.html">Agency</a></li>
+                        <li><a href="page-agency-single.html">Agency Single</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><span class="title">Dashboard</span></a>
+                      <ul>
+                        <li><a href="page-dashboard.html">Dashboard</a></li>
+                        <li><a href="page-dashboard-message.html">Message</a></li>
+                        <li><a href="page-dashboard-add-property.html">New Property</a></li>
+                        <li><a href="page-dashboard-properties.html">My Properties</a></li>
+                        <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
+                        <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
+                        <li><a href="page-dashboard-review.html">Reviews</a></li>
+                        <li><a href="page-dashboard-package.html">My Package</a></li>
+                        <li><a href="page-dashboard-profile.html">My Profile</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><span class="title">Map Style</span></a>
+                      <ul>
+                        <li><a href="page-property-header-map-style.html">Header Map Style</a></li>
+                        <li><a href="page-property-half-map-v1.html">Half Map Style v1</a></li>
+                        <li><a href="page-property-half-map-v2.html">Half Map Style v2</a></li>
+                        <li><a href="page-property-half-map-v3.html">Half Map Style v3</a></li>
+                        <li><a href="page-property-half-map-v4.html">Half Map Style v4</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><span class="title">Single Style</span></a>
+                      <ul>
+                        <li><a href="page-property-single-v1.html">Single V1</a></li>
+                        <li><a href="page-property-single-v2.html">Single V2</a></li>
+                        <li><a href="page-property-single-v3.html">Single V3</a></li>
+                        <li><a href="page-property-single-v4.html">Single V4</a></li>
+                        <li><a href="page-property-single-v5.html">Single V5</a></li>
+                        <li><a href="page-property-single-v6.html">Single V6</a></li>
+                        <li><a href="page-property-single-v7.html">Single V7</a></li>
+                        <li><a href="page-property-single-v8.html">Single V8</a></li>
+                        <li><a href="page-property-single-v9.html">Single V9</a></li>
+                        <li><a href="page-property-single-v10.html">Single V10</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="visible_list"> <a class="list-item" href="#"><span class="title">Blog</span></a>
+                  <ul>
+                    <li><a href="page-blog-v1.html">List V1</a></li>
+                    <li><a href="page-blog-v2.html">List V2</a></li>
+                    <li><a href="page-blog-v3.html">List V3</a></li>
+                    <li><a href="page-blog-single.html">Single</a></li>
+                  </ul>
+                </li>
+                <li class="visible_list"> <a class="list-item" href="#"><span class="title">Pages</span></a>
+                  <ul>
+                    <li><a href="page-about.html">About</a></li>
+                    <li><a href="page-contact.html">Contact</a></li>
+                    <li><a href="page-compare.html">Compare</a></li>
+                    <li><a href="page-pricing.html">Pricing</a></li>
+                    <li><a href="page-faq.html">Faq</a></li>
+                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="page-register.html">Register</a></li>
+                    <li><a href="page-error.html">404</a></li>
+                    <li><a href="page-invoice.html">Invoices</a></li>
+                    <li><a href="page-ui-element.html">UI Elements</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <a class="login-info d-flex align-items-center me-3" href="2-911-098-7654"><i class="far fa-phone fz16 me-2"></i> <span class="d-none d-xl-block">2 911 098 7654</span></a>
+              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
+              <a class="ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4" href="page-dashboard-add-property.html">Add Property<i class="fal fa-arrow-right-long"></i></a>
+              <a class="sidemenu-btn filter-btn-right" href="#"><img class="img-1" src="images/icon/nav-icon-white.svg" alt=""><img class="img-2" src="images/icon/nav-icon-dark.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!-- Signup Modal -->
   <div class="signup-modal">
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -446,7 +592,7 @@
       <ul>
         <li><span>Home</span>
           <ul>
-            <li><a href="index.php">Home V1</a></li>
+            <li><a href="index.html">Home V1</a></li>
             <li><a href="index2.html">Home V2</a></li>
             <li><a href="index3.html">Home V3</a></li>
             <li><a href="index4.html">Home V4</a></li>
@@ -547,19 +693,17 @@
     </nav>
   </div>
 
-  <div class="body_content_wrapper">
+  <div class="body_content">
     <!-- Home Banner Style V1 -->
-    <section class="home-banner-style1 p0">
-      <div class="home-style1">
-        <div class="container">
+    <section class="home-banner-style2 p0">
+      <div class="home-style2">
+        <div class="container maxw1600">
+          <div class="home2-hero-banner bdrs12"></div>
           <div class="row">
-            <div class="col-xl-11 mx-auto">
-              <div class="inner-banner-style1 text-center">
-                <h6 class="hero-sub-title animate-up-1">THE BEST WAY TO</h6>
-                <h2 class="hero-title animate-up-2">Find Your Dream Home</h2>
-                <p class="hero-text fz15 animate-up-3">We’ve more than 745,000 apartments, place & plot.</p>
-                <div class="advance-search-tab mt70 mt30-md mx-auto animate-up-3">
-                  <ul class="nav nav-tabs p-0 m-0" id="myTab" role="tablist">
+            <div class="col-xl-10 mx-auto">
+              <div class="inner-banner-style2 text-center">
+                <div class="advance-style2 mt80 mt0-md mb60 mx-auto animate-up-1">
+                  <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Buy</button>
                     </li>
@@ -572,20 +716,35 @@
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                      <div class="advance-content-style1">
-                        <div class="row">
-                          <div class="col-md-8 col-lg-9">
-                            <div class="advance-search-field position-relative text-start">
+                      <div class="advance-content-style2">
+                        <div class="row align-items-center justify-content-start justify-content-md-center">
+                          <div class="col-md-5 col-lg-6">
+                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
                               <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
                                 <div class="box-search">
                                   <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
                                 </div>
                               </form>
                             </div>
                           </div>
+                          <div class="col-md-3 col-lg-3 ps-md-0">
+                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
+                              <div class="bootselect-multiselect">
+                                <select class="selectpicker" data-width="100%">
+                                  <option data-tokens="Apartments">Apartments</option>
+                                  <option data-tokens="Bungalow">Bungalow</option>
+                                  <option data-tokens="Houses">Houses</option>
+                                  <option data-tokens="Loft">Loft</option>
+                                  <option data-tokens="Office">Office</option>
+                                  <option data-tokens="TownHome">TownHome</option>
+                                  <option data-tokens="Villa">Villa</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                           <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
                               <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
                               <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
@@ -594,20 +753,35 @@
                       </div>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div class="advance-content-style1">
-                        <div class="row">
-                          <div class="col-md-8 col-lg-9">
-                            <div class="advance-search-field position-relative text-start">
+                      <div class="advance-content-style2">
+                        <div class="row align-items-center justify-content-start justify-content-md-center">
+                          <div class="col-md-5 col-lg-6">
+                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
                               <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
                                 <div class="box-search">
                                   <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
                                 </div>
                               </form>
                             </div>
                           </div>
+                          <div class="col-md-3 col-lg-3 ps-md-0">
+                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
+                              <div class="bootselect-multiselect">
+                                <select class="selectpicker" data-width="100%">
+                                  <option data-tokens="Apartments">Apartments</option>
+                                  <option data-tokens="Bungalow">Bungalow</option>
+                                  <option data-tokens="Houses">Houses</option>
+                                  <option data-tokens="Loft">Loft</option>
+                                  <option data-tokens="Office">Office</option>
+                                  <option data-tokens="TownHome">TownHome</option>
+                                  <option data-tokens="Villa">Villa</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                           <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
                               <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
                               <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
@@ -616,20 +790,35 @@
                       </div>
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                      <div class="advance-content-style1">
-                        <div class="row">
-                          <div class="col-md-8 col-lg-9">
-                            <div class="advance-search-field position-relative text-start">
+                      <div class="advance-content-style2">
+                        <div class="row align-items-center justify-content-start justify-content-md-center">
+                          <div class="col-md-5 col-lg-6">
+                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
                               <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
                                 <div class="box-search">
                                   <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
                                 </div>
                               </form>
                             </div>
                           </div>
+                          <div class="col-md-3 col-lg-3 ps-md-0">
+                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
+                              <div class="bootselect-multiselect">
+                                <select class="selectpicker" data-width="100%">
+                                  <option data-tokens="Apartments">Apartments</option>
+                                  <option data-tokens="Bungalow">Bungalow</option>
+                                  <option data-tokens="Houses">Houses</option>
+                                  <option data-tokens="Loft">Loft</option>
+                                  <option data-tokens="Office">Office</option>
+                                  <option data-tokens="TownHome">TownHome</option>
+                                  <option data-tokens="Villa">Villa</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                           <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
                               <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
                               <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
@@ -637,37 +826,26 @@
                         </div>
                       </div>
                     </div>
-                  </div>              
+                  </div>
                 </div>
+                <h2 class="hero-title animate-up-2">Find Your Dream Home</h2>
+                <p class="hero-text fz15 animate-up-3">Let’s find a home that’s perfect for you</p>
               </div>
             </div>
           </div>
         </div>
-        <a href="#explore-property">
-          <div class="mouse_scroll animate-up-4">
-            <img src="images/about/home-scroll.png" alt="">
-          </div>
-        </a>
       </div>
     </section>
 
     <!-- Explore Apartment -->
-    <section id="explore-property" class="pb90 pb30-md">
+    <section class="pb90 pb30-md">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="main-title wow fadeInUp" data-wow-delay="300ms">
-              <h2 class="title">Explore Apartment Types</h2>
-              <p class="paragraph">Get some Inspirations from 1800+ skills</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
           <div class="col-lg-12">
-            <div class="explore-apartment-slider navi_pagi_top_right slider-5-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
+            <div class="dots_none nav_none slider-dib-sm slider-5-grid owl-theme owl-carousel">
               <div class="item">
                 <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
+                  <div class="iconbox-style4">
                     <span class="icon flaticon-home"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Houses</h6>
@@ -678,7 +856,7 @@
               </div>
               <div class="item">
                 <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
+                  <div class="iconbox-style4">
                     <span class="icon flaticon-corporation"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Apartments</h6>
@@ -689,7 +867,7 @@
               </div>
               <div class="item">
                 <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
+                  <div class="iconbox-style4">
                     <span class="icon flaticon-network"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Office</h6>
@@ -700,7 +878,7 @@
               </div>
               <div class="item">
                 <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
+                  <div class="iconbox-style4">
                     <span class="icon flaticon-garden"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Villa</h6>
@@ -711,76 +889,10 @@
               </div>
               <div class="item">
                 <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
+                  <div class="iconbox-style4">
                     <span class="icon flaticon-chat"></span>
                     <div class="iconbox-content">
                       <h6 class="title">Townhome</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-window"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Bungalow</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-bird-house"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Loft</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-garden"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Villa</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-chat"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Townhome</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-window"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Bungalow</h6>
-                      <p class="text mb-0">22 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-property-single-v1.html">
-                  <div class="iconbox-style1">
-                    <span class="icon flaticon-bird-house"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Loft</h6>
                       <p class="text mb-0">22 Properties</p>
                     </div>
                   </div>
@@ -793,53 +905,7 @@
     </section>
 
     <!-- Explore Apartment -->
-    <section class="pt0 pb90 pb10-md">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
-            <div class="main-title text-center">
-              <h2 class="title">See how Realton can help</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="iconbox-style2 text-center">
-              <div class="icon"><img src="images/icon/property-buy.svg" alt=""></div>
-              <div class="iconbox-content">
-                <h4 class="title">Buy a property</h4>
-                <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                <a href="page-property-single-v1.html" class="ud-btn btn-white2">Find a home<i class="fal fa-arrow-right-long"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-            <div class="iconbox-style2 active text-center">
-              <div class="icon"><img src="images/icon/property-sell.svg" alt=""></div>
-              <div class="iconbox-content">
-                <h4 class="title">Sell a property</h4>
-                <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                <a href="page-property-single-v1.html" class="ud-btn btn-white2">Place an ad<i class="fal fa-arrow-right-long"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
-            <div class="iconbox-style2 text-center">
-              <div class="icon"><img src="images/icon/property-rent.svg" alt=""></div>
-              <div class="iconbox-content">
-                <h4 class="title">Rent a property</h4>
-                <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
-                <a href="page-property-single-v1.html" class="ud-btn btn-white2">Find a rental<i class="fal fa-arrow-right-long"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Explore Apartment -->
-    <section class="bgc-f7">
+    <section class="pt0 pb60 pb30-md bgc-white">
       <div class="container">
         <div class="row align-items-center wow fadeInUp" data-wow-delay="00ms">
           <div class="col-lg-9">
@@ -856,9 +922,9 @@
         </div>
         <div class="row">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
-            <div class="feature-listing-slider navi_pagi_bottom_center slider-dib-sm slider-3-grid owl-carousel owl-theme">
+            <div class="feature-listing-slider2 vam_nav_style dots_none slider-dib-sm slider-3-grid owl-carousel owl-theme">
               <div class="item">
-                <div class="listing-style1">
+                <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-1.jpg" alt="">
                     <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
@@ -885,7 +951,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="listing-style1">
+                <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
                     <div class="list-price">$82,000 / <span>mo</span></div>
@@ -911,65 +977,13 @@
                 </div>
               </div>
               <div class="item">
-                <div class="listing-style1">
+                <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-3.jpg" alt="">
                     <div class="list-price">$63,000 / <span>mo</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                    <div class="list-price">$63,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
-                    <p class="list-text">California City, CA, USA</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-5.jpg" alt="">
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Northwest Office Space</a></h6>
                     <p class="list-text">California City, CA, USA</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
@@ -995,78 +1009,164 @@
     </section>
 
     <!-- Property Cities -->
-    <section class="pb40-md pb90">
+    <section class="pt0 pb90 pb50-md">
       <div class="container">
-        <div class="row align-items-center wow fadeInUp" data-wow-delay="300ms">
+        <div class="row wow fadeInUp" data-wow-delay="300ms">
           <div class="col-lg-9">
             <div class="main-title2">
-              <h2 class="title">Properties by Cities</h2>
+              <h2 class="title">Explore Cities</h2>
               <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="text-start text-lg-end mb-3">
-              <a class="ud-btn2" href="page-property-single-v1.html">See All Cities<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
-            <div class="property-city-slider dots_none slider-dib-sm slider-4-grid2 vam_nav_style owl-theme owl-carousel">
+            <div class="property-city-slider navi_pagi_top_right slider-dib-sm slider-4-grid owl-theme owl-carousel">
               <div class="item">
-                <div class="feature-style1 mb30">
-                  <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.png" alt=""></div>
-                  <div class="feature-content">
-                    <div class="top-area">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
                       <h6 class="title mb-1">Los Angeles</h6>
-                      <p class="text">12 Properties</p>
-                    </div>
-                    <div class="bottom-area">
-                      <a class="ud-btn2" href="page-property-single-v1.html">See All Cities<i class="fal fa-arrow-right-long"></i></a>
+                      <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="item">
-                <div class="feature-style1 mb30">
-                  <div class="feature-img"><img class="w-100" src="images/listings/city-listing-2.png" alt=""></div>
-                  <div class="feature-content">
-                    <div class="top-area">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
                       <h6 class="title mb-1">Miami</h6>
-                      <p class="text">12 Properties</p>
-                    </div>
-                    <div class="bottom-area">
-                      <a class="ud-btn2" href="page-property-single-v1.html">See All Cities<i class="fal fa-arrow-right-long"></i></a>
+                      <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="item">
-                <div class="feature-style1 mb30">
-                  <div class="feature-img"><img class="w-100" src="images/listings/city-listing-3.png" alt=""></div>
-                  <div class="feature-content">
-                    <div class="top-area">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
                       <h6 class="title mb-1">New York</h6>
-                      <p class="text">12 Properties</p>
-                    </div>
-                    <div class="bottom-area">
-                      <a class="ud-btn2" href="page-property-single-v1.html">See All Cities<i class="fal fa-arrow-right-long"></i></a>
+                      <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="item">
-                <div class="feature-style1 mb30">
-                  <div class="feature-img"><img class="w-100" src="images/listings/city-listing-4.png" alt=""></div>
-                  <div class="feature-content">
-                    <div class="top-area">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
                       <h6 class="title mb-1">Chicago</h6>
-                      <p class="text">12 Properties</p>
-                    </div>
-                    <div class="bottom-area">
-                      <a class="ud-btn2" href="page-property-single-v1.html">See All Cities<i class="fal fa-arrow-right-long"></i></a>
+                      <p class="text fz15">12 Properties</p>
                     </div>
                   </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
+                      <h6 class="title mb-1">Los Angeles</h6>
+                      <p class="text fz15">12 Properties</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
+                      <h6 class="title mb-1">Miami</h6>
+                      <p class="text fz15">12 Properties</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
+                      <h6 class="title mb-1">New York</h6>
+                      <p class="text fz15">12 Properties</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
+                      <h6 class="title mb-1">Chicago</h6>
+                      <p class="text fz15">12 Properties</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-grid-default-v1.html">
+                  <div class="feature-style2 mb30">
+                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
+                    <div class="feature-content pt20">
+                      <h6 class="title mb-1">Chicago</h6>
+                      <p class="text fz15">12 Properties</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Apartment -->
+    <section class="p-0">
+      <div class="how-we-help position-relative mx-auto bgc-thm-light maxw1600 pt120 pt60-md pb90 pb30-md bdrs12 mx20-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
+              <div class="main-title text-center">
+                <h2 class="title">See how Realton can help</h2>
+                <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay="00ms">
+              <div class="iconbox-style3 text-center">
+                <div class="icon"><img class="w-100" src="images/icon/property-buy-2.svg" alt=""></div>
+                <div class="iconbox-content">
+                  <h4 class="title">Buy a property</h4>
+                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Find a home<i class="fal fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+              <div class="iconbox-style3 active text-center">
+                <div class="icon"><img class="w-100" src="images/icon/property-sell-2.svg" alt=""></div>
+                <div class="iconbox-content">
+                  <h4 class="title">Sell a property</h4>
+                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Place an ad<i class="fal fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
+              <div class="iconbox-style3 text-center">
+                <div class="icon"><img class="w-100" src="images/icon/property-rent-2.svg" alt=""></div>
+                <div class="iconbox-content">
+                  <h4 class="title">Rent a property</h4>
+                  <p class="text">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                  <a href="page-property-single-v1.html" class="ud-btn btn-thm3">Find a rental<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -1076,298 +1176,65 @@
     </section>
 
     <!-- About Us -->
-    <section class="pt0 pb40-md">
+    <section class="about-us">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-xl-4">
-            <div class="about-box-1 pe-4 mt100 mt0-lg mb30-lg wow fadeInRight" data-wow-delay="300ms">
-              <h2 class="title mb30">Let’s find the right selling option for you</h2>
-              <p class="text mb25 fz15">As the complexity of buildings to increase, the field of architecture</p>
-              <div class="list-style1 mb50">
-                <ul>
-                  <li><i class="far fa-check text-white bgc-dark fz15"></i>Find excellent deals</li>
-                  <li><i class="far fa-check text-white bgc-dark fz15"></i>Friendly host & Fast support</li>
-                  <li><i class="far fa-check text-white bgc-dark fz15"></i>List your own property</li>
-                </ul>
+        <div class="row mt80 mt0-md">
+          <div class="col-md-6 col-xl-6">
+            <div class="position-relative wow fadeInRight" data-wow-delay="300ms">
+              <div class="img-box-7">
+                <img class="w-100 img-1" src="images/about/about-2.png" alt="">
               </div>
-              <a href="page-property-single-v1.html" class="ud-btn btn-white2">Learn More<i class="fal fa-arrow-right-long"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-9 col-xl-8 col-xxl-7 offset-xxl-1">
-            <div class="position-relative mb35 mb0-sm wow fadeInLeft" data-wow-delay="300ms">
-              <div class="img-box-1 list-inline-item me-0">
-                <img class="img-1" src="images/about/about-1.jpg" alt="">
-              </div>
-              <div class="img-box-2 list-inline-item me-0">
-                <img class="img-1" src="images/about/about-2.jpg" alt="">
-              </div>
-              <div class="img-box-3">
-                <img class="img-1 bounce-y" src="images/about/about-1.png" alt="">
-              </div>
-              <div class="img-box-4">
+              <div class="img-box-8 position-relative">
                 <img class="img-1 spin-right" src="images/about/element-1.png" alt="">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Popular Property -->
-    <section class="bgc-dark">
-      <div class="container">
-        <div class="row wow fadeInUp" data-wow-delay="00ms">
-          <div class="col-lg-9">
-            <div class="main-title2">
-              <h2 class="title text-white">Discover Popular Properties</h2>
-              <p class="paragraph text-white">Aliquam lacinia diam quis lacus euismod</p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="dark-light-navtab text-start text-lg-end mt-0 mt-lg-4 mb-4">
-              <ul class="nav nav-pills justify-content-start justify-content-lg-end" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">For Rent</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link me-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For Sale</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="dots_none nav_none slider-dib-sm slider-4-grid3 vam_nav_style owl-theme owl-carousel">
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                            <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                            <div class="list-price">$84,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                            <div class="list-price">$12,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                            <div class="list-price">$19,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                            <div class="list-price">$17,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="img-box-9 d-flex justify-content-center align-items-center">
+                <a class="popup-iframe popup-youtube" href="https://www.youtube.com/watch?v=1WdiUn9JaX0"><i class="fas fa-circle-play mr15"></i></a>
+                <h6 class="fz14 mb-0">Watch Video</h6>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="dots_none nav_none slider-dib-sm slider-4-grid3 vam_nav_style owl-theme owl-carousel">
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                            <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                            <div class="list-price">$84,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                            <div class="list-price">$12,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                            <div class="list-price">$19,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="listing-style1">
-                          <div class="list-thumb">
-                            <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                            <div class="list-price">$17,000 / <span>mo</span></div>
-                          </div>
-                          <div class="list-content pb-2">
-                            <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                            <p class="list-text">California City, CA, USA</p>
-                            <div class="list-meta d-flex align-items-center">
-                              <a class="me-2" href=""><span class="flaticon-bed"></span>3 bed</a>
-                              <a class="me-2" href=""><span class="flaticon-shower"></span>4 bath</a>
-                              <a class="me-2" href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                            </div>
-                            <hr class="mt-2 mb-2">
-                            <div class="list-meta2 d-flex justify-content-between align-items-center">
-                              <span class="for-what">For Rent</span>
-                              <div class="icons d-flex align-items-center">
-                                <a href=""><span class="flaticon-fullscreen"></span></a>
-                                <a href=""><span class="flaticon-new-tab"></span></a>
-                                <a href=""><span class="flaticon-like"></span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              <div class="img-box-10 position-relative">
+                <div class="listing-style1 mini-style bounce-y">
+                  <div class="list-content">
+                    <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
+                    <p class="list-text">California City, CA, USA</p>
+                    <div class="list-meta d-flex align-items-center">
+                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
+                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
+                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
                     </div>
+                    <a href="page-property-single-v1.html" class="btn mt15 fz15">View House<i class="fal fa-arrow-right-long"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="d-grid d-md-block text-center mt30 mt0-md">
-              <a href="page-grid-default-v1.html" class="ud-btn btn-thm">See All Properties<i class="fal fa-arrow-right-long"></i></a>
+          </div>
+          <div class="col-md-6 col-xl-4 offset-xl-2">
+            <div class="about-box-1 wow fadeInLeft" data-wow-delay="300ms">
+              <h2 class="title mb30">With Us Help You Find Your Dream Home</h2>
+              <p class="text mb20 fz15">As the complexity of buildings to increase, the field of architecture.</p>
+              <div class="funfact_one">
+                <div class="details mb25">
+                  <ul class="ps-0 mb-0">
+                    <li><div class="timer">400</div></li>
+                  </ul>
+                  <p class="text mb-0">Stores around the world</p>
+                </div>
+                <div class="details mb25">
+                  <ul class="ps-0 d-flex mb-0">
+                    <li><div class="timer">200</div></li>
+                    <li><span>+</span></li>
+                  </ul>
+                  <p class="text mb-0">Stores around the world</p>
+                </div>
+                <div class="details mb25">
+                  <ul class="ps-0 d-flex mb-0">
+                    <li><div class="timer">1</div></li>
+                    <li><span>K</span></li>
+                    <li><span>+</span></li>
+                  </ul>
+                  <p class="text mb-0">Stores around the world</p>
+                </div>
+                <a href="page-property-single-v1.html" class="ud-btn btn-thm">See More<i class="fal fa-arrow-right-long"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -1375,142 +1242,80 @@
     </section>
 
     <!-- Our Testimonials -->
-    <section class="pb100 pb50-md bgc-thm-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
-            <div class="main-title">
-              <h2 class="title">People Love Living with Realton</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+    <section class="our-testimonial p-0">
+      <div class="cta-banner2 bgc-f7 maxw1600 mx-auto pt110 pt60-md pb110 pb60-md bdrs12 position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
+              <div class="main-title text-center">
+                <h2>Testimonials</h2>
+                <p class="paragraph">10,000+ unique online course list designs</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="testimonial-slider navi_pagi_top_right slider-3-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
-              <div class="item">
-                <div class="testimonial-style1 position-relative">
-                  <div class="testimonial-content">
-                    <h5 class="title">Great Work</h5>
-                    <span class="icon fas fa-quote-left"></span>
-                    <p class="text">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                    <div class="testimonial-review">
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a href=""><i class="fas fa-star"></i></a>
+          <div class="row">
+            <div class="col-lg-8 m-auto wow fadeInUp" data-wow-delay="500ms">
+              <div class="testimonial-style2">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
+                    <div class="testi-content text-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
-                  <div class="thumb d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                      <img class="wa" src="images/testimonials/testimonial-1.png" alt="">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-0">Leslie Alexander</h6>
-                      <p class="mb-0">Nintendo</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-style1 position-relative">
-                  <div class="testimonial-content">
-                    <h5 class="title">Great Work</h5>
-                    <span class="icon fas fa-quote-left"></span>
-                    <p class="text">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                    <div class="testimonial-review">
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a href=""><i class="fas fa-star"></i></a>
+                  <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
+                    <div class="testi-content text-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
-                  <div class="thumb d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                      <img class="wa" src="images/testimonials/testimonial-2.png" alt="">
+                  <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
+                    <div class="testi-content text-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-0">Floyd Miles</h6>
-                      <p class="mb-0">Bank of America</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
+                    <div class="testi-content text-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
+                    <div class="testi-content text-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-style1 position-relative">
-                  <div class="testimonial-content">
-                    <h5 class="title">Great Work</h5>
-                    <span class="icon fas fa-quote-left"></span>
-                    <p class="text">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                    <div class="testimonial-review">
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a href=""><i class="fas fa-star"></i></a>
-                    </div>
-                  </div>
-                  <div class="thumb d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                      <img class="wa" src="images/testimonials/testimonial-3.png" alt="">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-0">Dianne Russell</h6>
-                      <p class="mb-0">Facebook</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-style1 position-relative">
-                  <div class="testimonial-content">
-                    <h5 class="title">Great Work</h5>
-                    <span class="icon fas fa-quote-left"></span>
-                    <p class="text">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                    <div class="testimonial-review">
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a href=""><i class="fas fa-star"></i></a>
-                    </div>
-                  </div>
-                  <div class="thumb d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                      <img class="wa" src="images/testimonials/testimonial-3.png" alt="">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-0">Dianne Russell</h6>
-                      <p class="mb-0">Facebook</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-style1 position-relative">
-                  <div class="testimonial-content">
-                    <h5 class="title">Great Work</h5>
-                    <span class="icon fas fa-quote-left"></span>
-                    <p class="text">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                    <div class="testimonial-review">
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a class="me-1" href=""><i class="fas fa-star"></i></a>
-                      <a href=""><i class="fas fa-star"></i></a>
-                    </div>
-                  </div>
-                  <div class="thumb d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                      <img class="wa" src="images/testimonials/testimonial-3.png" alt="">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-0">Dianne Russell</h6>
-                      <p class="mb-0">Facebook</p>
-                    </div>
-                  </div>
+                <div class="tab-list position-relative">
+                  <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link ps-0" id="pills-1st-tab" data-bs-toggle="pill" data-bs-target="#pills-1st" type="button" role="tab" aria-controls="pills-1st" aria-selected="true"><img src="images/testimonials/testi-1.png" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-2nd-tab" data-bs-toggle="pill" data-bs-target="#pills-2nd" type="button" role="tab" aria-controls="pills-2nd" aria-selected="false"><img src="images/testimonials/testi-2.png" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-3rd-tab" data-bs-toggle="pill" data-bs-target="#pills-3rd" type="button" role="tab" aria-controls="pills-3rd" aria-selected="false"><img src="images/testimonials/testi-3.png" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-4th-tab" data-bs-toggle="pill" data-bs-target="#pills-4th" type="button" role="tab" aria-controls="pills-4th" aria-selected="false"><img src="images/testimonials/testi-4.png" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link pe-0" id="pills-5th-tab" data-bs-toggle="pill" data-bs-target="#pills-5th" type="button" role="tab" aria-controls="pills-5th" aria-selected="false"><img src="images/testimonials/testi-5.png" alt=""></button>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1519,54 +1324,140 @@
       </div>
     </section>
 
-    <!-- Explore Apartment -->
-    <section class="pb90 pb20-md">
+    <!-- Property Cities -->
+    <section class="pb90">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="00ms">
-            <div class="main-title text-start text-md-center">
-              <h2 class="title">From Our Blog</h2>
+        <div class="row wow fadeInUp" data-wow-delay="300ms">
+          <div class="col-lg-9">
+            <div class="main-title2">
+              <h2 class="title">Our Exclusive Agetns</h2>
               <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
             </div>
           </div>
         </div>
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-sm-6 col-lg-4">
-            <div class="blog-style1">
-              <div class="blog-img"><img class="w-100" src="images/blog/blog-1.jpg" alt=""></div>
-              <div class="blog-content">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-                <a class="tag" href="">Living Room</a>
-                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
+        <div class="row">
+          <div class="col-lg-12 wow fadeInUp" data-wow-delay="500ms">
+            <div class="property-city-slider navi_pagi_top_right slider-dib-sm slider-5-grid owl-theme owl-carousel">
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/team-1.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Arlene McCoy</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="blog-style1">
-              <div class="blog-img"><img class="w-100" src="images/blog/blog-2.jpg" alt=""></div>
-              <div class="blog-content">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-                <a class="tag" href="">Living Room</a>
-                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/team-2.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Esther Howard</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="blog-style1">
-              <div class="blog-img"><img class="w-100" src="images/blog/blog-3.jpg" alt=""></div>
-              <div class="blog-content">
-                <div class="date">
-                  <span class="month">July</span>
-                  <span class="day">28</span>
-                </div>
-                <a class="tag" href="">Living Room</a>
-                <h6 class="title mt-1"><a href="page-blog-single.html">Private Contemporary Home Balancing Openness</a></h6>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/team-3.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Cody Fisher</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/team-4.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Bessie Cooper</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/team-5.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Guy Hawkins</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-6.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Arlene McCoy</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-7.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Esther Howard</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-8.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Cody Fisher</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-9.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Bessie Cooper</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-10.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Guy Hawkins</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="page-agent-single.html">
+                  <div class="team-style1 mb30">
+                    <div class="team-img"><img class="w-100" src="images/team/agent-11.jpg" alt=""></div>
+                    <div class="team-content pt20">
+                      <h6 class="name mb-1">Guy Hawkins</h6>
+                      <p class="text fz15 mb-0">Broker</p>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1578,13 +1469,13 @@
     <section class="our-partners pt0">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 wow fadeInUp">
+          <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
               <h6>Trusted by the world’s best</h6>
             </div>
           </div>
           <div class="col-lg-12">
-            <div class="dots_none nav_none slider-dib-sm slider-6-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
+            <div class="dots_none nav_none slider-dib-sm slider-6-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="500ms">
               <div class="item">
                 <div class="partner_item"><img class="wa m-auto" src="images/partners/1.png" alt="1.png"></div>
               </div>
@@ -1610,26 +1501,24 @@
     </section>
 
     <!-- Our CTA --> 
-    <section class="our-cta pt0">
-      <div class="cta-banner bgc-f7 mx-auto maxw1600 pt120 pt60-md pb120 pb60-md bdrs12 position-relative mx20-lg">
+    <section class="our-cta2 p0 px20">
+      <div class="cta-banner2 bgc-thm maxw1600 mx-auto pt100 pt50-md pb85 pb50-md px30-md bdrs12 position-relative">
         <div class="img-box-5">
           <img class="img-1 spin-right" src="images/about/element-1.png" alt="">
         </div>
         <div class="img-box-6">
-          <img class="img-1 spin-left" src="images/about/element-1.png" alt="">
+          <img class="img-1 spin-left" src="images/about/element-2.png" alt="">
+        </div>
+        <div class="cta-style2 d-none d-lg-block wow fadeInRight" data-wow-delay="300ms">
+          <img src="images/about/cta-img-1.png" alt="">
         </div>
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-xl-6 wow fadeInLeft">
-              <div class="cta-style1">
-                <h2 class="cta-title">Need help? Talk to our expert.</h2>
-                <p class="cta-text mb-0">Talk to our experts or Browse through more properties.</p>
-              </div>
-            </div>
-            <div class="col-lg-5 col-xl-6 wow fadeInRight" data-wow-delay="300ms">
-              <div class="cta-btns-style1 d-block d-sm-flex align-items-center justify-content-lg-end">
-                <a href="page-contact.html" class="ud-btn btn-transparent mr30 mr0-xs">Contact Us<i class="fal fa-arrow-right-long"></i></a>
-                <a href="page-contact.html" class="ud-btn btn-dark"><span class="flaticon-call vam pe-2"></span>920 851 9087</a>
+          <div class="row">
+            <div class="col-lg-7 col-xl-5 wow fadeInUp" data-wow-delay="500ms">
+              <div class="cta-style2">
+                <h2 class="cta-title">Start Listing or Buying a Property With Realton</h2>
+                <p class="cta-text">Talk to our experts or Browse through more properties.</p>
+                <a href="page-property-single-v1.html" class="ud-btn btn-dark mt10">Learn More<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -1638,26 +1527,154 @@
     </section>
 
     <!-- Our Footer --> 
-    <?php
-      include 'footer.php';
-    ?>
+    <section class="footer-style1 at-home2 pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="footer-widget mb-4 mb-lg-5">
+              <a class="footer-logo" href="index.html"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <div class="row mb-4 mb-lg-5">
+                <div class="col-auto">
+                  <div class="contact-info">
+                    <p class="info-title">Total Free Customer Care</p>
+                    <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="contact-info">
+                    <p class="info-title">Nee Live Support?</p>
+                    <h6 class="info-mail"><a href="mailto:hi@homez.com">hi@homez.com</a></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="app-widget">
+                <h5 class="title text-white mb10">Apps</h5>
+                <div class="row mb-4 mb-lg-5">
+                  <div class="col-auto">
+                    <a href="">
+                      <div class="app-info d-flex align-items-center mb10">
+                        <div class="flex-shrink-0">
+                          <i class="fab fa-apple fz30 text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ml20">
+                          <p class="app-text fz13 mb0">Download on the</p>
+                          <h6 class="app-title text-white fz14">Apple Store</h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="">
+                      <div class="app-info d-flex align-items-center mb10">
+                        <div class="flex-shrink-0">
+                          <i class="fab fa-google-play fz30 text-white"></i>
+                        </div>
+                        <div class="flex-grow-1 ml20">
+                          <p class="app-text fz13 mb0">Get in on</p>
+                          <h6 class="app-title text-white fz14">Google Play</h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="social-widget">
+                <h6 class="text-white mb20">Follow us on social media</h6>
+                <div class="social-style1">
+                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
+                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
+                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footer-widget mb-4 mb-lg-5">
+              <div class="mailchimp-widget mb-4 mb-lg-5">
+                <h6 class="title text-white mb20">Keep Yourself Up to Date</h6>
+                <div class="mailchimp-style1">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                  <button type="submit">Subscribe</button>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="link-style1 mb-3">
+                    <h6 class="text-white mb25">Popular Search</h6>
+                    <div class="link-list">
+                      <a href="">Apartment for Rent</a>
+                      <a href="">Apartment Low to hide</a>
+                      <a href="">Offices for Buy</a>
+                      <a href="">Offices for Rent</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-style1 mb-3">
+                    <h6 class="text-white mb25">Quick Links</h6>
+                    <ul class="ps-0">
+                      <li><a href="">Terms of Use</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                      <li><a href="">Pricing Plans</a></li>
+                      <li><a href="">Our Services</a></li>
+                      <li><a href="">Contact Support</a></li>
+                      <li><a href="">Careers</a></li>
+                      <li><a href="">FAQs</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="link-style1 mb-3">
+                    <h6 class="text-white mb25">Discover</h6>
+                    <ul class="ps-0">
+                      <li><a href="">Miami</a></li>
+                      <li><a href="">Los Angeles</a></li>
+                      <li><a href="">Chicago</a></li>
+                      <li><a href="">New York</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container white-bdrt1 py-4">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="text-center text-lg-start">
+              <p class="copyright-text text-gray ff-heading">© Homez - All rights reserved</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="text-center text-lg-end">
+              <p class="footer-menu ff-heading text-gray"><a class="text-gray" href="#">Privacy</a> · <a class="text-gray" href="#">Terms</a> · <a class="text-gray" href="#">Sitemap</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
 </div>
-<!-- Wrapper End --> 
+<!-- Wrapper End -->
 <script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/jquery-migrate-3.0.0.min.js"></script> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/bootstrap-select.min.js"></script> 
-<script src="js/jquery.mmenu.all.js"></script> 
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
 <script src="js/ace-responsive-menu.js"></script> 
-<script src="js/jquery-scrolltofixed-min.js"></script> 
-<script src="js/wow.min.js"></script> 
-<script src="js/owl.js"></script> 
-<script src="js/parallax.js"></script> 
+<script src="js/jquery-scrolltofixed-min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/isotop.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/pricing-slider.js"></script>
-<!-- Custom script for all pages --> 
+<script src="js/swiper.js"></script>
+<!-- Custom script for all pages -->
 <script src="js/script.js"></script>
 </body>
 </html>

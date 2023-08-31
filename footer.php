@@ -3,7 +3,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index.php"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">

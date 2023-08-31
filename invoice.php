@@ -48,7 +48,7 @@
         <div class="row mb30">
           <div class="col-lg-12">
             <div class="float-end">
-              <a href="index.php" class="ud-btn btn-dark invoice_down_print">Print Invoice<i class="fal fa-arrow-right-long"></i></a>
+              <a href="index" class="ud-btn btn-dark invoice_down_print">Print Invoice<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
