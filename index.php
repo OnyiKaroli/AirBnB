@@ -1,5 +1,5 @@
 <?php
-  require 'config/config.php';
+  require_once 'config/conn.php';
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -46,7 +46,7 @@
 </head>
 <body>
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   
   <!-- Main Header Nav -->
   <?php
@@ -479,15 +479,18 @@
                     <div class="iconbox-content">
                       <h6 class="title">Houses</h6>
                       <?php
-                        // SQL query to find total count
-                        $sql = "SELECT COUNT(*) FROM properties WHERE `category` = 'house'";
-                        $result = $conn->query($sql);
-  
-                        // Display data on web
-                        while($row = mysqli_fetch_array($result)) {
+                        /*/ SQL query to count rows with "house" in the category column
+                        $sql = "SELECT COUNT(`category`) FROM properties WHERE `category` = 'house'";
+
+                        // Execute the query
+                        $result = mysqli_query($config, $sql); 
+
+                        // Fetch the count
+                        $row = mysqli_fetch_assoc($result);
+                        $count = $row['count'];*/
                         
                       ?>
-                      <p class="text mb-0"><?php echo $row['count(*)']. "Properties"; } ?></p>
+                      <p class="text mb-0">22 Properties</p>
                     </div>
                   </div>
                 </a>
@@ -554,58 +557,40 @@
           </div>
           <div class="col-lg-3">
             <div class="text-start text-lg-end mb-3">
-              <a class="ud-btn2" href="">See All Properties<i class="fal fa-arrow-right-long"></i></a>
+              <a class="ud-btn2" href="listing">See All Properties<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
             <div class="feature-listing-slider2 vam_nav_style dots_none slider-dib-sm slider-3-grid owl-carousel owl-theme">
-              <div class="item">
-                <div class="listing-style1 style4">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `featured` = 1 ORDER BY RAND() LIMIT 6") or die(mysqli_error($server));
+                //$result = mysqli_query($conn, $query);
+
+                if (mysqli_num_rows($query) > 0) {
+                // OUTPUT DATA OF EACH ROW
+                while($row = mysqli_fetch_assoc($query)) {
+              ?>  
               <div class="item">
                 <div class="listing-style1 style4">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
                     <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                    <div class="list-price">$82,000 / <span>mo</span></div>
+                    <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <h6 class="list-title"><a href="page-property-single-v1.html"><?php echo $row["title"];?></a></h6>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
+                      <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
+                      <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
+                      <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
                     <hr class="mt-2 mb-2">
                     <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
+                      <span class="for-what"><?php echo $row["listed_in"];?></span>
                       <div class="icons d-flex align-items-center">
                         <a href=""><span class="flaticon-fullscreen"></span></a>
                         <a href=""><span class="flaticon-new-tab"></span></a>
@@ -614,34 +599,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1 style4">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                    <div class="list-price">$63,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div><?php }} ?>
             </div>
           </div>
         </div>
@@ -662,72 +620,28 @@
         <div class="row">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="300ms">
             <div class="property-city-slider navi_pagi_top_right slider-dib-sm slider-4-grid owl-theme owl-carousel">
+              
+              <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT city, COUNT(*) AS total_properties FROM properties GROUP BY city
+                ORDER BY total_properties limit 6") or die(mysqli_error($server));
+
+                // OUTPUT DATA OF EACH ROW
+                if (mysqli_num_rows($query) > 0) {
+                while($row = mysqli_fetch_assoc($query)) {
+              ?> 
+
               <div class="item">
                 <a href="page-grid-default-v1.html">
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1">Nairobi</h6>
-                      <p class="text fz15">12 Properties</p>
+                      <h6 class="title mb-1"><?php $row["city"] ?></h6>
+                      <p class="text fz15"><?php $row["total_properties"] ?> Properties</p>
                     </div>
                   </div>
                 </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Mombasa</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Naivasha</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Kisumu</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Nanyuki</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-grid-default-v1.html">
-                  <div class="feature-style2 mb30">
-                    <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
-                    <div class="feature-content pt20">
-                      <h6 class="title mb-1">Nyali</h6>
-                      <p class="text fz15">12 Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              </div><?php }}?>
             </div>
           </div>
         </div>
@@ -796,6 +710,17 @@
               </div>
               <div class="img-box-10 position-relative">
                 <div class="listing-style1 mini-style bounce-y">
+
+                  <?php
+                    //SQL Query
+                    $query = mysqli_query($server, "SELECT city, COUNT(*) AS total_properties FROM properties GROUP BY city
+                    ORDER BY total_properties limit 6") or die(mysqli_error($server));
+
+                    // OUTPUT DATA OF EACH ROW
+                    if (mysqli_num_rows($query) > 0) {
+                    while($row = mysqli_fetch_assoc($query)) {
+                  ?> 
+
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
                     <p class="list-text">Nairobi City, CA, Kenya</p>
