@@ -479,18 +479,15 @@
                     <div class="iconbox-content">
                       <h6 class="title">Houses</h6>
                       <?php
-                        /*/ SQL query to count rows with "house" in the category column
-                        $sql = "SELECT COUNT(`category`) FROM properties WHERE `category` = 'house'";
-
-                        // Execute the query
-                        $result = mysqli_query($config, $sql); 
+                        // SQL query to count rows with "house" in the category column
+                        $sql = mysqli_query($server,"SELECT COUNT(`category`) FROM properties WHERE `category` = 'house'") or die(mysqli_error($server));
 
                         // Fetch the count
-                        $row = mysqli_fetch_assoc($result);
-                        $count = $row['count'];*/
+                        $row = mysqli_fetch_assoc($sql);
+                        $count = $row['count'];
                         
                       ?>
-                      <p class="text mb-0">22 Properties</p>
+                      <p class="text mb-0"><?php echo $row["count"];?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -713,31 +710,30 @@
 
                   <?php
                     //SQL Query
-                    $query = mysqli_query($server, "SELECT city, COUNT(*) AS total_properties FROM properties GROUP BY city
-                    ORDER BY total_properties limit 6") or die(mysqli_error($server));
+                    $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `listed_in` = 'For sale' ORDER BY RAND() LIMIT 1") or die(mysqli_error($server));
 
                     // OUTPUT DATA OF EACH ROW
                     if (mysqli_num_rows($query) > 0) {
-                    while($row = mysqli_fetch_assoc($query)) {
+                      while($row = mysqli_fetch_assoc($query)) {
                   ?> 
 
                   <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <h6 class="list-title"><a href="page-property-single-v1.html"><?php $row["title"]; ?></a></h6>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
+                      <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
+                      <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
+                      <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
-                    <a href="page-property-single-v1.html" class="btn mt15 fz15">View House<i class="fal fa-arrow-right-long"></i></a>
-                  </div>
+                    <a href="#" class="btn mt15 fz15">View House<i class="fal fa-arrow-right-long"></i></a>
+                  </div><?php }}?>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-xl-4 offset-xl-2">
             <div class="about-box-1 wow fadeInLeft" data-wow-delay="300ms">
-              <h2 class="title mb30">With Us Help You Find Your Dream Home</h2>
+              <h2 class="title mb30">We Will Help You Find Your Dream Home</h2>
               <p class="text mb20 fz15">As the complexity of buildings to increase, the field of architecture.</p>
               <div class="funfact_one">
                 <div class="details mb25">
@@ -761,7 +757,7 @@
                   </ul>
                   <p class="text mb-0">Stores around the world</p>
                 </div>
-                <a href="#" class="ud-btn btn-thm">See More<i class="fal fa-arrow-right-long"></i></a>
+                <a href="listing" class="ud-btn btn-thm">See More<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -866,127 +862,26 @@
         <div class="row">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="500ms">
             <div class="property-city-slider navi_pagi_top_right slider-dib-sm slider-5-grid owl-theme owl-carousel">
+            <?php
+              //SQL Query
+              $query = mysqli_query($server, "SELECT * FROM `agents` ORDER BY RAND() LIMIT 15") or die(mysqli_error($server));
+              //$result = mysqli_query($conn, $query);
+
+              if (mysqli_num_rows($query) > 0) {
+              // OUTPUT DATA OF EACH ROW
+              while($row = mysqli_fetch_assoc($query)) {
+            ?>
               <div class="item">
-                <a href="page-agent-single.html">
+                <a href="#">
                   <div class="team-style1 mb30">
                     <div class="team-img"><img class="w-100" src="images/team/team-1.jpg" alt=""></div>
                     <div class="team-content pt20">
-                      <h6 class="name mb-1">Arlene McCoy</h6>
-                      <p class="text fz15 mb-0">Broker</p>
+                      <h6 class="name mb-1"><?php echo $row["name"];?></h6>
+                      <p class="text fz15 mb-0"><?php echo $row["house_category"]; ?></p>
                     </div>
                   </div>
                 </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/team-2.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Esther Howard</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/team-3.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Cody Fisher</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/team-4.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Bessie Cooper</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/team-5.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Guy Hawkins</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-6.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Arlene McCoy</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-7.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Esther Howard</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-8.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Cody Fisher</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-9.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Bessie Cooper</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-10.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Guy Hawkins</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="page-agent-single.html">
-                  <div class="team-style1 mb30">
-                    <div class="team-img"><img class="w-100" src="images/team/agent-11.jpg" alt=""></div>
-                    <div class="team-content pt20">
-                      <h6 class="name mb-1">Guy Hawkins</h6>
-                      <p class="text fz15 mb-0">Broker</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              </div><?php }}?>
             </div>
           </div>
         </div>
