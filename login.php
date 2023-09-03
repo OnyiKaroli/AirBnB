@@ -82,7 +82,7 @@
               <div class="d-grid mb20">
                 <button class="ud-btn btn-apple fw400" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
               </div>
-              <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
+              <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
             </div>
           </div>
         </div>

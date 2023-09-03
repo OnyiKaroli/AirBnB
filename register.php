@@ -50,39 +50,39 @@
     <section class="our-compare pt60 pb60">
       <img src="images/icon/register-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
       <div class="container">
+        <form action="process_registration.php" method="POST">
         <div class="row wow fadeInRight" data-wow-delay="300ms">
           <div class="col-lg-6">
-            <div class="log-reg-form signup-modal form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
+            <div class="log-reg-form form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
               <div class="text-center mb40">
                 <img class="mb25" src="images/header-logo2.svg" alt="">
                 <h2>Create account</h2>
                 <p class="text">Sign in with this account across the following sites.</p>
               </div>
               <div class="mb25">
+                <label class="form-label fw600 dark-color">Username</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="mb25">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="Enter Email">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
               </div>
               <div class="mb15">
                 <label class="form-label fw600 dark-color">Password</label>
-                <input type="text" class="form-control" placeholder="Enter Password">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
+              </div>
+              <div class="mb15">
+                <label class="form-label fw600 dark-color">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Renter Password">
               </div>
               <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
+                <button class="ud-btn btn-thm" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
               </div>
-              <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-              <div class="d-grid mb10">
-                <button class="ud-btn btn-white fw400" type="button"><i class="fab fa-google"></i> Continue Google</button>
-              </div>
-              <div class="d-grid mb10">
-                <button class="ud-btn btn-fb fw400" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-              </div>
-              <div class="d-grid mb20">
-                <button class="ud-btn btn-apple fw400" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
-              </div>
-              <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
+              <p class="dark-color text-center mb0 mt10">Already signed up? <a class="dark-color fw600" href="login">Go to Login</a></p>
             </div>
           </div>
         </div>
+        </form>
       </div>
     </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>

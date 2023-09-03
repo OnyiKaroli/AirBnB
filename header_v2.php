@@ -13,14 +13,13 @@
                 <li class="megamenu_style"><a  class="list-item" href="listing"><span class="title">Listing</span></a></li>
                 <li class="visible_list"><a class="list-item" href="agents"><span class="title">Agents</span></a></li>
                 <li class="visible_list"><a class="list-item" href="about"><span class="title">About</span></a></li>
-                <li class="visible_list"><a class="list-item" href="blog"><span class="title">Blog</span></a></li>
                 <li class="visible_list"><a class="list-item" href="contact"><span class="title">Contact Us</span></a></li>
             </ul>
           </div>
           <div class="col-auto">
             <div class="d-flex align-items-center">
-              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
-              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="dashboard-add-property.php">Add Property<i class="fal fa-arrow-right-long"></i></a>
+              <a class="login-info d-flex align-items-center" href="login" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
+              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="dashboard-add-property">Add Property<i class="fal fa-arrow-right-long"></i></a>
               <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
             </div>
           </div>

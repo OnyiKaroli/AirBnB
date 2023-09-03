@@ -1,5 +1,8 @@
 <?php
-  include 'config/conn.php';
+    include 'config/conn.php';
+
+    $id = $_GET['id'];
+    $title = $_GET['title'];
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -24,7 +27,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
-<title>Aveden - Where Every Stay is a Journey</title>
+<title>Aveden - <?php echo $row["title"];?> Results</title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -162,9 +165,11 @@
                   <p class="pagination_page_count mb-0">Showing 1–10 of 13 results</p>
                 </div>
               </div>
-              <?php
-                include 'sort_bar.php';
-              ?>
+              <div class="col-sm-6">
+                <?php
+                    include 'sort_bar.php';
+                ?>
+              </div>
             </div>
             <div class="row mt15">
 

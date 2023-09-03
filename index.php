@@ -480,14 +480,11 @@
                       <h6 class="title">Houses</h6>
                       <?php
                         // SQL query to count rows with "house" in the category column
-                        $sql = mysqli_query($server,"SELECT COUNT(`category`) FROM properties WHERE `category` = 'house'") or die(mysqli_error($server));
+                        $sql = mysqli_query($server,"SELECT COUNT(*) AS total_houses FROM properties WHERE category = 'House'") or die(mysqli_error($server));
 
-                        // Fetch the count
-                        $row = mysqli_fetch_assoc($sql);
-                        $count = $row['count'];
                         
                       ?>
-                      <p class="text mb-0"><?php echo $row["count"];?> Properties</p>
+                      <p class="text mb-0"><?php echo $total_houses;?> Properties</p>
                     </div>
                   </div>
                 </a>

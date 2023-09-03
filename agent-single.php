@@ -1,3 +1,9 @@
+<?php
+  require_once 'config/conn.php';
+
+  $id = $_GET['id'];
+  $title = $_GET['name'];
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
