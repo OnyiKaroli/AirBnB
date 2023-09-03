@@ -152,7 +152,7 @@
         <div class="row gx-xl-5">
           <div class="col-lg-4 d-none d-lg-block">
             <?php
-              include 'listing_searchbar.php';
+              include 'listing_searchbar.php'; 
             ?>
           </div>
           <div class="col-lg-8">

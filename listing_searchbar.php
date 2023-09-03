@@ -1,3 +1,4 @@
+<form action="search_listing.php" method="get">
 <div class="list-sidebar-style1">
               <div class="widget-wrapper">
                 <h6 class="list-title">Find your home</h6>
@@ -239,11 +240,11 @@
               </div>
               <div class="widget-wrapper mb20">
                 <div class="btn-area d-grid align-items-center">
-                  <button class="ud-btn btn-thm"><span class="flaticon-search align-text-top pr10"></span>Search</button>
+                  <button type="submit" class="ud-btn btn-thm"><span class="flaticon-search align-text-top pr10"></span>Search</button>
                 </div>
               </div>
               <div class="reset-area d-flex align-items-center justify-content-between">
-                <a class="reset-button" href="#"><span class="flaticon-turn-back"></span><u>Reset all filters</u></a>
-                <a class="reset-button" href="#"><span class="flaticon-favourite"></span><u>Save Search</u></a>
+                <a class="reset-button" href=""><span class="flaticon-turn-back"></span><u><button type="reset">Reset all filters</button></u></a>
               </div>
             </div>
+</form>

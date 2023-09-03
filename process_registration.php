@@ -1,5 +1,5 @@
 <?php
-    include 'config/conn.php';
+    require 'config/conn.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate form data
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($query) > 0) {
         // Redirect to login.php if email already exists
-        header("Location: login.php");
+        header("Location: login");
         exit();
     }
 
@@ -31,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert user data into the 'users' table
     $sql = mysqli_query($server, "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$hashed_password')") or die(mysqli_error($server));
 
-    if (mysqli_query($server, $sql)) {
+    if (mysqli_query($sql)) {
         // Display a pop-up and redirect to login.php
-        echo '<script>alert("Account Created"); window.location.href = "login.php";</script>';
+        echo '<script>alert("Account Created"); window.location.href = "login";</script>';
         exit();
     } else {
         echo "Error: " . mysqli_error($server);

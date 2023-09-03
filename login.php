@@ -38,29 +38,32 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+<?php
+  include 'header_v2.php';
+?>
 <body class="bgc-f7">
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   <div class="body_content">
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">
       <img src="images/icon/login-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
+      <form action="log_in.php" method="POST">
       <div class="container">
         <div class="row wow fadeInRight" data-wow-delay="300ms">
           <div class="col-lg-6">
-            <div class="log-reg-form signup-modal form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
+            <div class="log-reg-form form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
               <div class="text-center mb40">
-                <img class="mb25" src="images/header-logo2.svg" alt="">
                 <h2>Sign in</h2>
                 <p class="text">Sign in with this account across the following sites.</p>
               </div>
               <div class="mb25">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="Enter Email">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
               </div>
               <div class="mb15">
                 <label class="form-label fw600 dark-color">Password</label>
-                <input type="text" class="form-control" placeholder="Enter Password">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
               </div>
               <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
                 <label class="custom_checkbox fz14 ff-heading">Remember me
@@ -70,23 +73,14 @@
                 <a class="fz14 ff-heading" href="#">Lost your password?</a>
               </div>
               <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
-              </div>
-              <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-              <div class="d-grid mb10">
-                <button class="ud-btn btn-white fw400" type="button"><i class="fab fa-google"></i> Continue Google</button>
-              </div>
-              <div class="d-grid mb10">
-                <button class="ud-btn btn-fb fw400" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-              </div>
-              <div class="d-grid mb20">
-                <button class="ud-btn btn-apple fw400" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
+                <button class="ud-btn btn-thm" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
               </div>
               <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
             </div>
           </div>
         </div>
       </div>
+      </form>
     </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>

@@ -1,3 +1,21 @@
 <?php
     echo "<a href='property-single?id=".$column["id"]."'>".$column['title']."</a>";
+    <?php echo $row["no_bedroom"];?>
+
+        <?php
+            //SQL Query
+            $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `featured` = 1 ORDER BY RAND() LIMIT 6") or die(mysqli_error($server));
+            //$result = mysqli_query($conn, $query);
+
+            if (mysqli_num_rows($query) > 0) {
+            // OUTPUT DATA OF EACH ROW
+            while($row = mysqli_fetch_assoc($query)) {
+        ?>
+
+        <?php
+            require_once 'config/conn.php';
+
+            $id = $_GET['id'];
+            $title = $_GET['title'];
+        ?>
 ?>

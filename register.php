@@ -55,7 +55,6 @@
           <div class="col-lg-6">
             <div class="log-reg-form form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
               <div class="text-center mb40">
-                <img class="mb25" src="images/header-logo2.svg" alt="">
                 <h2>Create account</h2>
                 <p class="text">Sign in with this account across the following sites.</p>
               </div>
