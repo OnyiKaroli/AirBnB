@@ -1,3 +1,7 @@
+<?php
+  include 'config/conn.php';
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -44,11 +48,81 @@
 <body class="bgc-f7">
 <div class="wrapper ovh">
   <!--div class="preloader"></div-->
+
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
   <div class="body_content">
+
+  <?php
+  //Logout
+  if (isset($_GET['log_out'])) {
+    $end = session_destroy();
+    if ($end) {
+      echo "
+       <div class='alert alert-success alert-dismissible' role='alert'>
+          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          </button>
+          <strong>Successfully Logged out.</strong> <br>Log in to continue.
+        </div>";
+        header( "refresh:1;url=index" );
+    }
+  }
+
+
+if (isset($_POST['login']))
+{
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+
+    $res= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or 
+    die(mysqli_error($server));
+    //check rows returned
+    $count=mysqli_num_rows($res);
+
+    if($count<1)
+    {
+
+      echo "
+       <div class='alert alert-danger alert-dismissible' role='alert'>
+          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          </button>
+          <strong>Log in</strong> failed.<br> Check your details and try again.
+        </div>";
+    }
+    else
+    {
+
+      $_SESSION['user']=array();
+
+      $sel= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or die(mysql_error());
+      while ($column=mysqli_fetch_array($sel)) {
+        $_SESSION['user']['name']=$column[1];
+        $_SESSION['user']['role']=$column[3];
+        $_SESSION['user']['email']=$column[4];
+        $_SESSION['user']['phoneno']=$column[5];
+        //$_SESSION['user']['status']=$column[7];
+
+
+      }
+
+
+
+      header("location:dashboard");
+
+}
+
+
+}
+
+
+?>
+
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">
       <img src="images/icon/login-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
-      <form action="log_in.php" method="POST">
+      <form method="POST">
       <div class="container">
         <div class="row wow fadeInRight" data-wow-delay="300ms">
           <div class="col-lg-6">

@@ -113,149 +113,16 @@
       </div>
     </div>
     <!-- /.mobile-menu -->
-    <nav id="menu" class="">
-      <ul>
-        <li><span>Home</span>
-          <ul>
-            <li><a href="index">Home V1</a></li>
-            <li><a href="index2.html">Home V2</a></li>
-            <li><a href="index3.html">Home V3</a></li>
-            <li><a href="index4.html">Home V4</a></li>
-            <li><a href="index5.html">Home V5</a></li>
-            <li><a href="index6.html">Home V6</a></li>
-            <li><a href="index7.html">Home V7</a></li>
-            <li><a href="index8.html">Home V8</a></li>
-            <li><a href="index9.html">Home V9</a></li>
-            <li><a href="index10.html">Home V10</a></li>
-          </ul>
-        </li>
-        <li><span>Property Listign</span>
-          <ul>
-            <li><span>Listing Grid</span>
-              <ul>
-                <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-              </ul>
-            </li>
-            <li><span>List Style</span>
-              <ul>
-                <li><a href="page-property-list.html">Style V1</a></li>
-                <li><a href="page-property-list-all.html">All List</a></li>
-              </ul>
-            </li>
-            <li><span>Listing Single</span>
-              <ul>
-                <li><a href="page-property-single-v1.html">Single V1</a></li>
-                <li><a href="page-property-single-v2.html">Single V2</a></li>
-                <li><a href="page-property-single-v3.html">Single V3</a></li>
-                <li><a href="page-property-single-v4.html">Single V4</a></li>
-                <li><a href="page-property-single-v5.html">Single V5</a></li>
-                <li><a href="page-property-single-v6.html">Single V6</a></li>
-                <li><a href="page-property-single-v7.html">Single V7</a></li>
-                <li><a href="page-property-single-v8.html">Single V8</a></li>
-                <li><a href="page-property-single-v9.html">Single V9</a></li>
-                <li><a href="page-property-single-v10.html">Single V10</a></li>
-              </ul>
-            </li>
-            <li><span>Map Style</span>
-              <ul>
-                <li><a href="page-property-header-map-style.html">Map Header</a></li>
-                <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><span>User Dashboard</span>
-          <ul>
-            <li><a href="dashboard">Dashboard</a></li>
-            <li><a href="dashboard-message.html">Message</a></li>
-            <li><a href="dashboard-add-property.php">New Property</a></li>
-            <li><a href="dashboard-properties.html">My Properties</a></li>
-            <li><a href="dashboard-favorites.html">My Favorites</a></li>
-            <li><a href="dashboard-savesearch.html">Saved Search</a></li>
-            <li><a href="dashboard-review.html">Reviews</a></li>
-            <li><a href="dashboard-package.html">My Package</a></li>
-            <li><a href="dashboard-profile.html">My Profile</a></li>
-          </ul>
-        </li>
-        <li><span>Blog</span>
-          <ul>
-            <li><a href="page-blog-v1.html">List V1</a></li>
-            <li><a href="page-blog-v2.html">List V2</a></li>
-            <li><a href="page-blog-v3.html">List V3</a></li>
-            <li><a href="page-blog-single.html">Single</a></li>
-          </ul>
-        </li>
-        <li><span>Pages</span>
-          <ul>
-            <li><a href="page-about.html">About</a></li>
-            <li><a href="page-contact.html">Contact</a></li>
-            <li><a href="page-compare.html">Compare</a></li>
-            <li><a href="page-pricing.html">Pricing</a></li>
-            <li><a href="page-faq.html">Faq</a></li>
-            <li><a href="page-login.html">Login</a></li>
-            <li><a href="page-register.html">Register</a></li>
-            <li><a href="page-error.html">404</a></li>
-            <li><a href="page-invoice.html">Invoices</a></li>
-            <li><a href="page-ui-element.html">UI Elements</a></li>
-          </ul>
-        </li>
-        <li class="px-3 mobile-menu-btn">
-          <a href="dashboard-add-property.php" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
-        </li>
-        <!-- Only for Mobile View -->
-      </ul>
-    </nav>
+    <?php
+      include 'mobile_header.php';
+    ?>
   </div>
 
   <div class="dashboard_content_wrapper">
     <div class="dashboard dashboard_wrapper pr30 pr0-md">
-      <div class="dashboard__sidebar d-none d-lg-block">
-        <div class="dashboard_sidebar_list">
-          <div class="sidebar_list_item">
-            <a href="dashboard" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
-          </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-add-property.php" class="items-center"><i class="flaticon-new-tab mr15"></i>Add New Property</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>My Properties</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>My Favorites</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-savesearch.html" class="items-center -is-active"><i class="flaticon-search-2 mr15"></i>Saved Search</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-review.html" class="items-center"><i class="flaticon-review mr15"></i>Reviews</a>
-          </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-package.html" class="items-center"><i class="flaticon-protection mr15"></i>My Package</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="dashboard-profile.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
-          </div>
-        </div>
-      </div>
+      <?php
+        include 'sidebar_v2.php';
+      ?>
       <div class="dashboard__main pl0-md">
         <div class="dashboard__content bgc-f7">
           <div class="row pb40">

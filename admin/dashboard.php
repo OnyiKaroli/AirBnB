@@ -1,3 +1,7 @@
+<?php
+  include 'config/conn.php';
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -78,7 +82,7 @@
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
+                <p class="info-title dark-color">Need Live Support?</p>
                 <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
