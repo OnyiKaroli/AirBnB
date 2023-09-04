@@ -604,7 +604,7 @@
                     <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html"><?php echo $row["title"];?></a></h6>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."'>".$row["title"]."</a>"; ?></h6>
                     <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>

@@ -1,3 +1,9 @@
+<?php
+  require_once 'config/conn.php';
+
+  $id = $_GET['id'];
+  $title = $_GET['title'];
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -23,7 +29,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
-<title>Aveden - Where Every Stay is a Journey</title>
+<title>Aveden - <?php echo $row["title"];?></title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -42,98 +48,12 @@
 </head>
 <body>
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   
   <!-- Main Header Nav -->
   <?php
     include 'header_v2.php';
   ?>
-  <!-- Signup Modal -->
-  <div class="signup-modal">
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Welcome to Aveden</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="log-reg-form">
-              <div class="navtab-style2">
-                <nav>
-                  <div class="nav nav-tabs mb20" id="nav-tab" role="tablist">
-                    <button class="nav-link active fw600" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Sign In</button>
-                    <button class="nav-link fw600" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">New Account</button>
-                  </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent2">
-                  <div class="tab-pane fade show active fz15" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="form-style1">
-                      <div class="mb25">
-                        <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="Enter Email">
-                      </div>
-                      <div class="mb15">
-                        <label class="form-label fw600 dark-color">Password</label>
-                        <input type="text" class="form-control" placeholder="Enter Password">
-                      </div>
-                      <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                        <label class="custom_checkbox fz14 ff-heading">Remember me
-                          <input type="checkbox" checked="checked">
-                          <span class="checkmark"></span>
-                        </label>
-                        <a class="fz14 ff-heading" href="#">Lost your password?</a>
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-thm" type="button">Sign in <i class="fal fa-arrow-right-long"></i></button>
-                      </div>
-                      <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-white" type="button"><i class="fab fa-google"></i> Continue Google</button>
-                      </div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-fb" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-apple" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
-                      </div>
-                      <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade fz15" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="form-style1">
-                      <div class="mb25">
-                        <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="Enter Email">
-                      </div>
-                      <div class="mb20">
-                        <label class="form-label fw600 dark-color">Password</label>
-                        <input type="text" class="form-control" placeholder="Enter Password">
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-thm" type="button">Create account <i class="fal fa-arrow-right-long"></i></button>
-                      </div>
-                      <div class="hr_content mb20"><hr><span class="hr_top_text">OR</span></div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-white" type="button"><i class="fab fa-google"></i> Continue Google</button>
-                      </div>
-                      <div class="d-grid mb10">
-                        <button class="ud-btn btn-fb" type="button"><i class="fab fa-facebook-f"></i> Continue Facebook</button>
-                      </div>
-                      <div class="d-grid mb20">
-                        <button class="ud-btn btn-apple" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
-                      </div>
-                      <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="page-register.html">Create an account.</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
@@ -163,7 +83,7 @@
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
+                <p class="info-title dark-color">Need Live Support?</p>
                 <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
@@ -201,109 +121,9 @@
       </div>
     </div>
     <!-- /.mobile-menu -->
-    <nav id="menu" class="">
-      <ul>
-        <li><span>Home</span>
-          <ul>
-            <li><a href="index">Home V1</a></li>
-            <li><a href="index2.html">Home V2</a></li>
-            <li><a href="index3.html">Home V3</a></li>
-            <li><a href="index4.html">Home V4</a></li>
-            <li><a href="index5.html">Home V5</a></li>
-            <li><a href="index6.html">Home V6</a></li>
-            <li><a href="index7.html">Home V7</a></li>
-            <li><a href="index8.html">Home V8</a></li>
-            <li><a href="index9.html">Home V9</a></li>
-            <li><a href="index10.html">Home V10</a></li>
-          </ul>
-        </li>
-        <li><span>Property Listign</span>
-          <ul>
-            <li><span>Listing Grid</span>
-              <ul>
-                <li><a href="page-grid-default-v1.html">Grid Default v1</a></li>
-                <li><a href="page-grid-default-v2.html">Grid Default v2</a></li>
-                <li><a href="page-property-3-col.html">Grid Full Width 3 Cols</a></li>
-                <li><a href="page-property-4-col.html">Grid Full Width 4 Cols</a></li>
-                <li><a href="page-property-2-col.html">Grid Full Width 2 Cols</a></li>
-                <li><a href="page-property-1-col-v1.html">Grid Full Width 1 Cols v1</a></li>
-                <li><a href="page-property-1-col-v2.html">Grid Full Width 1 Cols v2</a></li>
-                <li><a href="page-property-banner-v1.html">Banner Search v1</a></li>
-                <li><a href="page-property-banner-v2.html">Banner Search v2</a></li>
-              </ul>
-            </li>
-            <li><span>List Style</span>
-              <ul>
-                <li><a href="page-property-list.html">Style V1</a></li>
-                <li><a href="page-property-list-all.html">All List</a></li>
-              </ul>
-            </li>
-            <li><span>Listing Single</span>
-              <ul>
-                <li><a href="page-property-single-v1.html">Single V1</a></li>
-                <li><a href="page-property-single-v2.html">Single V2</a></li>
-                <li><a href="page-property-single-v3.html">Single V3</a></li>
-                <li><a href="page-property-single-v4.html">Single V4</a></li>
-                <li><a href="page-property-single-v5.html">Single V5</a></li>
-                <li><a href="page-property-single-v6.html">Single V6</a></li>
-                <li><a href="page-property-single-v7.html">Single V7</a></li>
-                <li><a href="page-property-single-v8.html">Single V8</a></li>
-                <li><a href="page-property-single-v9.html">Single V9</a></li>
-                <li><a href="page-property-single-v10.html">Single V10</a></li>
-              </ul>
-            </li>
-            <li><span>Map Style</span>
-              <ul>
-                <li><a href="page-property-header-map-style.html">Map Header</a></li>
-                <li><a href="page-property-half-map-v1.html">Map V1</a></li>
-                <li><a href="page-property-half-map-v2.html">Map V2</a></li>
-                <li><a href="page-property-half-map-v3.html">Map V3</a></li>
-                <li><a href="page-property-half-map-v4.html">Map V4</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><span>User Dashboard</span>
-          <ul>
-            <li><a href="page-dashboard.html">Dashboard</a></li>
-            <li><a href="page-dashboard-message.html">Message</a></li>
-            <li><a href="dashboard-add-property.php">New Property</a></li>
-            <li><a href="page-dashboard-properties.html">My Properties</a></li>
-            <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-            <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-            <li><a href="page-dashboard-review.html">Reviews</a></li>
-            <li><a href="page-dashboard-package.html">My Package</a></li>
-            <li><a href="page-dashboard-profile.html">My Profile</a></li>
-          </ul>
-        </li>
-        <li><span>Blog</span>
-          <ul>
-            <li><a href="page-blog-v1.html">List V1</a></li>
-            <li><a href="page-blog-v2.html">List V2</a></li>
-            <li><a href="page-blog-v3.html">List V3</a></li>
-            <li><a href="page-blog-single.html">Single</a></li>
-          </ul>
-        </li>
-        <li><span>Pages</span>
-          <ul>
-            <li><a href="page-about.html">About</a></li>
-            <li><a href="page-contact.html">Contact</a></li>
-            <li><a href="page-compare.html">Compare</a></li>
-            <li><a href="page-pricing.html">Pricing</a></li>
-            <li><a href="page-faq.html">Faq</a></li>
-            <li><a href="page-login.html">Login</a></li>
-            <li><a href="page-register.html">Register</a></li>
-            <li><a href="page-error.html">404</a></li>
-            <li><a href="page-invoice.html">Invoices</a></li>
-            <li><a href="page-ui-element.html">UI Elements</a></li>
-          </ul>
-        </li>
-        <li class="px-3 mobile-menu-btn">
-          <a href="dashboard-add-property.php" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
-        </li>
-        <!-- Only for Mobile View -->
-      </ul>
-    </nav>
+    <?php
+      include 'mobile_header.php'
+    ?>
   </div>
 
   <div class="body_content">
@@ -313,17 +133,16 @@
         <div class="row mb30 wow fadeInUp" data-wow-delay="100ms">
           <div class="col-lg-8">
             <div class="single-property-content mb30-md">
-              <h2 class="sp-lg-title">Awesome Interior Apartment</h2>
+              <h2 class="sp-lg-title"><?php echo $row["title"];?></h2>
               <div class="pd-meta mb15 d-md-flex align-items-center">
-                <p class="text fz15 mb-0 bdrr1 pr10 bdrrn-sm">4834 N 10th St, Philadelphia, PA 19141</p>
-                <a class="ff-heading text-thm fz15 bdrr1 pr10 ml0-sm ml10 bdrrn-sm" href=""><i class="fas fa-circle fz10 pe-2"></i>For sale</a>
-                <a class="ff-heading bdrr1 fz15 pr10 ml10 ml0-sm bdrrn-sm" href=""><i class="far fa-clock pe-2"></i>1 years ago</a>
-                <a class="ff-heading ml10 ml0-sm fz15" href=""><i class="flaticon-fullscreen pe-2 align-text-top"></i>8721</a>
+                <p class="text fz15 mb-0 bdrr1 pr10 bdrrn-sm"><?php echo $row["street"], $row["city"], $row["county"];?></p>
+                <a class="ff-heading text-thm fz15 bdrr1 pr10 ml0-sm ml10 bdrrn-sm" href=""><i class="fas fa-circle fz10 pe-2"></i><?php echo $row["listed_in"];?></a>
+                <a class="ff-heading bdrr1 fz15 pr10 ml10 ml0-sm bdrrn-sm" href=""><i class="far fa-clock pe-2"></i>Since <?php echo $row["date"];?></a>
               </div>
               <div class="property-meta d-flex align-items-center">
-                <a class="text fz15" href=""><i class="flaticon-bed pe-2 align-text-top"></i>3 bed</a>
-                <a class="text ml20 fz15" href=""><i class="flaticon-shower pe-2 align-text-top"></i>4 bath</a>
-                <a class="text ml20 fz15" href=""><i class="flaticon-expand pe-2 align-text-top"></i>1200 sqft</a>
+                <a class="text fz15" href=""><i class="flaticon-bed pe-2 align-text-top"></i><?php echo $row["no_bedroom"];?> bed</a>
+                <a class="text ml20 fz15" href=""><i class="flaticon-shower pe-2 align-text-top"></i><?php echo $row["no_bathroom"];?> bath</a>
+                <a class="text ml20 fz15" href=""><i class="flaticon-expand pe-2 align-text-top"></i><?php echo $row["room_size"];?> sqft</a>
               </div>
             </div>
           </div>
@@ -336,8 +155,7 @@
                   <a class="icon mr10" href=""><span class="flaticon-share-1"></span></a>
                   <a class="icon" href=""><span class="flaticon-printer"></span></a>
                 </div>
-                <h3 class="price mb-0">$958,000</h3>
-                <p class="text space fz15">$2,300/sq ft</p>
+                <h3 class="price mb-0">$<?php echo $row["price"];?></h3>
               </div>
             </div>
           </div>
@@ -399,7 +217,7 @@
                     <span class="icon flaticon-bed"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Bedroom</h6>
-                      <p class="text mb-0 fz15">3</p>
+                      <p class="text mb-0 fz15"><?php echo $row["no_bedroom"];?></p>
                     </div>
                   </div>
                 </div>
@@ -408,7 +226,7 @@
                     <span class="icon flaticon-shower"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Bath</h6>
-                      <p class="text mb-0 fz15">2</p>
+                      <p class="text mb-0 fz15"><?php echo $row["no_bathroom"];?></p>
                     </div>
                   </div>
                 </div>
@@ -416,8 +234,8 @@
                   <div class="overview-element mb25 d-flex align-items-center">
                     <span class="icon flaticon-event"></span>
                     <div class="ml15">
-                      <h6 class="mb-0">Year Built</h6>
-                      <p class="text mb-0 fz15">2022</p>
+                      <h6 class="mb-0">Date Built</h6>
+                      <p class="text mb-0 fz15"><?php echo $row["date"];?></p>
                     </div>
                   </div>
                 </div>
@@ -426,7 +244,7 @@
                     <span class="icon flaticon-garage"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Garage</h6>
-                      <p class="text mb-0 fz15">2</p>
+                      <p class="text mb-0 fz15"><?php echo $row["garage"];?></p>
                     </div>
                   </div>
                 </div>
@@ -435,7 +253,7 @@
                     <span class="icon flaticon-expand"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Sqft</h6>
-                      <p class="text mb-0 fz15">1200</p>
+                      <p class="text mb-0 fz15"><?php echo $row["room_size"];?></p>
                     </div>
                   </div>
                 </div>
@@ -444,7 +262,7 @@
                     <span class="icon flaticon-home-1"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Property Type</h6>
-                      <p class="text mb-0 fz15">Apartment</p>
+                      <p class="text mb-0 fz15"><?php echo $row["category"];?></p>
                     </div>
                   </div>
                 </div>
@@ -452,58 +270,7 @@
             </div>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30">Property Description</h4>
-              <p class="text mb10">This 3-bed with a loft, 2-bath home in the gated community of The Hideout has it all. From the open floor plan to the abundance of light from the windows, this home is perfect for entertaining. The living room and dining room have vaulted ceilings and a beautiful fireplace. You will love spending time on the deck taking in the beautiful views. In the kitchen, you'll find stainless steel appliances and a tile backsplash, as well as a breakfast bar.</p>
-              <div class="agent-single-accordion">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
-                      <div class="accordion-body p-0"><p class="text">Placeholder content for this accordion, which is intended to demonstrate the class. This is the first item's accordion body you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need.</p></div>
-                    </div>
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Show more</button>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <h4 class="title fz17 mb30 mt50">Property Details</h4>
-              <div class="row">
-                <div class="col-md-6 col-xl-4">
-                  <div class="d-flex justify-content-between">
-                    <div class="pd-list">
-                      <p class="fw600 mb10 ff-heading dark-color">Property ID</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Price</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Property Size</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Bathrooms</p>
-                      <p class="fw600 mb-0 ff-heading dark-color">Bedrooms</p>
-                    </div>
-                    <div class="pd-list">
-                      <p class="text mb10">RT48</p>
-                      <p class="text mb10">$252,000</p>
-                      <p class="text mb10">1500 Sq Ft</p>
-                      <p class="text mb10">3</p>
-                      <p class="text mb-0">2</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-4 offset-xl-2">
-                  <div class="d-flex justify-content-between">
-                    <div class="pd-list">
-                      <p class="fw600 mb10 ff-heading dark-color">Garage</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Garage Size</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Year Built</p>
-                      <p class="fw600 mb10 ff-heading dark-color">Property Type</p>
-                      <p class="fw600 mb-0 ff-heading dark-color">Property Status</p>
-                    </div>
-                    <div class="pd-list">
-                      <p class="text mb10">2</p>
-                      <p class="text mb10">200 SqFt</p>
-                      <p class="text mb10">2022</p>
-                      <p class="text mb10">Apartment</p>
-                      <p class="text mb-0">For Sale</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p class="text mb10"><?php echo $row["description"];?></p>
             </div>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30 mt30">Address</h4>
@@ -516,23 +283,21 @@
                       <p class="fw600 mb-0 ff-heading dark-color">State/county</p>
                     </div>
                     <div class="pd-list">
-                      <p class="text mb10">10425 Tabor St</p>
-                      <p class="text mb10">Nairobi</p>
-                      <p class="text mb-0">California</p>
+                      <p class="text mb10"><?php echo $row["address"];?></p>
+                      <p class="text mb10"><?php echo $row["state"];?></p>
+                      <p class="text mb-0"><?php echo $row["city"];?></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-xl-4 offset-xl-2">
                   <div class="d-flex justify-content-between">
                     <div class="pd-list">
-                      <p class="fw600 mb10 ff-heading dark-color">Zip/Postal Code</p>
                       <p class="fw600 mb10 ff-heading dark-color">Area</p>
-                      <p class="fw600 mb-0 ff-heading dark-color">Country</p>
+                      <p class="fw600 mb-0 ff-heading dark-color">County</p>
                     </div>
                     <div class="pd-list">
-                      <p class="text mb10">90034</p>
-                      <p class="text mb10">Brookside</p>
-                      <p class="text mb-0">United States</p>
+                      <p class="text mb10"><?php echo $row["street"];?></p>
+                      <p class="text mb-0"><?php echo $row["county"];?></p>
                     </div>
                   </div>
                 </div>
@@ -567,466 +332,6 @@
                     <p class="text mb10"><i class="fas fa-circle fz6 align-middle pe-2"></i>Washer</p>
                     <p class="text mb-0"><i class="fas fa-circle fz6 align-middle pe-2"></i>WiFi6<p>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Energy Class</h4>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="pd-list d-flex justify-content-between">
-                    <p class="text mb10">Global Energy Performance Index</p>
-                    <p>A+</p>
-                  </div>
-                  <div class="pd-list d-flex justify-content-between">
-                    <p class="text mb10">Renewable energy performance index</p>
-                    <p>92.42 kWh / m²a</p>
-                  </div>
-                  <div class="pd-list d-flex justify-content-between">
-                    <p class="text mb10">Energy performance of the building</p>
-                    <p>00.00 kWh / m²a</p>
-                  </div>
-                  <div class="pd-list d-flex justify-content-between">
-                    <p class="text mb10">EPC Current Rating</p>
-                    <p>92</p>
-                  </div>
-                  <div class="pd-list d-flex justify-content-between">
-                    <p class="text mb10">EPC Potential Rating</p>
-                    <p>80+</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 mt20">
-                  <img class="w-100" src="images/resource/energy-class.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Floor Plans</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="accordion-style1 style2">
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFirst">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirst" aria-expanded="true" aria-controls="collapseFirst">
-                            <span class="w-100 d-md-flex align-items-center">
-                              <span class="mr10-sm">First Floor</span>
-                              <span class="ms-auto d-md-flex align-items-center justify-content-end">
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Size:</span>
-                                  <span class="text">1267 Sqft</span>
-                                </span>
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Bedrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Bathrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span>
-                                  <span class="fw600">Price</span>
-                                  <span class="text">$920,99</span>
-                                </span>
-                              </span>
-                            </span>
-                          </button>
-                        </h2>
-                        <div id="collapseFirst" class="accordion-collapse collapse" aria-labelledby="headingFirst" data-parent="#accordionExample">
-                          <div class="accordion-body text-center"><img class="w-100" src="images/listings/listing-single-1.png" alt=""></div>
-                        </div>
-                      </div>
-                      <div class="accordion-item active">
-                        <h2 class="accordion-header" id="headingSecond">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond">
-                            <span class="w-100 d-md-flex align-items-center">
-                              <span class="mr10-sm">Second Floor</span>
-                              <span class="ms-auto d-md-flex align-items-center justify-content-end">
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Size:</span>
-                                  <span class="text">1267 Sqft</span>
-                                </span>
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Bedrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span class="me-2 me-md-4">
-                                  <span class="fw600">Bathrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span>
-                                  <span class="fw600">Price</span>
-                                  <span class="text">$920,99</span>
-                                </span>
-                              </span>
-                            </span>
-                          </button>
-                        </h2>
-                        <div id="collapseSecond" class="accordion-collapse collapse show" aria-labelledby="headingSecond" data-parent="#accordionExample">
-                          <div class="accordion-body text-center"><img class="w-100" src="images/listings/listing-single-1.png" alt=""></div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThird">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThird" aria-expanded="false" aria-controls="collapseThird">
-                            <span class="w-100 d-md-flex align-items-center">
-                              <span class="mr10-sm">Third Floor</span>
-                              <span class="ms-auto d-md-flex align-items-center justify-content-end">
-                                <span class="me-4">
-                                  <span class="fw600">Size:</span>
-                                  <span class="text">1267 Sqft</span>
-                                </span>
-                                <span class="me-4">
-                                  <span class="fw600">Bedrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span class="me-4">
-                                  <span class="fw600">Bathrooms</span>
-                                  <span class="text">2</span>
-                                </span>
-                                <span>
-                                  <span class="fw600">Price</span>
-                                  <span class="text">$920,99</span>
-                                </span>
-                              </span>
-                            </span>
-                          </button>
-                        </h2>
-                        <div id="collapseThird" class="accordion-collapse collapse" aria-labelledby="headingThird" data-parent="#accordionExample">
-                          <div class="accordion-body text-center"><img class="w-100" src="images/listings/listing-single-1.png" alt=""></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Video</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="property_video bdrs12 w-100">
-                    <a class="video_popup_btn mx-auto popup-img popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="flaticon-play"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">360° Virtual Tour</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <img src="images/listings/listing-single-7.jpg" alt="" class="w-100 bdrs12">
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">What's Nearby?</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="navtab-style1">
-                    <nav>
-                      <div class="nav nav-tabs mb20" id="nav-tab2" role="tablist">
-                        <button class="nav-link fw600 active" id="nav-item1-tab" data-bs-toggle="tab" data-bs-target="#nav-item1" type="button" role="tab" aria-controls="nav-item1" aria-selected="true">Education</button>
-                        <button class="nav-link fw600" id="nav-item2-tab" data-bs-toggle="tab" data-bs-target="#nav-item2" type="button" role="tab" aria-controls="nav-item2" aria-selected="false">Health & Medical</button>
-                        <button class="nav-link fw600" id="nav-item3-tab" data-bs-toggle="tab" data-bs-target="#nav-item3" type="button" role="tab" aria-controls="nav-item3" aria-selected="false">Transportation</button>
-                      </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade fz15 active show" id="nav-item1" role="tabpanel" aria-labelledby="nav-item1-tab">
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">4</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">South Londonderry Elementary School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Senior High School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center">
-                          <div class="rating style2 dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Middle School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade fz15" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2-tab">
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">4</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">South Londonderry Elementary School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Senior High School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center">
-                          <div class="rating style2 dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Middle School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade fz15" id="nav-item3" role="tabpanel" aria-labelledby="nav-item3-tab">
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">4</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">South Londonderry Elementary School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center mb20">
-                          <div class="rating dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Senior High School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearby d-sm-flex align-items-center">
-                          <div class="rating style2 dark-color mr15 ms-1 mt10-xs mb10-xs"><span class="fw600 fz14">5</span><span class="text fz14">/10</span></div>
-                          <div class="details">
-                            <p class="dark-color fw600 mb-0">Londonderry Middle School</p>
-                            <p class="text mb-0">Grades: PK-6   Distance: 3.7 mi</p>
-                            <div class="blog-single-review">
-                              <ul class="mb0 ps-0">
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Walkscore</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="fw400 mb20">10425 Tabor St Nairobi CA 90034 Kenya</h4>
-                  <div class="walkscore d-sm-flex align-items-center mb20">
-                    <span class="icon mr15 mb10-sm flaticon-walking"></span>
-                    <div class="details">
-                      <p class="dark-color fw600 mb-2">Walk Score</p>
-                      <p class="text mb-0">57 / 100  (Somewhat Walkable)</p>
-                    </div>
-                  </div>
-                  <div class="walkscore d-sm-flex align-items-center mb20">
-                    <span class="icon mr15 mb10-sm flaticon-bus"></span>
-                    <div class="details">
-                      <p class="dark-color fw600 mb-2">Transit Score</p>
-                      <p class="text mb-0">27 / 100  (Some Transit)</p>
-                    </div>
-                  </div>
-                  <div class="walkscore d-sm-flex align-items-center">
-                    <span class="icon mr15 mb10-sm flaticon-bike"></span>
-                    <div class="details">
-                      <p class="dark-color fw600 mb-2">Walk Score</p>
-                      <p class="text mb-0">45 / 100  (Somewhat Bikeable)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Mortgage Calculator</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="d-flex align-items-center flex-wrap calculator-chart-percent">
-                    <div class="principal-interest-st"></div>
-                    <div class="property-tax-st"></div>
-                    <div class="home-insurance-st"></div>
-                  </div>
-                  <ul class="list-result-calculator d-md-flex flex-wrap justify-content-between bdrb1 mt20 ps-0 pb15 mb-0">
-                    <li class="d-sm-flex align-items-center">
-                      <span class="name-result text">Principal and Interest</span>
-                      <span class="principal-interest-val fw600">$2,412</span>
-                    </li>
-                    <li class="d-sm-flex align-items-center">
-                      <span class="name-result text">Property Taxes</span>
-                      <span class="property-tax-val fw600">$2,412</span>
-                    </li>
-                    <li class="d-sm-flex align-items-center"> 
-                      <span class="name-result text">Homeowners' Insurance</span>
-                      <span class="home-insurance-val fw600">$2,412</span>
-                    </li>
-                  </ul>
-                  <form class="comments_form mt30">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Total Amount</label>
-                          <input type="text" class="form-control" placeholder="$ 250">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Down Payment</label>
-                          <input type="text" class="form-control" placeholder="$2304">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Interest Rate</label>
-                          <input type="text" class="form-control" placeholder="%3.5">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Loan Terms (Years)</label>
-                          <input type="text" class="form-control" placeholder="12">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Property Tax</label>
-                          <input type="text" class="form-control" placeholder="$1000">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-4">
-                          <label class="fw600 ff-heading mb-2">Home Insurance</label>
-                          <input type="text" class="form-control" placeholder="$1000">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <a href="page-property-single-v1.html" class="ud-btn btn-white2">Calculate<i class="fal fa-arrow-right-long"></i></a>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="navtab-style1">
-                    <div class="d-sm-flex align-items-center justify-content-between">
-                      <h4 class="title fz17 mb20">Property Views</h4>
-                      <ul class="nav nav-tabs border-bottom-0 mb30" id="myTab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="hourly-tab" data-bs-toggle="tab" href="#hourly" role="tab" aria-controls="hourly" aria-selected="true">Hours</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Monthly</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-content" id="myTabContent2">
-                      <div class="tab-pane fade show active" id="hourly" role="tabpanel" aria-labelledby="hourly-tab">
-                        <canvas class="chart-container" id="doublebar-chart"></canvas>
-                      </div>
-                      <div class="tab-pane w-100 fade" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
-                        <div class="chart-container">
-                          <div class="c_container w-100"></div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
-                        <div class="chart pt20">
-                          <canvas id="myChart" width="400" height="200"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Home Value</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <canvas class="canvas w-100" id="myChartweave"></canvas>
                 </div>
               </div>
             </div>
