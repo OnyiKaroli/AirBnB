@@ -3,6 +3,8 @@
 
   $id = $_GET['id'];
   $title = $_GET['title'];
+  $agent_id = $_GET['agent_id'];
+
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -344,206 +346,22 @@
                 <div class="single-img mb30-sm">
                   <img class="w90" src="images/team/agent-3.png" alt="">
                 </div>
+
+                <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT * FROM `agents` WHERE `id` = '$agent_id'") or die(mysqli_error($server));
+                ?>
+
                 <div class="single-contant ml30 ml0-xs">
-                  <h6 class="title mb-1">Arlene McCoy</h6>
+                  <h6 class="title mb-1"><?php echo $row["name"];?></h6>
                   <div class="agent-meta mb10 d-md-flex align-items-center">
-                    <a class="text fz15 pe-2 bdrr1" href=""><i class="flaticon-call pe-1"></i>(920) 012-3421</a>
-                    <a class="text fz15 pe-2 ps-2 bdrr1" href=""><i class="flaticon-smartphone pe-1"></i>(920) 012-4390</a>
-                    <a class="text fz15 ps-2" href=""><i class="flaticon-whatsapp pe-1"></i>WhatsApp</a>
+                    <a class="text fz15 pe-2 bdrr1" href=""><i class="flaticon-call pe-1"></i><?php echo $row["tel"];?></a>
                   </div>
                   <div class="agent-social">
                     <a class="mr20" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="mr20" href=""><i class="fab fa-twitter"></i></a>
                     <a class="mr20" href=""><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <form class="form-style1 row">
-                    <div class="col-md-6">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Name</label>
-                        <input type="text" class="form-control" placeholder="Ali Tufan">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Phone</label>
-                        <input type="text" class="form-control" placeholder="Enter your phone">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Email</label>
-                        <input type="email" class="form-control" placeholder="creativelayers088">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="widget-wrapper sideborder-dropdown psp-review mb20">
-                        <label class="heading-color ff-heading fw600 mb10">I'm a</label>
-                        <div class="form-style2 input-group">
-                          <select class="selectpicker" data-width="100%">
-                            <option>Select</option>
-                            <option value="Engineer">Engineer</option>
-                            <option value="Doctor">Doctor</option>
-                            <option value="Employee">Employee</option>
-                            <option value="Businessman">Businessman</option>
-                            <option value="Other">Other</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="mb10">
-                        <label class="heading-color ff-heading fw600 mb10">Message</label>
-                        <textarea cols="30" rows="4" placeholder="Hello, I am interested in [Renovated apartment at last floor]"></textarea>
-                      </div>
-                    </div>
-                    <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                      <label class="custom_checkbox fz14 ff-heading">By submitting this form I agree to Terms of Use
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="btn-area">
-                      <button class="ud-btn btn-white2">Request Information <i class="fal fa-arrow-right-long"></i></button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="product_single_content">
-                    <div class="mbp_pagination_comments">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="total_review d-flex align-items-center justify-content-between mb20">
-                            <h6 class="fz17 mb15"><i class="fas fa-star fz12 pe-2"></i>5.0 · 3 reviews</h6>
-                            <div class="page_control_shorting d-flex align-items-center justify-content-center justify-content-sm-end">
-                              <div class="pcs_dropdown mb15"><span>Sort by</span>
-                                <select class="selectpicker show-tick">
-                                  <option>Newest</option>
-                                  <option>Best Seller</option>
-                                  <option>Best Match</option>
-                                  <option>Price Low</option>
-                                  <option>Price High</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mbp_first position-relative d-flex align-items-center justify-content-start mb30-sm">
-                            <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
-                            <div class="ml20">
-                              <h6 class="mt-0 mb-0">Bessie Cooper</h6>
-                              <div><span class="fz14">12 March 2022</span>
-                                <div class="blog-single-review">
-                                  <ul class="mb0 ps-0">
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <p class="text mt20 mb20">Every single thing we tried with John was delicious! Found some awesome places we would definitely go back to on our trip. John was also super friendly and passionate about Beşiktaş and Istanbul.</p>
-                          <ul class="mb20 ps-0">
-                            <li class="list-inline-item mb5-sm"><img class="bdrs6" src="images/blog/blog-single-3.jpg" alt="review-img"></li>
-                            <li class="list-inline-item mb5-sm"><img class="bdrs6" src="images/blog/blog-single-4.jpg" alt="review-img"></li>
-                            <li class="list-inline-item mb5-sm"><img class="bdrs6" src="images/blog/blog-single-5.jpg" alt="review-img"></li>
-                            <li class="list-inline-item mb5-sm"><img class="bdrs6" src="images/blog/blog-single-6.jpg" alt="review-img"></li>
-                          </ul>
-                          <div class="review_cansel_btns d-flex bdrb1 pb30">
-                            <a href="#"><i class="fas fa-thumbs-up"></i>Helpful</a>
-                            <a href="#"><i class="fas fa-thumbs-down"></i>Not helpful</a>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mbp_first position-relative d-flex align-items-center justify-content-start mt30 mb30-sm">
-                            <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
-                            <div class="ml20">
-                              <h6 class="mt-0 mb-0">Darrell Steward</h6>
-                              <div><span class="fz14">12 March 2022</span>
-                                <div class="blog-single-review">
-                                  <ul class="mb0 ps-0">
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                    <li class="list-inline-item me-0"><a href="#"><i class="fas fa-star review-color2 fz10"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <p class="text mt20 mb20">Every single thing we tried with John was delicious! Found some awesome places we would definitely go back to on our trip. John was also super friendly and passionate about Beşiktaş and Istanbul.</p>
-                          <div class="review_cansel_btns d-flex bdrb1 pb30">
-                            <a href="#"><i class="fas fa-thumbs-up"></i>Helpful</a>
-                            <a href="#"><i class="fas fa-thumbs-down"></i>Not helpful</a>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="position-relative pt30">
-                            <a href="page-property-single-v1.html" class="ud-btn btn-white2">Show all 134 reviews<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Leave A Review</h4>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="bsp_reveiw_wrt">
-                    <form class="comments_form">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="mb-4">
-                            <label class="fw600 ff-heading mb-2">Email</label>
-                            <input type="email" class="form-control" placeholder="creativelayers088">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="mb-4">
-                            <label class="fw600 ff-heading mb-2">Title</label>
-                            <input type="text" class="form-control" placeholder="Enter Title">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="widget-wrapper sideborder-dropdown psp-review mb-4">
-                            <label class="fw600 ff-heading mb-2">Rating</label>
-                            <div class="form-style2 input-group">
-                              <select class="selectpicker" data-live-search="true" data-width="100%">
-                                <option>Select</option>
-                                <option data-tokens="Five Star">Five Star</option>
-                                <option data-tokens="Four Star">Four Star</option>
-                                <option data-tokens="Three Star">Three Star</option>
-                                <option data-tokens="Two Star">Two Star</option>
-                                <option data-tokens="One Star">One Star</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mb-4">
-                            <label class="fw600 ff-heading mb-2">Review</label>
-                            <textarea class="pt15" rows="6" placeholder="Write a Review"></textarea>
-                          </div>
-                          <a href="page-property-single-v1.html" class="ud-btn btn-white2">Submit Review<i class="fal fa-arrow-right-long"></i></a>
-                        </div>
-                      </div>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -554,14 +372,6 @@
               <h4 class="form-title mb5">Schedule a tour</h4>
               <p class="text">Choose your preferred day</p>
               <div class="ps-navtab">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active mr15 mb5-lg" id="pills-inperson-tab" data-bs-toggle="pill" data-bs-target="#pills-inperson" type="button" role="tab" aria-controls="pills-inperson" aria-selected="true">In Person</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-videochat-tab" data-bs-toggle="pill" data-bs-target="#pills-videochat" type="button" role="tab" aria-controls="pills-videochat" aria-selected="false">Video Chat</button>
-                  </li>
-                </ul>
                 <div class="tab-content" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="pills-inperson" role="tabpanel" aria-labelledby="pills-inperson-tab">
                     <form class="form-style1">
@@ -639,26 +449,6 @@
                 </div>
               </div>
             </div>
-            <div class="agen-personal-info position-relative bgc-white default-box-shadow2 bdrs12 p30 mb30">
-              <div class="widget-wrapper mb-0">
-                <h6 class="title fz17 mb30">Get More Information</h6>
-                <div class="agent-single d-sm-flex align-items-center pb25">
-                  <div class="single-img mb30-sm">
-                    <img class="w90" src="images/team/agent-3.png" alt="">
-                  </div>
-                  <div class="single-contant ml20 ml0-xs">
-                    <h6 class="title mb-1">Arlene McCoy</h6>
-                    <div class="agent-meta mb10 d-md-flex align-items-center">
-                      <a class="text fz15" href=""><i class="flaticon-call pe-1"></i>(920) 012-3421</a>
-                    </div>
-                    <a href="" class="text-decoration-underline fw600">View Listings</a>
-                  </div>
-                </div>
-                <div class="d-grid">
-                  <button class="ud-btn btn-white2">Contact Agent<i class="fal fa-arrow-right-long"></i></button>
-                </div>
-              </div>
-            </div>
             <?php
               include 'listing_sidebar.php';
             ?>
@@ -666,91 +456,63 @@
               <div class="widget-wrapper">
                 <h6 class="list-title">Property Showcase</h6>
                 <div class="listing-style1 sidebar-style1">
+
+                <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND() LIMIT 2") or die(mysqli_error($server));
+                //$result = mysqli_query($conn, $query);
+
+                if (mysqli_num_rows($query) > 0) {
+                // OUTPUT DATA OF EACH ROW
+                while($row = mysqli_fetch_assoc($query)) {
+                ?>
+
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                    <div class="list-price">$14,000 / <span>mo</span></div>
+                    <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content px-0 pb-0">
-                    <h6 class="list-title mb-1"><a href="">House on the Northridge</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <h6 class="list-title mb-1"><a href=""><?php echo $row["title"];?></a></h6>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
+                      <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
+                      <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
+                      <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
                     <hr class="mt-2 mb-2">
                     <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
+                      <span class="for-what"><?php echo $row["listed_in"];?></span>
                       <div class="icons d-flex align-items-center">
                         <a href=""><span class="flaticon-fullscreen"></span></a>
                         <a href=""><span class="flaticon-new-tab"></span></a>
                         <a href=""><span class="flaticon-like"></span></a>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="listing-style1 sidebar-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-7.jpg" alt="">
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content px-0 pb-0">
-                    <h6 class="list-title mb-1"><a href="">New apartment nice view</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
+                  </div><?php }}?>
                 </div>
               </div>
               <div class="widget-wrapper">
+                <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND() LIMIT 3") or die(mysqli_error($server));
+                //$result = mysqli_query($conn, $query);
+
+                if (mysqli_num_rows($query) > 0) {
+                // OUTPUT DATA OF EACH ROW
+                while($row = mysqli_fetch_assoc($query)) {
+                ?>
                 <div class="list-news-style d-flex align-items-center mb20">
                   <div class="news-img flex-shrink-0"><img src="images/listings/ps-s-1.jpg" alt=""></div>
                   <div class="news-content flex-shrink-1 ms-3">
-                    <h5 class="title mb0">$14,000 /<span class="fz15">mo</span></h5>
-                    <p class="new-text mb0 fz14">House on the Northridge</p>
+                    <h5 class="title mb0">$<?php echo $row["price"];?> /<span class="fz15">mo</span></h5>
+                    <p class="new-text mb0 fz14"><?php echo $row["title"];?></p>
                     <div class="list-meta">
-                      <a class="me-2" href=""><span class="flaticon-bed pe-1"></span>3</a>
-                      <a class="me-2" href=""><span class="flaticon-shower pe-1"></span>4</a>
-                      <a href=""><span class="flaticon-expand pe-1"></span>1200</a>
+                      <a class="me-2" href=""><span class="flaticon-bed pe-1"></span><?php echo $row["no_bedroom"];?></a>
+                      <a class="me-2" href=""><span class="flaticon-shower pe-1"></span><?php echo $row["no_bathroom"];?></a>
+                      <a href=""><span class="flaticon-expand pe-1"></span><?php echo $row["room_size"];?></a>
                     </div>
                   </div>
-                </div>
-                <div class="list-news-style d-flex align-items-center mb20">
-                  <div class="news-img flex-shrink-0"><img src="images/listings/ps-s-2.jpg" alt=""></div>
-                  <div class="news-content flex-shrink-1 ms-3">
-                    <h5 class="title mb0">$14,000 /<small>mo</small></h5>
-                    <p class="mb0">House on the Northridge</p>
-                    <div class="list-meta">
-                      <a class="me-2" href=""><span class="flaticon-bed pe-1"></span>3</a>
-                      <a class="me-2" href=""><span class="flaticon-shower pe-1"></span>4</a>
-                      <a href=""><span class="flaticon-expand pe-1"></span>1200</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-news-style d-flex align-items-center">
-                  <div class="news-img flex-shrink-0"><img src="images/listings/ps-s-3.jpg" alt=""></div>
-                  <div class="news-content flex-shrink-1 ms-3">
-                    <h5 class="title mb0">$14,000 /<small>mo</small></h5>
-                    <p class="mb0">House on the Northridge</p>
-                    <div class="list-meta">
-                      <a class="me-2" href=""><span class="flaticon-bed pe-1"></span>3</a>
-                      <a class="me-2" href=""><span class="flaticon-shower pe-1"></span>4</a>
-                      <a href=""><span class="flaticon-expand pe-1"></span>1200</a>
-                    </div>
-                  </div>
-                </div>
+                </div><?php }}?>
               </div>
               <div class="widget-wrapper">
               </div>

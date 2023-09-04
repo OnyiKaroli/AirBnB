@@ -1,6 +1,11 @@
 <?php
-    echo "<a href='property-single?id=".$column["id"]."'>".$column['title']."</a>";
+    echo "<a href='property-single?id=".$row["id"]."'>".$row['title']."</a>";
+    echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."'>".$row['title']."</a>";
+    <?php echo "<a href='property-single?id=".$row["id"]."'>".$row["title"]."</a>"; ?>
     <?php echo $row["no_bedroom"];?>
+    <?php echo $row["street"], $row["city"], $row["county"];?>
+
+    $join = mysqli_query($server, "SELECT properties.*, agents.id FROM properties LEFT JOIN agents ON properties.agent_id = agents.id") or die(mysqli_error($server))
 
         <?php
             //SQL Query

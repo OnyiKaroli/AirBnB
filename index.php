@@ -604,7 +604,7 @@
                     <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."'>".$row["title"]."</a>"; ?></h6>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."'>".$row["title"]."</a>"; ?></h6>
                     <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
@@ -744,14 +744,14 @@
                   ?> 
 
                   <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html"><?php $row["title"]; ?></a></h6>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."'>".$row["title"]."</a>"; ?></h6>
                     <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
                       <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
                       <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
-                    <a href="#" class="btn mt15 fz15">View House<i class="fal fa-arrow-right-long"></i></a>
+                    <?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."' class='btn mt15 fz15'>View House<i class='fal fa-arrow-right-long'></i></a>"; ?>
                   </div><?php }}?>
                 </div>
               </div>
