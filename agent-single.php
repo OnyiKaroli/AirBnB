@@ -122,15 +122,15 @@
                     </li>
                     <li> <a href="#"><span class="title">Dashboard</span></a>
                       <ul>
-                        <li><a href="page-dashboard.html">Dashboard</a></li>
-                        <li><a href="page-dashboard-message.html">Message</a></li>
+                        <li><a href="dashboard">Dashboard</a></li>
+                        <li><a href="dashboard-message.html">Message</a></li>
                         <li><a href="dashboard-add-property.php">New Property</a></li>
-                        <li><a href="page-dashboard-properties.html">My Properties</a></li>
-                        <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-                        <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-                        <li><a href="page-dashboard-review.html">Reviews</a></li>
-                        <li><a href="page-dashboard-package.html">My Package</a></li>
-                        <li><a href="page-dashboard-profile.html">My Profile</a></li>
+                        <li><a href="dashboard-properties.html">My Properties</a></li>
+                        <li><a href="dashboard-favorites.html">My Favorites</a></li>
+                        <li><a href="dashboard-savesearch.html">Saved Search</a></li>
+                        <li><a href="dashboard-review.html">Reviews</a></li>
+                        <li><a href="dashboard-package.html">My Package</a></li>
+                        <li><a href="dashboard-profile.html">My Profile</a></li>
                       </ul>
                     </li>
                     <li> <a href="#"><span class="title">Map Style</span></a>
@@ -420,15 +420,15 @@
         </li>
         <li><span>User Dashboard</span>
           <ul>
-            <li><a href="page-dashboard.html">Dashboard</a></li>
-            <li><a href="page-dashboard-message.html">Message</a></li>
+            <li><a href="dashboard">Dashboard</a></li>
+            <li><a href="dashboard-message.html">Message</a></li>
             <li><a href="dashboard-add-property.php">New Property</a></li>
-            <li><a href="page-dashboard-properties.html">My Properties</a></li>
-            <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-            <li><a href="page-dashboard-savesearch.html">Saved Search</a></li>
-            <li><a href="page-dashboard-review.html">Reviews</a></li>
-            <li><a href="page-dashboard-package.html">My Package</a></li>
-            <li><a href="page-dashboard-profile.html">My Profile</a></li>
+            <li><a href="dashboard-properties.html">My Properties</a></li>
+            <li><a href="dashboard-favorites.html">My Favorites</a></li>
+            <li><a href="dashboard-savesearch.html">Saved Search</a></li>
+            <li><a href="dashboard-review.html">Reviews</a></li>
+            <li><a href="dashboard-package.html">My Package</a></li>
+            <li><a href="dashboard-profile.html">My Profile</a></li>
           </ul>
         </li>
         <li><span>Blog</span>

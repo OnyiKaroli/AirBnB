@@ -1,3 +1,6 @@
+<?php
+  include 'config/conn.php';
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -75,7 +78,7 @@
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
+                <p class="info-title dark-color">Need Live Support?</p>
                 <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
@@ -230,141 +233,25 @@
           </div>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 wow fadeInUp" data-wow-delay="100ms">
+
+        <?php
+            //SQL Query
+            $query = mysqli_query($server, "SELECT * FROM `agents` ORDER BY RAND()") or die(mysqli_error($server));
+            
+            if (mysqli_num_rows($query) > 0) {
+            // OUTPUT DATA OF EACH ROW
+            while($row = mysqli_fetch_assoc($query)) {
+        ?>
+
           <div class="col">
             <div class="feature-style2 mb30">
               <div class="feature-img"><img class="bdrs12" src="images/team/agent-1.jpg" alt=""></div>
               <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
+                <h6 class="title mb-1"><?php echo $row["name"];?></h6>
+                <p class="text fz15"><?php echo $row["house_category"];?></p>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-2.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-3.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-4.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-5.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-6.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-7.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-8.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-9.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-10.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-11.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-12.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-13.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-14.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-15.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
+          </div><?php }}?>
         </div>
         <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
           <div class="mbp_pagination text-center">
