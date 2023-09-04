@@ -129,6 +129,10 @@
   <div class="body_content">
     <!-- Property All Lists -->
     <section class="pt60 pb90 bgc-f7">
+    <?php
+      $select = mysqli_query($server, "SELECT * FROM `properties` WHERE `id`='$id'") or die(mysqli_error($server));
+      while ($row = mysqli_fetch_assoc($select)) {
+    ?> 
       <div class="container">
         <div class="row mb30 wow fadeInUp" data-wow-delay="100ms">
           <div class="col-lg-8">
@@ -244,7 +248,7 @@
                     <span class="icon flaticon-garage"></span>
                     <div class="ml15">
                       <h6 class="mb-0">Garage</h6>
-                      <p class="text mb-0 fz15"><?php echo $row["garage"];?></p>
+                      <p class="text mb-0 fz15"><?php echo $row["garage_size"];?></p>
                     </div>
                   </div>
                 </div>
@@ -280,11 +284,9 @@
                     <div class="pd-list">
                       <p class="fw600 mb10 ff-heading dark-color">Address</p>
                       <p class="fw600 mb10 ff-heading dark-color">City</p>
-                      <p class="fw600 mb-0 ff-heading dark-color">State/county</p>
                     </div>
                     <div class="pd-list">
                       <p class="text mb10"><?php echo $row["address"];?></p>
-                      <p class="text mb10"><?php echo $row["state"];?></p>
                       <p class="text mb-0"><?php echo $row["city"];?></p>
                     </div>
                   </div>
@@ -335,6 +337,7 @@
                 </div>
               </div>
             </div>
+            <?php }?>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30">Get More Information</h4>
               <div class="agent-single d-sm-flex align-items-center bdrb1 mb30 pb25">
@@ -656,255 +659,9 @@
                 </div>
               </div>
             </div>
-            <div class="list-sidebar-style1 mb30">
-              <div class="widget-wrapper">
-                <h6 class="list-title">Find your home</h6>
-                <div class="search_area">
-                  <input type="text" class="form-control" placeholder="What are you looking for?">
-                  <label><span class="flaticon-search"></span></label>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Listing Status</h6>
-                <div class="radio-element">
-                  <div class="form-check d-flex align-items-center mb10">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">Buy</label>
-                  </div>
-                  <div class="form-check d-flex align-items-center mb10">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="checked">
-                    <label class="form-check-label" for="flexRadioDefault2">Rent</label>
-                  </div>
-                  <div class="form-check d-flex align-items-center">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">Sold</label>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Property Type</h6>
-                <div class="checkbox-style1">
-                  <label class="custom_checkbox">Houses
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="custom_checkbox">Apartments
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="custom_checkbox">Office
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="custom_checkbox">Villa
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="custom_checkbox">Townhome
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Price Range</h6>
-                <!-- Range Slider Mobile Version -->
-                <div class="range-slider-style2">
-                  <div class="range-wrapper">
-                    <div class="mb30 mt35" id="slider"></div>
-                    <div class="d-flex align-items-center">
-                      <span id="slider-range-value1"></span><i class="fa-sharp fa-solid fa-minus mx-2 dark-color icon"></i>
-                      <span id="slider-range-value2"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Bedrooms</h6>
-                <div class="d-flex">
-                  <div class="selection">
-                    <input id="any" name="beds" type="radio" checked>
-                    <label for="any">any</label>
-                  </div>
-                  <div class="selection">
-                    <input id="oneplus" name="beds" type="radio">
-                    <label for="oneplus">1+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="twoplus" name="beds" type="radio">
-                    <label for="twoplus">2+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="threeplus" name="beds" type="radio">
-                    <label for="threeplus">3+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="fourplus" name="beds" type="radio">
-                    <label for="fourplus">4+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="fiveplus" name="beds" type="radio">
-                    <label for="fiveplus">5+</label>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Bathrooms</h6>
-                <div class="d-flex">
-                  <div class="selection">
-                    <input id="bathany" name="bath" type="radio" checked>
-                    <label for="bathany">any</label>
-                  </div>
-                  <div class="selection">
-                    <input id="bathoneplus" name="bath" type="radio">
-                    <label for="bathoneplus">1+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="bathtwoplus" name="bath" type="radio">
-                    <label for="bathtwoplus">2+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="baththreeplus" name="bath" type="radio">
-                    <label for="baththreeplus">3+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="bathfourplus" name="bath" type="radio">
-                    <label for="bathfourplus">4+</label>
-                  </div>
-                  <div class="selection">
-                    <input id="bathfiveplus" name="bath" type="radio">
-                    <label for="bathfiveplus">5+</label>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper advance-feature-modal">
-                <h6 class="list-title">Location</h6>
-                <div class="form-style2 input-group">
-          <select class="selectpicker" data-width="100%">
-            <option>All Cities</option>
-            <option data-tokens="California">California</option>
-            <option data-tokens="Kisumu">Kisumu</option>
-            <option data-tokens="LosAngeles">Nairobi</option>
-            <option data-tokens="Manhattan">Manhattan</option>
-            <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">Naivasha</option>
-            <option data-tokens="SanDiego">San Diego</option>
-            <option data-tokens="SanFrancisco">San Francisco</option>
-            <option data-tokens="Texas">Texas</option>
-          </select>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Square Feet</h6>
-                <div class="space-area">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <div class="form-style1">
-                      <input type="text" class="form-control" placeholder="Min.">
-                    </div>
-                    <span class="dark-color">-</span>
-                    <div class="form-style1">
-                      <input type="text" class="form-control" placeholder="Max">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <h6 class="list-title">Year Built</h6>
-                <div class="space-area">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <div class="form-style1">
-                      <input type="text" class="form-control" placeholder="2019">
-                    </div>
-                    <span class="dark-color">-</span>
-                    <div class="form-style1">
-                      <input type="text" class="form-control" placeholder="2022">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper">
-                <div class="feature-accordion">
-                  <div class="accordion" id="accordionExampleN">
-                    <div class="accordion-item border-none">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button border-none p-0 after-none feature-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="flaticon-settings"></span> Other Features</button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleN">
-                        <div class="accordion-body p-0 mt15">
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div class="checkbox-style1">
-                                <label class="custom_checkbox">Attic
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Basketball court
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Air Conditioning
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Lawn
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">TV Cable
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Dryer
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="checkbox-style1">
-                                <label class="custom_checkbox">Outdoor Shower
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Washer
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Lake view
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Wine cellar
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Front yard
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                                <label class="custom_checkbox">Refrigerator
-                                  <input type="checkbox">
-                                  <span class="checkmark"></span>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="widget-wrapper mb20">
-                <div class="btn-area d-grid align-items-center">
-                  <button class="ud-btn btn-thm"><span class="flaticon-search align-text-top pr10"></span>Search</button>
-                </div>
-              </div>
-              <div class="reset-area d-flex align-items-center justify-content-between">
-                <a class="reset-button" href="#"><span class="flaticon-turn-back"></span><u>Reset all filters</u></a>
-                <a class="reset-button" href="#"><span class="flaticon-favourite"></span><u>Save Search</u></a>
-              </div>
-            </div>
+            <?php
+              include 'listing_sidebar.php';
+            ?>
             <div class="list-sidebar-style1">
               <div class="widget-wrapper">
                 <h6 class="list-title">Property Showcase</h6>
@@ -1018,169 +775,11 @@
               <div class="item">
                 <div class="listing-style1">
                   <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
                     <div class="list-price">$82,000 / <span>mo</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                    <div class="list-price">$63,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                    <div class="list-price">$63,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-5.jpg" alt="">
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Northwest Office Space</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-6.jpg" alt="">
-                    <div class="list-price">$82,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">House on the beverly hills</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
-                    <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
-                    </div>
-                    <hr class="mt-2 mb-2">
-                    <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
-                      <div class="icons d-flex align-items-center">
-                        <a href=""><span class="flaticon-fullscreen"></span></a>
-                        <a href=""><span class="flaticon-new-tab"></span></a>
-                        <a href=""><span class="flaticon-like"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="listing-style1">
-                  <div class="list-thumb">
-                    <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                    <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                    <div class="list-price">$14,000 / <span>mo</span></div>
-                  </div>
-                  <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
                     <p class="list-text">Nairobi City, CA, Kenya</p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span>3 bed</a>
