@@ -480,11 +480,12 @@
                       <h6 class="title">Houses</h6>
                       <?php
                         // SQL query to count rows with "house" in the category column
-                        $sql = mysqli_query($server,"SELECT COUNT(*) AS total_houses FROM properties WHERE category = 'House'") or die(mysqli_error($server));
-
+                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'house'") or die(mysqli_error($server));
+                        //check rows returned
+                        $count=mysqli_num_rows($checkout_count);
                         
                       ?>
-                      <p class="text mb-0"><?php echo $total_houses;?> Properties</p>
+                      <p class="text mb-0"><?php echo $count;?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -494,8 +495,15 @@
                   <div class="iconbox-style4">
                     <span class="icon flaticon-corporation"></span>
                     <div class="iconbox-content">
+                    <?php
+                        // SQL query to count rows with "house" in the category column
+                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'apartment'") or die(mysqli_error($server));
+                        //check rows returned
+                        $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
                       <h6 class="title">Apartments</h6>
-                      <p class="text mb-0">22 Properties</p>
+                      <p class="text mb-0"><?php echo $count;?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -505,8 +513,15 @@
                   <div class="iconbox-style4">
                     <span class="icon flaticon-network"></span>
                     <div class="iconbox-content">
+                    <?php
+                        // SQL query to count rows with "house" in the category column
+                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'office'") or die(mysqli_error($server));
+                        //check rows returned
+                        $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
                       <h6 class="title">Office</h6>
-                      <p class="text mb-0">22 Properties</p>
+                      <p class="text mb-0"><?php echo $count;?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -516,8 +531,15 @@
                   <div class="iconbox-style4">
                     <span class="icon flaticon-garden"></span>
                     <div class="iconbox-content">
+                    <?php
+                        // SQL query to count rows with "house" in the category column
+                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'villa'") or die(mysqli_error($server));
+                        //check rows returned
+                        $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
                       <h6 class="title">Villa</h6>
-                      <p class="text mb-0">22 Properties</p>
+                      <p class="text mb-0"><?php echo $count;?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -527,8 +549,15 @@
                   <div class="iconbox-style4">
                     <span class="icon flaticon-chat"></span>
                     <div class="iconbox-content">
+                    <?php
+                        // SQL query to count rows with "house" in the category column
+                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'townhome'") or die(mysqli_error($server));
+                        //check rows returned
+                        $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
                       <h6 class="title">Townhome</h6>
-                      <p class="text mb-0">22 Properties</p>
+                      <p class="text mb-0"><?php echo $count;?> Properties</p>
                     </div>
                   </div>
                 </a>

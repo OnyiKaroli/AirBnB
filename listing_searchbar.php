@@ -1,5 +1,5 @@
-<form action="search_listing.php" method="get">
-<div class="list-sidebar-style1">
+<form action="search_listing.php" method="POST">
+            <div class="list-sidebar-style1">
               <div class="widget-wrapper">
                 <h6 class="list-title">Find your home</h6>
                 <div class="search_area">
@@ -126,11 +126,11 @@
             <select class="selectpicker" data-width="100%">
             <option>All Cities</option>
             <option data-tokens="California">California</option>
-            <option data-tokens="Kisumu">Kisumu</option>
-            <option data-tokens="LosAngeles">Nairobi</option>
+            <option data-tokens="Chicago">Chicago</option>
+            <option data-tokens="LosAngeles">Los Angeles</option>
             <option data-tokens="Manhattan">Manhattan</option>
             <option data-tokens="NewJersey">New Jersey</option>
-            <option data-tokens="NewYork">Naivasha</option>
+            <option data-tokens="NewYork">New York</option>
             <option data-tokens="SanDiego">San Diego</option>
             <option data-tokens="SanFrancisco">San Francisco</option>
             <option data-tokens="Texas">Texas</option>
@@ -240,11 +240,11 @@
               </div>
               <div class="widget-wrapper mb20">
                 <div class="btn-area d-grid align-items-center">
-                  <button type="submit" class="ud-btn btn-thm"><span class="flaticon-search align-text-top pr10"></span>Search</button>
+                <button class="ud-btn btn-thm"><?php echo "<a class="reset-button" href="search_listing?id=".$column["id"]">;?><span class="flaticon-search align-text-top pr10"></span>Search</a></button>
                 </div>
               </div>
               <div class="reset-area d-flex align-items-center justify-content-between">
-                <a class="reset-button" href=""><span class="flaticon-turn-back"></span><u><button type="reset">Reset all filters</button></u></a>
+                <a class="reset-button" href="#"><span class="flaticon-turn-back"></span><u>Reset all filters</u></a>
               </div>
             </div>
 </form>
