@@ -22,7 +22,7 @@
             </div>
             <div class="col-lg-12">
               <div class="dashboard_title_area">
-                <h2>Howdy, Ali!</h2>
+                <h2>Howdy, <?php echo $column[1];?>!</h2>
                 <p class="text">We are glad to see you again!</p>
               </div>
             </div>

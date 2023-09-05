@@ -54,71 +54,6 @@
   </script>
 
   <div class="body_content">
-
-  <?php
-  //Logout
-  if (isset($_GET['log_out'])) {
-    $end = session_destroy();
-    if ($end) {
-      echo "
-       <div class='alert alert-success alert-dismissible' role='alert'>
-          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          </button>
-          <strong>Successfully Logged out.</strong> <br>Log in to continue.
-        </div>";
-        header( "refresh:1;url=index" );
-    }
-  }
-
-
-if (isset($_POST['login']))
-{
-    $email = $_POST['email'];
-    $password = md5($_POST['password']);
-
-    $res= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or 
-    die(mysqli_error($server));
-    //check rows returned
-    $count=mysqli_num_rows($res);
-
-    if($count<1)
-    {
-
-      echo "
-       <div class='alert alert-danger alert-dismissible' role='alert'>
-          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          </button>
-          <strong>Log in</strong> failed.<br> Check your details and try again.
-        </div>";
-    }
-    else
-    {
-
-      $_SESSION['user']=array();
-
-      $sel= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or die(mysql_error());
-      while ($column=mysqli_fetch_array($sel)) {
-        $_SESSION['user']['name']=$column[1];
-        $_SESSION['user']['role']=$column[3];
-        $_SESSION['user']['email']=$column[4];
-        $_SESSION['user']['phoneno']=$column[5];
-        //$_SESSION['user']['status']=$column[7];
-
-
-      }
-
-
-
-      header("location:dashboard");
-
-}
-
-
-}
-
-
-?>
-
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">
       <img src="images/icon/login-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
@@ -147,7 +82,7 @@ if (isset($_POST['login']))
                 <a class="fz14 ff-heading" href="#">Lost your password?</a>
               </div>
               <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
+                <button class="ud-btn btn-thm" name="login" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
               </div>
               <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
             </div>
@@ -155,6 +90,59 @@ if (isset($_POST['login']))
         </div>
       </div>
       </form>
+
+<?php
+
+//Logout
+if (isset($_GET['log_out'])) {
+  $end = session_destroy();
+  if ($end) {
+    echo "
+    <div class='alert alart_style_four alert-dismissible fade show mb20' role='alert'>Successfully logged out!
+    <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+  </div>";
+      header( "refresh:1;url=index" );
+  }
+}
+
+  
+  if (isset($_POST['login']))
+  {
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+
+    $res= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or 
+    die(mysqli_error($server));
+    //check rows returned
+    $count=mysqli_num_rows($res);
+
+    if($count<1)
+    {
+
+      echo "
+      <div class='alert alart_style_three alert-dismissible fade show mb20' role='alert'>Error: Check your details and try again.
+      <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+        </div>";
+    }
+    else
+    {
+
+      $_SESSION['user']=array();
+
+      $sel = mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or die(mysql_error());
+      while ($column = mysqli_fetch_array($sel)) {
+        $_SESSION['user']['name'] = $column[1];
+        $_SESSION['user']['role'] = $column[3];
+        $_SESSION['user']['email'] = $column[4];
+        $_SESSION['user']['phoneno'] = $column[5];
+        //$_SESSION['user']['status']=$column[7];
+
+
+      } header("location:dashboard");
+    }
+  }
+?>
+
     </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
