@@ -46,7 +46,7 @@
 </head>
 <body>
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   
   <!-- Main Header Nav -->
   <header class="header-nav nav-innerpage-style bdrb1 style2 main-menu">

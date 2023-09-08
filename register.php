@@ -40,7 +40,7 @@
 </head>
 <body class="bgc-f7">
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
 <?php
   include 'header_v2.php';
 ?>

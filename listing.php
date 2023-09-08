@@ -182,11 +182,21 @@
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
+
+                    <?php
+                    
+                    /*if ($row["featured"] = 1) {
+                      echo "<div class='list-tag fz12'><span class='flaticon-electricity me-2'></span>FEATURED</div>";
+                    } */
+                    
+                    
+                    ?>
+
                     <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><a href="#"><?php echo $row["title"];?></a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
                       <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>

@@ -1,3 +1,7 @@
+<?php
+  include 'config/conn.php';
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -41,7 +45,7 @@
 </head>
 <body>
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   
   <!-- Main Header Nav -->
   <?php
@@ -77,7 +81,7 @@
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
+                <p class="info-title dark-color">Need Live Support?</p>
                 <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
@@ -142,7 +146,7 @@
             <h2>We're on a Mission to Create <br class="d-none d-lg-block"> a world where anyone can belong.</h2>
           </div>
           <div class="col-lg-6">
-            <p class="text mb25">At Aveden, we believe in the transformative power of travel and the remarkable connections it fosters. Founded [year of founding], our journey began with a simple yet revolutionary idea: to provide a platform where people can find unique accommodations and experiences, anywhere in the world.</p>
+            <p class="text mb25">At Aveden, we believe in the transformative power of travel and the remarkable connections it fosters. Founded 2020, our journey began with a simple yet revolutionary idea: to provide a platform where people can find unique accommodations and experiences, anywhere in the world.</p>
             <p class="text mb55">Our mission is to create a world where anyone can belong anywhere, transcending traditional notions of travel and hospitality. Whether you're a wanderer seeking a cozy nook in a bustling city or an adventurer yearning for an unforgettable escape, we're here to make your travel dreams a reality.</p>
             <div class="row">
               <div class="col-sm-6">
@@ -194,10 +198,10 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">4</div></li>
-                  <li><span>M</span></li>
+                  <li><div class="timer">50</div></li>
+                  <li><span>+</span></li>
                 </ul>
-                <p class="text mb-0">Awward Winning</p>
+                <p class="text mb-0">Award Winning</p>
               </div>
             </div>
           </div>
@@ -205,7 +209,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">12</div></li>
+                  <li><div class="timer">1</div></li>
                   <li><span>K</span></li>
                 </ul>
                 <p class="text mb-0">Property Ready</p>
@@ -216,8 +220,8 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">20</div></li>
-                  <li><span>M</span></li>
+                  <li><div class="timer">5K</div></li>
+                  <li><span>+</span></li>
                 </ul>
                 <p class="text mb-0">Happy Customer</p>
               </div>
@@ -234,56 +238,29 @@
           <div class="col-lg-9 mx-auto text-center">
             <div class="main-title2">
               <h2 class="title">Our Exclusive Agents</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
+              <p class="paragraph">We have more than enough qualified agents to help you through in choosing a house.</p>
             </div>
           </div>
         </div>
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-auto">
+            <div class="row wow fadeInUp" data-wow-delay="300ms">
+        <?php
+              //SQL Query
+              $query = mysqli_query($server, "SELECT * FROM `agents` ORDER BY RAND() LIMIT 5") or die(mysqli_error($server));
+              //$result = mysqli_query($conn, $query);
+
+              if (mysqli_num_rows($query) > 0) {
+              // OUTPUT DATA OF EACH ROW
+              while($row = mysqli_fetch_assoc($query)) {
+            ?>
+            <div class="col-auto">  
             <div class="feature-style2 mb30">
               <div class="feature-img"><img class="bdrs12" src="images/team/agent-1.jpg" alt=""></div>
               <div class="feature-content pt20">
-                <h6 class="title mb-1">Arlene McCoy</h6>
-                <p class="text fz15">Broker</p>
+                <h6 class="title mb-1"><?php echo $row["name"];?></h6>
+                <p class="text fz15"><?php echo $row["house_category"]; ?></p>
               </div>
             </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-2.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Esther Howard</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-3.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Cody Fisher</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-4.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Bessie Cooper</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="feature-style2 mb30">
-              <div class="feature-img"><img class="bdrs12" src="images/team/agent-5.jpg" alt=""></div>
-              <div class="feature-content pt20">
-                <h6 class="title mb-1">Guy Hawkins</h6>
-                <p class="text fz15">Broker</p>
-              </div>
-            </div>
-          </div>
+          </div><?php }}?>
         </div>
       </div>
     </section>
@@ -302,25 +279,25 @@
                   <span class="list-icon flex-shrink-0 flaticon-security"></span>
                   <div class="list-content flex-grow-1 ml20">
                     <h6 class="mb-1">Property Management</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                    <p class="text mb-0 fz15">After property has been placed on the market, we will take care of it for you.</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-keywording"></span>
                   <div class="list-content flex-grow-1 ml20">
                     <h6 class="mb-1">Mortgage Services</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                    <p class="text mb-0 fz15">We offer affordable morgage services which are flexible to accomodate everyone.</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-investment"></span>
                   <div class="list-content flex-grow-1 ml20">
                     <h6 class="mb-1">Currency Services</h6>
-                    <p class="text mb-0 fz15">Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+                    <p class="text mb-0 fz15">We accept both Kenyan shillings as well as US dollars at the current conversion rates</p>
                   </div>
                 </div>
               </div>
-              <a href="page-property-single-v1.html" class="ud-btn btn-dark">Learn More<i class="fal fa-arrow-right-long"></i></a>
+              <a href="admin/dashboard-add-property" class="ud-btn btn-dark">Get started<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -381,8 +358,8 @@
             </div>
             <div class="col-lg-5 col-xl-6 wow fadeInRight" data-wow-delay="300ms">
               <div class="cta-btns-style1 d-block d-sm-flex align-items-center justify-content-lg-end">
-                <a href="page-contact.html" class="ud-btn btn-transparent mr30 mr0-xs">Contact Us<i class="fal fa-arrow-right-long"></i></a>
-                <a href="page-contact.html" class="ud-btn btn-dark"><span class="flaticon-call vam pe-2"></span>920 851 9087</a>
+                <a href="contact" class="ud-btn btn-transparent mr30 mr0-xs">Contact Us<i class="fal fa-arrow-right-long"></i></a>
+                <a href="contact" class="ud-btn btn-dark"><span class="flaticon-call vam pe-2"></span>920 851 9087</a>
               </div>
             </div>
           </div>

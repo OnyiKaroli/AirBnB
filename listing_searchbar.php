@@ -240,7 +240,7 @@
               </div>
               <div class="widget-wrapper mb20">
                 <div class="btn-area d-grid align-items-center">
-                <button class="ud-btn btn-thm"><?php echo "<a class="reset-button" href="search_listing?id=".$row["id"]">;?><span class="flaticon-search align-text-top pr10"></span>Search</a></button>
+                <button class="ud-btn btn-thm"><a class='reset-button' href=""><span class='flaticon-search align-text-top pr10'></span>Search</a></button>
                 </div>
               </div>
               <div class="reset-area d-flex align-items-center justify-content-between">

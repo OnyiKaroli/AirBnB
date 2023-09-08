@@ -22,8 +22,15 @@
           <div class="col-auto">
             <div class="d-flex align-items-center">
               <a class="login-info d-flex align-items-center me-3" href="2-911-098-7654"><i class="far fa-phone fz16 me-2"></i> <span class="d-none d-xl-block">2 911 098 7654</span></a>
-              <a class="login-info d-flex align-items-center" data-bs-toggle="modal" href="register" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block">Login / Register</span></a>
-              <a class="ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4" href="dashboard-add-property.php">Add Property<i class="fal fa-arrow-right-long"></i></a>
+              <?php
+              
+              if(!isset($_SESSION['user']['email'])) {
+                echo "<a class='login-info d-flex align-items-center' href='users/index' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>Login / Register</span></a>";
+              } else {
+                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
+              }
+              
+              ?>
               <a class="sidemenu-btn filter-btn-right" href="#"><img class="img-1" src="images/icon/nav-icon-white.svg" alt=""><img class="img-2" src="images/icon/nav-icon-dark.svg" alt=""></a>
             </div>
           </div>

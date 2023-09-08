@@ -42,7 +42,7 @@
 </head>
 <body>
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   
   <!-- Main Header Nav -->
   <?php

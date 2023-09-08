@@ -40,7 +40,7 @@
 </head>
 <body class="bgc-f7">
 <div class="wrapper ovh">
-  <div class="preloader"></div>
+  <!--div class="preloader"></div-->
   <div class="body_content">
     <!-- Our Invoice Page -->
     <section class="our-invoice bgc-gmart-gray pb200">

@@ -534,23 +534,31 @@
         <div class="row wow fadeInUp" data-wow-delay="900ms">
           <div class="col-lg-12">
             <div class="property-city-slider navi_pagi_top_right slider-dib-sm slider-3-grid owl-theme owl-carousel">
-              <div class="item">
+              
+            <?php
+                  $select = mysqli_query($server, "SELECT * FROM `properties` limit 15") or die(mysqli_error($server));
+                  if (mysqli_num_rows($select) > 0) {
+                    // OUTPUT DATA OF EACH ROW
+                    while($row = mysqli_fetch_assoc($select)) {
+                  ?>
+                <div class="item">
+
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                    <div class="list-price">$82,000 / <span>mo</span></div>
+                    <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
-                      <a href=""><span class="flaticon-bed"></span>3 bed</a>
-                      <a href=""><span class="flaticon-shower"></span>4 bath</a>
-                      <a href=""><span class="flaticon-expand"></span>1200 sqft</a>
+                      <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
+                      <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
+                      <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
                     <hr class="mt-2 mb-2">
                     <div class="list-meta2 d-flex justify-content-between align-items-center">
-                      <span class="for-what">For Rent</span>
+                      <span class="for-what"><?php echo $row["listed_in"];?></span>
                       <div class="icons d-flex align-items-center">
                         <a href=""><span class="flaticon-fullscreen"></span></a>
                         <a href=""><span class="flaticon-new-tab"></span></a>
@@ -559,7 +567,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div><?php }}?>
             </div>
           </div>
         </div>

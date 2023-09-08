@@ -1,8 +1,8 @@
-<?php
-  require_once 'config/conn.php';
-?>
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
+<?php
+  require 'config/conn.php';
+?>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -604,7 +604,7 @@
                     <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
-                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."'>".$row["title"]."</a>"; ?></h6>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>
                     <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
@@ -659,8 +659,8 @@
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
-                      <h6 class="title mb-1"><?php $row["city"] ?></h6>
-                      <p class="text fz15"><?php $row["total_properties"] ?> Properties</p>
+                      <h6 class="title mb-1"><?php $row["city"]; ?></h6>
+                      <p class="text fz15"><?php $row["total_properties"]; ?> Properties</p>
                     </div>
                   </div>
                 </a>
@@ -744,14 +744,14 @@
                   ?> 
 
                   <div class="list-content">
-                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."'>".$row["title"]."</a>"; ?></h6>
+                    <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>
                     <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
                       <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
                       <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
                     </div>
-                    <?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row['agent_id']."' class='btn mt15 fz15'>View House<i class='fal fa-arrow-right-long'></i></a>"; ?>
+                    <?php echo "<a href='property-single?id=".$row["id"]."&agent_id=".$row["agent_id"]."' class='btn mt15 fz15'>View House<i class='fal fa-arrow-right-long'></i></a>"; ?>
                   </div><?php }}?>
                 </div>
               </div>
