@@ -56,13 +56,13 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header_v2.php';
+    include 'header_v4.php';
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
       <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
+      <h4 class="title"><?php echo $servedby_name; ?>Profile</h4>
     </div>
     <div class="hsidebar-content">
       <div class="hiddenbar_navbar_content">
@@ -130,79 +130,140 @@
   <div class="dashboard_content_wrapper">
     <div class="dashboard dashboard_wrapper pr30 pr0-md">
       <?php
-        include 'sidebar_v2.php';
+        include 'sidebar_v2.php'
       ?>
       <div class="dashboard__main pl0-md">
-        <div class="dashboard__content bgc-f7">
+        <div class="dashboard__content property-page bgc-f7">
+
           <?php
             include 'sidebar.php';
           ?>
+          <div class="row align-items-center pb40">
+            <div class="col-lg-12">
+              <div class="dashboard_title_area">
+                <h2>My Profile</h2>
+                <p class="text">We are glad to see you again!</p>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-xl-12">
-              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 p20-xs mb30 overflow-hidden position-relative">
-                <div class="row">
+              
+          <?php
+          
+          //SQL Query
+          $query = mysqli_query($server, "SELECT * FROM `users` WHERE `email` = '$servedby_email'") or die(mysqli_error($server));
 
-                <?php
-                  //SQL Query
-                   $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `featured` = 1 ORDER BY RAND()") or die(mysqli_error($server));
-                   $count=mysqli_num_rows($query);      
-                  if (mysqli_num_rows($query) > 0) {
-                  // OUTPUT DATA OF EACH ROW
-                  while($row = mysqli_fetch_assoc($query)) {
-                ?>
+          if (mysqli_num_rows($query) > 0) {
+            // OUTPUT DATA OF EACH ROW
+            while($row = mysqli_fetch_assoc($query)) {
 
-                  <div class="col-sm-6 col-xl-3">
-                    <div class="listing-style1 style2">
-                      <div class="list-thumb">
-                        <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Item"><span class="fas fa-trash-can"></span></a>
-                        <img class="w-100" src="images/listings/g1-1.jpg" alt="">
-                        <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div> 
-                        <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
-                      </div>
-                      <div class="list-content">
-                        <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>
-                        <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
-                        <div class="list-meta d-flex align-items-center">
-                          <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
-                          <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>
-                          <a href=""><span class="flaticon-expand"></span><?php echo $row["room_size"];?> sqft</a>
+          ?>
+
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <div class="col-xl-7">
+                  <div class="profile-box position-relative d-md-flex align-items-end mb50">
+                    <div class="profile-img position-relative overflow-hidden bdrs12 mb20-sm">
+                      <img class="w-100" src="images/listings/profile-1.jpg" alt="">
+                      <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
+                    </div>
+                    <div class="profile-content ml30 ml0-sm">
+                      <a href="" class="ud-btn btn-white2 mb30">Upload Profile Files<i class="fal fa-arrow-right-long"></i></a>
+                      <p class="text">Photos must be JPEG or PNG format and least 2048x768</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <form class="form-style1">
+                    <div class="row">
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Username</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["name"].">"; ?>
                         </div>
-                        <hr class="mt-2 mb-2">
-                        <div class="list-meta2 d-flex justify-content-between align-items-center">
-                          <span class="for-what"><?php echo $row["listed_in"];?></span>
-                          <div class="icons d-flex align-items-center">
-                            <a href=""><span class="flaticon-fullscreen"></span></a>
-                            <a href=""><span class="flaticon-new-tab"></span></a>
-                            <a href=""><span class="flaticon-like"></span></a>
-                          </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Email</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["email"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Phone</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["phone_no"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">First Name</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["fname"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Last Name</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["lname"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Position</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["role"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">KRA PIN</label>
+                          <?php echo "<input type='text' class='form-control' placeholder=".$row["kra"].">"; ?>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="mb10">
+                          <label class="heading-color ff-heading fw600 mb10">About me</label>
+                          <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="text-end">
+                          <a class="ud-btn btn-dark" href="#">Update Profile<i class="fal fa-arrow-right-long"></i></a>
                         </div>
                       </div>
                     </div>
-                  </div><?php }}?>
+                  </form>
                 </div>
-                <div class="row">
-                  <div class="mbp_pagination text-center">
-                    <ul class="page_navigation">
-                      <li class="page-item">
-                        <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                      <li class="page-item"><a class="page-link" href="#">...</a></li>
-                      <li class="page-item"><a class="page-link" href="#">20</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
-                      </li>
-                    </ul>
-                    
-                    <p class="mt10 pagination_page_count text-center">1 – 20 of <?php echo $count; ?>+ property available</p>
+              </div><?php }}?>
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <h4 class="title fz17 mb30">Change password</h4>
+                <form class="form-style1">
+                  <div class="row">
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="mb20">
+                        <label class="heading-color ff-heading fw600 mb10">Old Password</label>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="mb20">
+                        <label class="heading-color ff-heading fw600 mb10">New Password</label>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="mb20">
+                        <label class="heading-color ff-heading fw600 mb10">Confirm New Password</label>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="text-end">
+                        <a class="ud-btn btn-dark" href="page-contact.html">Change Password<i class="fal fa-arrow-right-long"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

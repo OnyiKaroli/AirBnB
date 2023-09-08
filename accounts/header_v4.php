@@ -4,7 +4,7 @@
       <div class="container posr menu_bdrt1">
         <div class="row align-items-center justify-content-between">
           <div class="col-auto">
-            <a class="header-logo" href="index"><img src="images/header-logo.png" alt="Header Logo"></a>
+            <a class="header-logo" href="index"><img src="../images/header-logo.png" alt="Header Logo"></a>
           </div>
           <div class="col-auto">
             <!-- Responsive Menu Structure-->
@@ -18,9 +18,10 @@
           </div>
           <div class="col-auto">
             <div class="d-flex align-items-center">
-              <a class="login-info d-flex align-items-center" href="login" role="button"><i class="far fa-user-circle fz16 me-2"></i> <span class="d-none d-xl-block"><?php echo $servedby_name;?></span></a>
-              <a class="ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4" href="dashboard-add-property">Add Property<i class="fal fa-arrow-right-long"></i></a>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
+
+              <?php
+                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
+              ?>
             </div>
           </div>
         </div>

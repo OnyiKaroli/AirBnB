@@ -1,5 +1,5 @@
 <?php
-include 'config/conn.php';
+include '../config/conn.php';
 
 // remove all session variables
 session_unset();

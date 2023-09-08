@@ -1,5 +1,5 @@
 <?php
-  include 'config/conn.php';
+  include '../config/conn.php';
 
   //Session check
   if(!isset($_SESSION['user']['email'])) {
@@ -35,8 +35,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -56,7 +56,7 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header_v2.php';
+    include 'header_v4.php';
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
@@ -87,7 +87,7 @@
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
+                <p class="info-title dark-color">Need Live Support?</p>
                 <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
               </div>
             </div>
@@ -115,7 +115,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
             <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
@@ -128,126 +128,128 @@
   </div>
 
   <div class="dashboard_content_wrapper">
-    <div class="dashboard dashboard_wrapper pr30 pr0-md">
+    <div class="dashboard dashboard_wrapper pr30 pr0-xl">
       <?php
         include 'sidebar_v2.php';
       ?>
       <div class="dashboard__main pl0-md">
-        <div class="dashboard__content property-page bgc-f7">
+        <div class="dashboard__content bgc-f7">
           <?php
             include 'sidebar.php';
           ?>
-          <div class="row align-items-center pb40">
-            <div class="col-xxl-3">
-              <div class="dashboard_title_area">
-                <h2>My Properties</h2>
-                <p class="text">We are glad to see you again!</p>
+          <div class="row">
+            <div class="col-sm-6 col-xxl-4">
+            <?php
+              // SQL query to count rows with "house" in the category column
+              $checkout_count= mysqli_query($server, "SELECT * FROM `properties`") or die(mysqli_error($server));
+              //check rows returned
+              $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">All Properties</div>
+                  <div class="title"><?php echo $count; ?></div>
+                </div>
+                <div class="icon text-center"><i class="flaticon-home"></i></div>
               </div>
             </div>
-            <div class="col-xxl-9">
-              <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
-                <div class="item1 mb15-sm">
-                  <div class="search_area">
-                    <input type="text" class="form-control bdrs12" placeholder="Search">
-                    <label><span class="flaticon-search"></span></label>
-                  </div>
+            <div class="col-sm-6 col-xxl-4">
+            <?php
+              // SQL query to count rows with "house" in the category column
+              $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `listed_in` = 'For sale'") or die(mysqli_error($server));
+              //check rows returned
+              $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">For Sale</div>
+                  <div class="title"><?php echo $count; ?></div>
                 </div>
-                <div class="page_control_shorting bdr1 bdrs12 py-2 ps-3 pe-2 mx-1 mx-xxl-3 bgc-white mb15-sm maxw140">
-                  <div class="pcs_dropdown d-flex align-items-center"><span class="title-color">Sort by:</span>
-                    <select class="selectpicker show-tick">
-                      <option>New</option>
-                      <option>Best Seller</option>
-                      <option>Best Match</option>
-                      <option>Price Low</option>
-                      <option>Price High</option>
-                    </select>
-                  </div>
+                <div class="icon text-center"><i class="flaticon-search-chart"></i></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xxl-4">
+              <div class="d-flex justify-content-between statistics_funfact">
+              <?php
+              // SQL query to count rows with "house" in the category column
+              $checkout_count= mysqli_query($server, "SELECT * FROM `agents`") or die(mysqli_error($server));
+              //check rows returned
+              $count=mysqli_num_rows($checkout_count);
+                        
+                      ?>
+                <div class="details">
+                  <div class="text fz25">Sales Agents</div>
+                  <div class="title"><?php echo $count; ?></div>
                 </div>
-                <a href="" class="ud-btn btn-thm">Add New Property<i class="fal fa-arrow-right-long"></i></a>
+                <div class="icon text-center"><i class="flaticon-review"></i></div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-8">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <div class="packages_table table-responsive">
-                  <table class="table-style3 table at-savesearch">
-                    <thead class="t-head">
-                      <tr>
-                        <th scope="col">Listing title</th>
-                        <th scope="col">Date Published</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">View</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody class="t-body">
-                      
-
-                      <?php
-                        //SQL Query
-                        $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND()") or die(mysqli_error($server));
-                        $count=mysqli_num_rows($query);
-                        if (mysqli_num_rows($query) > 0) {
-                        // OUTPUT DATA OF EACH ROW
-                        while($row = mysqli_fetch_assoc($query)) {
-                      ?>
-                        <tr>
-                        <th scope="row">
-                          <div class="listing-style1 dashboard-style d-xxl-flex align-items-center mb-0">
-                            <div class="list-thumb">
-                              <img class="w-100" src="images/listings/list-1.jpg" alt="">
-                            </div>
-                            <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
-                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
-                              <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
-                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>mo</span></a></div>
-                            </div>
-                          </div>
-                        </th>
-                        <td class="vam"><?php echo $row["date"];?></td>
-
-                          <?php
-                          
-                          if ($row["status"] = "Published") {
-                            echo "<td class='vam'><span class='pending-style style2'>".$row["status"]."</span></td>";
-                          } elseif ($row["status"] = "Processing") {
-                            echo "<td class='vam'><span class='pending-style style3'>".$row["status"]."</span></td>";
-                          } else {
-                            echo "<td class='vam'><span class='pending-style style1'>".$row["status"]."</span></td>";
-                          }
-                          
-                          
-                          ?>
-                        <td class="vam"><?php echo $row["date"];?></td>
-                        <td class="vam">
-                          <div class="d-flex">
-                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
-                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="flaticon-bin"></span></a>
-                          </div>
-                        </td><?php }}?>
-                    </tbody>
-                  </table>
-                  <div class="mbp_pagination text-center mt30">
-                    <ul class="page_navigation">
-                      <li class="page-item">
-                        <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
+                <div class="navtab-style1">
+                  <div class="d-sm-flex align-items-center justify-content-between">
+                    <h4 class="title fz17 mb20">View statistics</h4>
+                    <ul class="nav nav-tabs border-bottom-0 mb30" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link fw600 active" id="hourly-tab" data-bs-toggle="tab" href="#hourly" role="tab" aria-controls="hourly" aria-selected="true">Hours</a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly</a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                      <li class="page-item"><a class="page-link" href="#">...</a></li>
-                      <li class="page-item"><a class="page-link" href="#">20</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Monthly</a>
                       </li>
                     </ul>
-                    <p class="mt10 pagination_page_count text-center">1 – 20 of <?php echo $count; ?>+ property available</p>
                   </div>
+                  <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="hourly" role="tabpanel" aria-labelledby="hourly-tab">
+                      <canvas class="chart-container" id="doublebar-chart"></canvas>
+                    </div>
+                    <div class="tab-pane fade w-100" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
+                      <canvas class="canvas w-100" id="myChartweave"></canvas>
+                    </div>
+                    <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                      <div class="chart pt20">
+                        <canvas class="w-100" id="myChart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <h4 class="title fz17 mb25">Recent Activities</h4>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-home flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Your listing <span class="fw600">House on the beverly hills</span> has been approved</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Dollie Horton left a review on <span class="fw600">House on the Northridge</span></p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-like flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Someone favorites your <span class="fw600">Triple Story House for Rent</span> listing</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Someone favorites your <span class="fw600">Triple Story House for Rent</span> listing</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-home flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Your listing <span class="fw600">House on the beverly hills</span> has been approved</p>
+                </div>
+                <div class="recent-activity d-sm-flex align-items-center mb20">
+                  <span class="icon me-3 flaticon-review flex-shrink-0"></span>
+                  <p class="text mb-0 flex-grow-1">Dollie Horton left a review on <span class="fw600">House on the Northridge</span></p>
+                </div>
+                <div class="d-grid">
+                  <a href="" class="ud-btn btn-white2">Veiw More<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -259,11 +261,6 @@
               <div class="col-auto">
                 <div class="copyright-widget">
                   <p class="text">© <a href="windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="footer_bottom_right_widgets text-center text-lg-end">
-                  <p><a href="#">Privacy</a>  ·  <a href="#">Terms</a>  ·  <a href="#">Sitemap</a></p>
                 </div>
               </div>
             </div>
@@ -281,7 +278,9 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/bootstrap-select.min.js"></script> 
 <script src="js/jquery.mmenu.all.js"></script> 
-<script src="js/ace-responsive-menu.js"></script>
+<script src="js/ace-responsive-menu.js"></script> 
+<script src="js/chart.min.js"></script>
+<script src="js/chart-custome.js"></script>
 <script src="js/jquery-scrolltofixed-min.js"></script>
 <script src="js/dashboard-script.js"></script>
 <!-- Custom script for all pages --> 

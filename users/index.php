@@ -1,5 +1,5 @@
 <?php
-  include 'config/conn.php';
+  include '../config/conn.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +27,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">

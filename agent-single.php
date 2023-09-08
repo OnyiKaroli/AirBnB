@@ -29,8 +29,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -55,7 +55,7 @@
       <div class="container posr menu_bdrt1">
         <div class="row align-items-center justify-content-between">
           <div class="col-auto">
-            <a class="header-logo" href="index"><img src="images/header-logo2.svg" alt="Header Logo"></a>
+            <a class="header-logo" href="index"><img src="images/header-logo.png" alt="Header Logo"></a>
           </div>
           <div class="col-auto">
             <!-- Responsive Menu Structure-->
@@ -349,7 +349,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
             <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
@@ -1087,7 +1087,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">

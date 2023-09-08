@@ -3,7 +3,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">
@@ -115,7 +115,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="text-center text-lg-start">
-              <p class="copyright-text text-gray ff-heading">© Homez - All rights reserved</p>
+              <p class="copyright-text text-gray ff-heading">© <a class="text-gray" href="windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
             </div>
           </div>
           <div class="col-sm-6">

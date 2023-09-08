@@ -6,8 +6,8 @@
           <div class="col-auto">
             <div class="d-flex align-items-center justify-content-between">
               <div class="logos mr35">
-                <a class="header-logo logo1" href="index.html"><img src="images/header-logo.svg" alt="Header Logo"></a>
-                <a class="header-logo logo2" href="index.html"><img src="images/header-logo2.svg" alt="Header Logo"></a>
+                <a class="header-logo logo1" href="index.html"><img src="images/header-logo.png" alt="Header Logo"></a>
+                <a class="header-logo logo2" href="index.html"><img src="images/header-logo.png" alt="Header Logo"></a>
               </div>
               <!-- Responsive Menu Structure-->
               <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
@@ -25,11 +25,18 @@
               <?php
               
               if(!isset($_SESSION['user']['email'])) {
-                echo "<a class='login-info d-flex align-items-center' href='users/index' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>Login / Register</span></a>";
+                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>Login / Register</span></a>";
               } else {
-                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
+                echo "<a class='login-info d-flex align-items-center' href='accounts/index.php' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
               }
               
+              ?>
+              <?php
+                if (isset($_SESSION['user']['email']) && $servedby_role = 'client') {
+                  echo "<a class='ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4' href='listing'>Make a Booking<i class='fal fa-arrow-right-long'></i></a>";
+                } elseif (isset($_SESSION['user']['email']) && $servedby_role = 'Admin') {
+                  echo "<a class='ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4' href='dashboard-add-property'>Add Property<i class='fal fa-arrow-right-long'></i></a>";
+                }
               ?>
               <a class="sidemenu-btn filter-btn-right" href="#"><img class="img-1" src="images/icon/nav-icon-white.svg" alt=""><img class="img-2" src="images/icon/nav-icon-dark.svg" alt=""></a>
             </div>

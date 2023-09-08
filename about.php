@@ -28,8 +28,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -373,7 +373,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.svg" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">

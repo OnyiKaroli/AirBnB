@@ -1,5 +1,5 @@
 <?php
-  include 'config/conn.php';
+  include '../config/conn.php';
 
   //Session check
   if(!isset($_SESSION['user']['email'])) {
@@ -35,8 +35,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -56,13 +56,13 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header_v2.php';
+    include 'header_v4.php';
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
       <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title"><?php echo $servedby_name; ?>Profile</h4>
+      <h4 class="title">Welcome to Aveden</h4>
     </div>
     <div class="hsidebar-content">
       <div class="hiddenbar_navbar_content">
@@ -115,7 +115,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
             <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
@@ -130,140 +130,125 @@
   <div class="dashboard_content_wrapper">
     <div class="dashboard dashboard_wrapper pr30 pr0-md">
       <?php
-        include 'sidebar_v2.php'
+        include 'sidebar_v2.php';
       ?>
       <div class="dashboard__main pl0-md">
         <div class="dashboard__content property-page bgc-f7">
-
           <?php
             include 'sidebar.php';
           ?>
           <div class="row align-items-center pb40">
-            <div class="col-lg-12">
+            <div class="col-xxl-3">
               <div class="dashboard_title_area">
-                <h2>My Profile</h2>
+                <h2>My Properties</h2>
                 <p class="text">We are glad to see you again!</p>
+              </div>
+            </div>
+            <div class="col-xxl-9">
+              <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
+                <div class="item1 mb15-sm">
+                  <div class="search_area">
+                    <input type="text" class="form-control bdrs12" placeholder="Search">
+                    <label><span class="flaticon-search"></span></label>
+                  </div>
+                </div>
+                <div class="page_control_shorting bdr1 bdrs12 py-2 ps-3 pe-2 mx-1 mx-xxl-3 bgc-white mb15-sm maxw140">
+                  <div class="pcs_dropdown d-flex align-items-center"><span class="title-color">Sort by:</span>
+                    <select class="selectpicker show-tick">
+                      <option>New</option>
+                      <option>Best Seller</option>
+                      <option>Best Match</option>
+                      <option>Price Low</option>
+                      <option>Price High</option>
+                    </select>
+                  </div>
+                </div>
+                <a href="" class="ud-btn btn-thm">Add New Property<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xl-12">
-              
-          <?php
-          
-          //SQL Query
-          $query = mysqli_query($server, "SELECT * FROM `users` WHERE `email` = '$servedby_email'") or die(mysqli_error($server));
-
-          if (mysqli_num_rows($query) > 0) {
-            // OUTPUT DATA OF EACH ROW
-            while($row = mysqli_fetch_assoc($query)) {
-
-          ?>
-
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <div class="col-xl-7">
-                  <div class="profile-box position-relative d-md-flex align-items-end mb50">
-                    <div class="profile-img position-relative overflow-hidden bdrs12 mb20-sm">
-                      <img class="w-100" src="images/listings/profile-1.jpg" alt="">
-                      <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
-                    </div>
-                    <div class="profile-content ml30 ml0-sm">
-                      <a href="" class="ud-btn btn-white2 mb30">Upload Profile Files<i class="fal fa-arrow-right-long"></i></a>
-                      <p class="text">Photos must be JPEG or PNG format and least 2048x768</p>
-                    </div>
+                <div class="packages_table table-responsive">
+                  <table class="table-style3 table at-savesearch">
+                    <thead class="t-head">
+                      <tr>
+                        <th scope="col">Listing title</th>
+                        <th scope="col">Date Published</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">View</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="t-body">
+                      
+
+                      <?php
+                        //SQL Query
+                        $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND()") or die(mysqli_error($server));
+                        $count=mysqli_num_rows($query);
+                        if (mysqli_num_rows($query) > 0) {
+                        // OUTPUT DATA OF EACH ROW
+                        while($row = mysqli_fetch_assoc($query)) {
+                      ?>
+                        <tr>
+                        <th scope="row">
+                          <div class="listing-style1 dashboard-style d-xxl-flex align-items-center mb-0">
+                            <div class="list-thumb">
+                              <img class="w-100" src="images/listings/list-1.jpg" alt="">
+                            </div>
+                            <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
+                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
+                              <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
+                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>mo</span></a></div>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="vam"><?php echo $row["date"];?></td>
+
+                          <?php
+                          
+                          if ($row["status"] = "Published") {
+                            echo "<td class='vam'><span class='pending-style style2'>".$row["status"]."</span></td>";
+                          } elseif ($row["status"] = "Processing") {
+                            echo "<td class='vam'><span class='pending-style style3'>".$row["status"]."</span></td>";
+                          } else {
+                            echo "<td class='vam'><span class='pending-style style1'>".$row["status"]."</span></td>";
+                          }
+                          
+                          
+                          ?>
+                        <td class="vam"><?php echo $row["date"];?></td>
+                        <td class="vam">
+                          <div class="d-flex">
+                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="flaticon-bin"></span></a>
+                          </div>
+                        </td><?php }}?>
+                    </tbody>
+                  </table>
+                  <div class="mbp_pagination text-center mt30">
+                    <ul class="page_navigation">
+                      <li class="page-item">
+                        <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">20</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+                      </li>
+                    </ul>
+                    <p class="mt10 pagination_page_count text-center">1 – 20 of <?php echo $count; ?>+ property available</p>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <form class="form-style1">
-                    <div class="row">
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Username</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["name"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Email</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["email"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Phone</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["phone_no"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">First Name</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["fname"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Last Name</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["lname"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Position</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["role"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-xl-4">
-                        <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">KRA PIN</label>
-                          <?php echo "<input type='text' class='form-control' placeholder=".$row["kra"].">"; ?>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb10">
-                          <label class="heading-color ff-heading fw600 mb10">About me</label>
-                          <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="text-end">
-                          <a class="ud-btn btn-dark" href="#">Update Profile<i class="fal fa-arrow-right-long"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div><?php }}?>
-              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <h4 class="title fz17 mb30">Change password</h4>
-                <form class="form-style1">
-                  <div class="row">
-                    <div class="col-sm-6 col-xl-4">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Old Password</label>
-                        <input type="text" class="form-control" placeholder="Your Name">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-xl-4">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">New Password</label>
-                        <input type="text" class="form-control" placeholder="Your Name">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-4">
-                      <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Confirm New Password</label>
-                        <input type="text" class="form-control" placeholder="Your Name">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="text-end">
-                        <a class="ud-btn btn-dark" href="page-contact.html">Change Password<i class="fal fa-arrow-right-long"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
           </div>

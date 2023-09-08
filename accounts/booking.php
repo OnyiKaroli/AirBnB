@@ -3,7 +3,7 @@
 
   //Session check
   if(!isset($_SESSION['user']['email'])) {
-    header("location:index");
+    header("location:login");
   }
 ?>
 
@@ -56,13 +56,13 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header_v2.php';
+    include 'header_v4.php';
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
       <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
+      <h4 class="title">Book your stay</h4>
     </div>
     <div class="hsidebar-content">
       <div class="hiddenbar_navbar_content">

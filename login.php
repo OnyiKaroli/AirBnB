@@ -1,3 +1,7 @@
+<?php
+  include 'config/conn.php';
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -23,8 +27,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -44,11 +48,16 @@
 <body class="bgc-f7">
 <div class="wrapper ovh">
   <!--div class="preloader"></div-->
+
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
   <div class="body_content">
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">
       <img src="images/icon/login-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
-      <form action="log_in.php" method="POST">
+      <form method="POST">
       <div class="container">
         <div class="row wow fadeInRight" data-wow-delay="300ms">
           <div class="col-lg-6">
@@ -73,7 +82,7 @@
                 <a class="fz14 ff-heading" href="#">Lost your password?</a>
               </div>
               <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
+                <button class="ud-btn btn-thm" name="login" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
               </div>
               <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
             </div>
@@ -81,6 +90,61 @@
         </div>
       </div>
       </form>
+
+<?php
+if(isset($_SESSION['user']['email'])) {
+  header("location:accounts/index");
+}
+//Logout
+if (isset($_GET['logout'])) {
+  $end = session_destroy();
+  if ($end) {
+    echo "
+    <div class='alert alart_style_four alert-dismissible fade show mb20' role='alert'>Successfully logged out!
+    <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+  </div>";
+      header( "refresh:1;url=index" );
+  }
+}
+
+  
+  if (isset($_POST['login']))
+  {
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+
+    $res= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or 
+    die(mysqli_error($server));
+    //check rows returned
+    $count=mysqli_num_rows($res);
+
+    if($count<1)
+    {
+
+      echo "
+      <div class='alert alart_style_three alert-dismissible fade show mb20' role='alert'>Error: Check your details and try again.
+      <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+        </div>";
+    }
+    else
+    {
+
+      $_SESSION['user']=array();
+
+      $sel = mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' AND password='$password'") or die(mysql_error());
+      while ($column = mysqli_fetch_array($sel)) {
+        $_SESSION['user']['name'] = $column[1];
+        $_SESSION['user']['role'] = $column[9];
+        $_SESSION['user']['email'] = $column[4];
+        $_SESSION['user']['phone_no'] = $column[6];
+        //$_SESSION['user']['status']=$column[7];
+
+
+      } header("location:accounts/index");
+    }
+  }
+?>
+
     </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>

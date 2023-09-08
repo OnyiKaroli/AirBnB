@@ -26,8 +26,8 @@
 <!-- Title -->
 <title>Aveden - Where Every Stay is a Journey</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -48,7 +48,11 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'header_v2.php';
+    if (isset($_SESSION['user']['email'])) {
+      include 'accounts/header_v4.php';
+    } else {
+      include 'header_v2.php';
+    }  
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
@@ -115,7 +119,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
             <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
