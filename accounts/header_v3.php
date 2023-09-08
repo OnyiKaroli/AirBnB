@@ -30,7 +30,7 @@
               ?>
               <?php
                 if (isset($_SESSION['user']['email']) && $servedby_role = 'client') {
-                  echo "<a class='ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4' href='#'>Book this<i class='fal fa-arrow-right-long'></i></a>";
+                  echo "<a class='ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4' href='accounts/booking?id=".$row["id"]."&title=".$row["title"]."'>Book this<i class='fal fa-arrow-right-long'></i></a>";
                 } elseif (isset($_SESSION['user']['email']) && $servedby_role = 'Admin') {
                   echo "<a class='ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4' href='dashboard-add-property'>Add Property<i class='fal fa-arrow-right-long'></i></a>";
                 }
