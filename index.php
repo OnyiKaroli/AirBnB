@@ -473,7 +473,7 @@
           <div class="col-lg-12">
             <div class="dots_none nav_none slider-dib-sm slider-5-grid owl-theme owl-carousel">
               <div class="item">
-                <a href="page-property-single-v1.html">
+                <a href="#">
                   <div class="iconbox-style4">
                     <span class="icon flaticon-home"></span>
                     <div class="iconbox-content">
@@ -491,7 +491,7 @@
                 </a>
               </div>
               <div class="item">
-                <a href="page-property-single-v1.html">
+                <a href="#">
                   <div class="iconbox-style4">
                     <span class="icon flaticon-corporation"></span>
                     <div class="iconbox-content">
@@ -509,7 +509,7 @@
                 </a>
               </div>
               <div class="item">
-                <a href="page-property-single-v1.html">
+                <a href="#">
                   <div class="iconbox-style4">
                     <span class="icon flaticon-network"></span>
                     <div class="iconbox-content">
@@ -527,7 +527,7 @@
                 </a>
               </div>
               <div class="item">
-                <a href="page-property-single-v1.html">
+                <a href="#">
                   <div class="iconbox-style4">
                     <span class="icon flaticon-garden"></span>
                     <div class="iconbox-content">
@@ -545,7 +545,7 @@
                 </a>
               </div>
               <div class="item">
-                <a href="page-property-single-v1.html">
+                <a href="#">
                   <div class="iconbox-style4">
                     <span class="icon flaticon-chat"></span>
                     <div class="iconbox-content">
@@ -799,7 +799,6 @@
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
               <div class="main-title text-center">
                 <h2>Testimonials</h2>
-                <p class="paragraph">10,000+ unique online course list designs</p>
               </div>
             </div>
           </div>
@@ -810,7 +809,7 @@
                   <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h4 class="testi-text">Our stay at Aveden was absolutely fantastic! The host was incredibly welcoming, the apartment was spotless, and the location couldn't have been better. We'll definitely be coming back!</h4>
                       <h6 class="name">Ali Tufan</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
@@ -818,7 +817,7 @@
                   <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h4 class="testi-text">I can't say enough good things about Aveden experience. From the breathtaking views to the cozy decor, it felt like a home away from home. We had an unforgettable time, and we'll be recommending this place to all our friends!</h4>
                       <h6 class="name">Ali Tufan</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
@@ -826,7 +825,7 @@
                   <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h4 class="testi-text">Staying at Aveden was a dream come true. The host went above and beyond to make our stay comfortable, and the attention to detail in the design of the space was impressive. We can't wait to return!</h4>
                       <h6 class="name">Ali Tufan</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
@@ -834,7 +833,7 @@
                   <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h4 class="testi-text">We had the most amazing weekend getaway at Aveden. The cottage was charming, and the garden was a serene oasis. It was the perfect escape from the city, and we can't wait to return for another relaxing stay.</h4>
                       <h6 class="name">Ali Tufan</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
@@ -842,7 +841,7 @@
                   <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h4>
+                      <h4 class="testi-text">Our family had an incredible vacation thanks to Aveden. The location was perfect for exploring the area, and the amenities provided made our stay stress-free. We'll cherish the memories we made here forever.</h4>
                       <h6 class="name">Ali Tufan</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>

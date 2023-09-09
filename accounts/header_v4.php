@@ -4,7 +4,7 @@
       <div class="container posr menu_bdrt1">
         <div class="row align-items-center justify-content-between">
           <div class="col-auto">
-            <a class="header-logo" href="index"><img src="../images/header-logo.png" alt="Header Logo"></a>
+            <a class="header-logo" href="../index"><img src="../images/header-logo.png" alt="Header Logo"></a>
           </div>
           <div class="col-auto">
             <!-- Responsive Menu Structure-->

@@ -209,9 +209,9 @@
 
                           <?php
                           
-                          if ($row["status"] = "Checked In") {
+                          if ($row["status"] = "Confirmed") {
                             echo "<td class='vam'><span class='pending-style style2'>".$row["status"]."</span></td>";
-                          } elseif ($row["status"] = "Processing") {
+                          } elseif ($row["status"] = "Pending") {
                             echo "<td class='vam'><span class='pending-style style3'>".$row["status"]."</span></td>";
                           } else {
                             echo "<td class='vam'><span class='pending-style style1'>".$row["status"]."</span></td>";

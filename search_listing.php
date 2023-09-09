@@ -1,8 +1,13 @@
 <?php
     include 'config/conn.php';
 
-    $id = $_GET['id'];
-    $title = $_GET['title'];
+    if (isset($_POST['search'])) {
+      $min_amount = $_POST['min_amount'];
+      $max_amount = $_POST['max_amount'];
+      $bedrooms = $_POST['bedrooms'];
+      $bathrooms = $_POST['bathrooms'];
+      $location = $_POST['location'];    
+    }
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -30,8 +35,8 @@
 <title>Aveden - <?php echo $row["title"];?> Results</title>
 
 <!-- Favicon -->
-<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="images/favicon.png" sizes="128x128" rel="shortcut icon" />
+<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
 <!-- Apple Touch Icon -->
 <link href="images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -119,7 +124,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
             <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
@@ -176,7 +181,7 @@
 
               <?php
                 //SQL Query
-                $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND()") or die(mysqli_error($server));
+                $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `price`>='$min_amount' AND `price`<='$max_amount' AND `no_bedroom`='$bedrooms' AND `no_bathroom`='$bathrooms' AND `county` LIKE '%$location%' ORDER BY RAND()") or die(mysqli_error($server));
                 //$result = mysqli_query($conn, $query);
 
                 if (mysqli_num_rows($query) > 0) {
@@ -188,7 +193,7 @@
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                    <div class="list-price"><?php echo $row["price"];?> / <span>day</span></div>
+                    <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="#"><?php echo $row["title"];?></a></h6>
