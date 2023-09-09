@@ -395,7 +395,7 @@
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-1.jpg" alt="">
                             <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                            <div class="list-price">$14,000 / <span>mo</span></div>
+                            <div class="list-price">$14,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
@@ -421,7 +421,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                            <div class="list-price">$82,000 / <span>mo</span></div>
+                            <div class="list-price">$82,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
@@ -447,7 +447,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
@@ -473,7 +473,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
@@ -504,7 +504,7 @@
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-1.jpg" alt="">
                             <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                            <div class="list-price">$14,000 / <span>mo</span></div>
+                            <div class="list-price">$14,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
@@ -530,7 +530,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                            <div class="list-price">$82,000 / <span>mo</span></div>
+                            <div class="list-price">$82,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
@@ -556,7 +556,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
@@ -582,7 +582,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
@@ -613,7 +613,7 @@
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-1.jpg" alt="">
                             <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div>
-                            <div class="list-price">$14,000 / <span>mo</span></div>
+                            <div class="list-price">$14,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Equestrian Family Home</a></h6>
@@ -639,7 +639,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                            <div class="list-price">$82,000 / <span>mo</span></div>
+                            <div class="list-price">$82,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
@@ -665,7 +665,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
@@ -691,7 +691,7 @@
                         <div class="listing-style1">
                           <div class="list-thumb">
                             <img class="w-100" src="images/listings/g1-4.jpg" alt="">
-                            <div class="list-price">$63,000 / <span>mo</span></div>
+                            <div class="list-price">$63,000 / <span>day</span></div>
                           </div>
                           <div class="list-content">
                             <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>

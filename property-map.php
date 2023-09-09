@@ -604,7 +604,7 @@
                     <div class="list-content">
                       <h6 class="list-title"><a href="page-property-single-v1.html">New apartment nice view</a></h6>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="list-price">$14,000 / <span>mo</span> </div>
+                        <div class="list-price">$14,000 / <span>day</span> </div>
                         <div class="list-meta2 d-flex align-items-center">
                           <a class="mr10" href=""><span class="flaticon-bed mr5"></span>3</a>
                           <a class="mr10" href=""><span class="flaticon-shower mr5"></span>4</a>
@@ -628,7 +628,7 @@
                     <div class="list-content">
                       <h6 class="list-title"><a href="page-property-single-v1.html">Luxury villa in Rego Park</a></h6>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="list-price">$14,000 / <span>mo</span> </div>
+                        <div class="list-price">$14,000 / <span>day</span> </div>
                         <div class="list-meta2 d-flex align-items-center">
                           <a class="mr10" href=""><span class="flaticon-bed mr5"></span>3</a>
                           <a class="mr10" href=""><span class="flaticon-shower mr5"></span>4</a>
@@ -652,7 +652,7 @@
                     <div class="list-content">
                       <h6 class="list-title"><a href="page-property-single-v1.html">Villa on Hollywood Boulevard</a></h6>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="list-price">$14,000 / <span>mo</span> </div>
+                        <div class="list-price">$14,000 / <span>day</span> </div>
                         <div class="list-meta2 d-flex align-items-center">
                           <a class="mr10" href=""><span class="flaticon-bed mr5"></span>3</a>
                           <a class="mr10" href=""><span class="flaticon-shower mr5"></span>4</a>
@@ -675,7 +675,7 @@
                     <div class="list-content">
                       <h6 class="list-title"><a href="page-property-single-v1.html">Triple Story House for Rent</a></h6>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="list-price">$14,000 / <span>mo</span> </div>
+                        <div class="list-price">$14,000 / <span>day</span> </div>
                         <div class="list-meta2 d-flex align-items-center">
                           <a class="mr10" href=""><span class="flaticon-bed mr5"></span>3</a>
                           <a class="mr10" href=""><span class="flaticon-shower mr5"></span>4</a>

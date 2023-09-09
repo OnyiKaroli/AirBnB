@@ -157,7 +157,7 @@
                         <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Item"><span class="fas fa-trash-can"></span></a>
                         <img class="w-100" src="images/listings/g1-1.jpg" alt="">
                         <div class="list-tag fz12"><span class="flaticon-electricity me-2"></span>FEATURED</div> 
-                        <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
+                        <div class="list-price">$<?php echo $row["price"];?> / <span>day</span></div>
                       </div>
                       <div class="list-content">
                         <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>

@@ -196,7 +196,7 @@
                     
                     ?>
 
-                    <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
+                    <div class="list-price"><?php echo $row["price"];?> / <span>day</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>

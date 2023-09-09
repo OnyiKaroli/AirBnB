@@ -4,6 +4,7 @@
     <?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?>
     <?php echo $row["no_bedroom"];?>
     <?php echo $row["street"], $row["city"], $row["county"];?>
+    accounts/booking?id=".$row["id"]."&title=".$row["title"]."
 
     <?php echo "<input type='text' class='form-control' placeholder= $row["name"]>" ?>
 

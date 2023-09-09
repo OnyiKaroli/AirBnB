@@ -54,7 +54,7 @@
   
   <!-- Main Header Nav -->
   <?php
-    include 'accounts/header_v3.php';
+    include 'header_v2.php';
   ?>
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
@@ -274,6 +274,13 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6 col-lg-4">
+                  <div class="overview-element d-flex align-items-center">
+                    <div class="ml15">
+                    <?php echo "<a href='accounts/booking?id=".$row["id"]."&title=".$row["title"]."&price=".$row["price"]."' class='ud-btn btn-thm2 mb25 me-4'>Book this room<i class='fal fa-arrow-right-long'></i></a>";?>
+                    </div>
+                  </div>
+                </div>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30">Property Description</h4>
               <p class="text mb10"><?php echo $row["description"];?></p>
@@ -469,7 +476,7 @@
 
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-3.jpg" alt="">
-                    <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
+                    <div class="list-price">$<?php echo $row["price"];?> / <span>day</span></div>
                   </div>
                   <div class="list-content px-0 pb-0">
                     <h6 class="list-title mb-1"><a href=""><?php echo $row["title"];?></a></h6>
@@ -546,7 +553,7 @@
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                    <div class="list-price">$<?php echo $row["price"];?> / <span>mo</span></div>
+                    <div class="list-price">$<?php echo $row["price"];?> / <span>day</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></h6>

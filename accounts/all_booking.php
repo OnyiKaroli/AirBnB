@@ -1,14 +1,9 @@
 <?php
   include '../config/conn.php';
-  
 
   //Session check
   if(!isset($_SESSION['user']['email'])) {
-    header("location:../login");
-  } else {
-    $id = $_GET['id'];
-    $title = $_GET['title'];
-    $price = $_GET['price'];
+    header("location:index");
   }
 ?>
 
@@ -17,7 +12,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="advanced search, agency, agent, classified, directory, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
 <meta name="description" content="Aveden - Where Every Stay is a Journey">
 <meta name="CreativeLayers" content="ATFN">
@@ -67,7 +62,7 @@
   <div class="rightside-hidden-bar">
     <div class="hsidebar-header">
       <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Book your stay</h4>
+      <h4 class="title">Welcome to Aveden</h4>
     </div>
     <div class="hsidebar-content">
       <div class="hiddenbar_navbar_content">
@@ -143,94 +138,118 @@
             include 'sidebar.php';
           ?>
           <div class="row align-items-center pb40">
-            <div class="col-lg-12">
+            <div class="col-xxl-3">
               <div class="dashboard_title_area">
-                <h2>Complete the details</h2>
+                <h2>My Properties</h2>
                 <p class="text">We are glad to see you again!</p>
+              </div>
+            </div>
+            <div class="col-xxl-9">
+              <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
+                <div class="item1 mb15-sm">
+                  <div class="search_area">
+                    <input type="text" class="form-control bdrs12" placeholder="Search">
+                    <label><span class="flaticon-search"></span></label>
+                  </div>
+                </div>
+                <div class="page_control_shorting bdr1 bdrs12 py-2 ps-3 pe-2 mx-1 mx-xxl-3 bgc-white mb15-sm maxw140">
+                  <div class="pcs_dropdown d-flex align-items-center"><span class="title-color">Sort by:</span>
+                    <select class="selectpicker show-tick">
+                      <option>New</option>
+                      <option>Best Seller</option>
+                      <option>Best Match</option>
+                      <option>Price Low</option>
+                      <option>Price High</option>
+                    </select>
+                  </div>
+                </div>
+                <a href="../listing" class="ud-btn btn-thm">Make another booking<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xl-12">
-            <?php
-          
-          //SQL Query
-          $query = mysqli_query($server, "SELECT * FROM `users` WHERE `email` = '$servedby_email'") or die(mysqli_error($server));
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <div class="packages_table table-responsive">
+                  <table class="table-style3 table at-savesearch">
+                    <thead class="t-head">
+                      <tr>
+                        <th scope="col">Listing title</th>
+                        <th scope="col">Date Booked</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">View</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="t-body">
+                      
 
-          if (mysqli_num_rows($query) > 0) {
-            // OUTPUT DATA OF EACH ROW
-            while($row = mysqli_fetch_assoc($query)) {
+                      <?php
+                        //SQL Query
+                        $query = mysqli_query($server, "SELECT * FROM `bookings` WHERE `client_id` = '$servedby_email' ORDER BY `date_booked` DESC") or die(mysqli_error($server));
+                        $count=mysqli_num_rows($query);
+                        if (mysqli_num_rows($query) > 0) {
+                        // OUTPUT DATA OF EACH ROW
+                        while($row = mysqli_fetch_assoc($query)) {
+                      ?>
+                        <tr>
+                        <th scope="row">
+                          <div class="listing-style1 dashboard-style d-xxl-flex align-items-center mb-0">
+                            <div class="list-thumb">
+                              <img class="w-100" src="images/listings/list-1.jpg" alt="">
+                            </div>
+                            <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
+                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
+                              <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
+                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>day</span></a></div>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="vam"><?php echo $row["date"];?></td>
 
-          ?>
-              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 pt30 mb30 overflow-hidden position-relative">
-                <form action="booking_process.php" method="post">
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">Username</label>
-                            <?php echo "<input type='text' name='username' class='form-control' placeholder=".$row["name"]." readonly>"; ?>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">Email</label>
-                            <?php echo "<input type='text' name='email' class='form-control' placeholder=".$row["email"]." readonly>"; ?>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">Property</label>
-                            <?php echo "<input type='text' name='property' class='form-control' placeholder=".$title." readonly>"; ?>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">Property ID</label>
-                            <?php echo "<input type='text' name='id' class='form-control' placeholder=".$id." readonly>"; ?>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">From</label>
-                            <input type="date" name="date1" class="form-control" >
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <label class="form-label fw600 dark-color">To</label>
-                            <input type="date" name="date2" class="form-control">
-                        </div>
-                        </div>
-                    </div>
-                    <?php
-                        $date1 = strtotime('date1');
-                        $date2 = strtotime('date2');
-
-                        $diff = $date2 - $date1;
-                        $days = floor($diff / (60 * 60 * 24));
-                        $t_price = $days * $price;
-                    ?>
-                    <div class="col-lg-6">
-                        <div class="ui-content mb40">
-                        <div class="form-style1">
-                            <input type="numeric" name="price" class="ud-btn btn-thm mb25" placeholder="<?php echo $t_price; ?>" readonly>
-                        </div>
-                        </div>
-                    </div>
-                    <button type="submit" name="book" class="ud-btn btn-white2 mb25 me-4">Book<i class="fal fa-arrow-right-long"></i></button>
-                </form>
+                          <?php
+                          
+                          if ($row["status"] = "Checked In") {
+                            echo "<td class='vam'><span class='pending-style style2'>".$row["status"]."</span></td>";
+                          } elseif ($row["status"] = "Processing") {
+                            echo "<td class='vam'><span class='pending-style style3'>".$row["status"]."</span></td>";
+                          } else {
+                            echo "<td class='vam'><span class='pending-style style1'>".$row["status"]."</span></td>";
+                          }
+                          
+                          
+                          ?>
+                        <td class="vam"><?php echo $row["date"];?></td>
+                        <td class="vam">
+                          <div class="d-flex">
+                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="flaticon-bin"></span></a>
+                          </div>
+                        </td><?php }}?>
+                    </tbody>
+                  </table>
+                  <div class="mbp_pagination text-center mt30">
+                    <ul class="page_navigation">
+                      <li class="page-item">
+                        <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">20</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+                      </li>
+                    </ul>
+                    <p class="mt10 pagination_page_count text-center">1 – 20 of <?php echo $count; ?>+ property available</p>
+                  </div>
+                </div>
               </div>
-              <?php }}?>
             </div>
           </div>
         </div>

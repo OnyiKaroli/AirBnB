@@ -11,7 +11,7 @@
               <a href='../listing' class='items-center'><i class='flaticon-new-tab mr15'></i>Make a booking</a>
             </div>
             <div class='sidebar_list_item'>
-              <a href='dashboard-properties' class='items-center'><i class='flaticon-home mr15'></i>My Bookings</a>
+              <a href='all_booking' class='items-center'><i class='flaticon-home mr15'></i>My Bookings</a>
             </div>";
             } elseif ($servedby_role = "Admin") {
               echo "<div class='sidebar_list_item'>

@@ -201,7 +201,7 @@
                             <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
                               <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
                               <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
-                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>mo</span></a></div>
+                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>day</span></a></div>
                             </div>
                           </div>
                         </th>

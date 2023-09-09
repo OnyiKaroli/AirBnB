@@ -188,7 +188,7 @@
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                    <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
+                    <div class="list-price"><?php echo $row["price"];?> / <span>day</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="#"><?php echo $row["title"];?></a></h6>
