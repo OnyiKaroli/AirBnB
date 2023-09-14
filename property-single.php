@@ -56,56 +56,6 @@
   <?php
     include 'header_v2.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Need Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
 
   <div class="hiddenbar-body-ovelay"></div>
 
@@ -117,7 +67,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -169,19 +119,6 @@
         <div class="row wow fadeInUp" data-wow-delay="500ms">
           <div class="col-lg-8">
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <div class="ps-v4-hero-tab position-relative">
-                <ul class="nav nav-pills justify-content-end" id="pills-tab2" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active mr10" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><span class="flaticon-images text-white fz20"></span></button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link mr10" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span class="flaticon-map text-white fz20"></span></button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><span class="flaticon-maps-1 text-white fz20"></span></button>
-                  </li>
-                </ul>
-              </div>
               <div class="ps-v4-hero-tab">
                 <div class="tab-content overflow-visible" id="pills-tabContent2">
                   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -206,18 +143,21 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <iframe class="position-relative h510" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
-                  </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <iframe class="h510 w-100" src="https://www.google.com/maps/embed?pb=!4v1553797194458!6m8!1m7!1sR4K_5Z2wRHTk9el8KLTh9Q!2m2!1d36.82551718071267!2d-76.34864590837246!3f305.15097!4f0!5f0.7820865974627469" allowfullscreen=""></iframe>
-                  </div>
                 </div>
               </div>
             </div>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30">Overview</h4>
               <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                  <div class="overview-element mb25 d-flex align-items-center">
+                    <span class="icon flaticon-bed"></span>
+                    <div class="ml15">
+                      <h6 class="mb-0">Guests</h6>
+                      <p class="text mb-0 fz15"><?php echo $row["guest"];?> max</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="overview-element mb25 d-flex align-items-center">
                     <span class="icon flaticon-bed"></span>
@@ -236,51 +176,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="overview-element mb25 d-flex align-items-center">
-                    <span class="icon flaticon-event"></span>
-                    <div class="ml15">
-                      <h6 class="mb-0">Date Built</h6>
-                      <p class="text mb-0 fz15"><?php echo $row["date"];?></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="overview-element mb25-xs d-flex align-items-center">
-                    <span class="icon flaticon-garage"></span>
-                    <div class="ml15">
-                      <h6 class="mb-0">Garage</h6>
-                      <p class="text mb-0 fz15"><?php echo $row["garage_size"];?></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="overview-element mb25-xs d-flex align-items-center">
-                    <span class="icon flaticon-expand"></span>
-                    <div class="ml15">
-                      <h6 class="mb-0">Sqft</h6>
-                      <p class="text mb-0 fz15"><?php echo $row["room_size"];?></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="overview-element d-flex align-items-center">
-                    <span class="icon flaticon-home-1"></span>
-                    <div class="ml15">
-                      <h6 class="mb-0">Property Type</h6>
-                      <p class="text mb-0 fz15"><?php echo $row["category"];?></p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                  <div class="overview-element d-flex align-items-center">
-                    <div class="ml15">
-                    <?php echo "<a href='accounts/booking?id=".$row["id"]."&title=".$row["title"]."&price=".$row["price"]."' class='ud-btn btn-thm2 mb25 me-4'>Book this room<i class='fal fa-arrow-right-long'></i></a>";?>
-                    </div>
-                  </div>
-                </div>
             <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
               <h4 class="title fz17 mb30">Property Description</h4>
               <p class="text mb10"><?php echo $row["description"];?></p>
@@ -311,9 +208,6 @@
                       <p class="text mb-0"><?php echo $row["county"];?></p>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <iframe class="position-relative bdrs12 mt30 h250" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
                 </div>
               </div>
             </div>
@@ -346,116 +240,14 @@
                 </div>
               </div>
             </div>
-            <?php }?>
-            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-              <h4 class="title fz17 mb30">Get More Information</h4>
-              <div class="agent-single d-sm-flex align-items-center bdrb1 mb30 pb25">
-                <div class="single-img mb30-sm">
-                  <img class="w90" src="images/team/agent-3.png" alt="">
-                </div>
-
-                <?php
-                //SQL Query
-                $query = mysqli_query($server, "SELECT * FROM `agents` WHERE `id` = '$agent_id'") or die(mysqli_error($server));
-                ?>
-
-                <div class="single-contant ml30 ml0-xs">
-                  <h6 class="title mb-1"><?php echo $row["name"];?></h6>
-                  <div class="agent-meta mb10 d-md-flex align-items-center">
-                    <a class="text fz15 pe-2 bdrr1" href=""><i class="flaticon-call pe-1"></i><?php echo $row["tel"];?></a>
-                  </div>
-                  <div class="agent-social">
-                    <a class="mr20" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="mr20" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="mr20" href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div class="col-lg-4">
-            <div class="default-box-shadow2 bdrs12 bdr1 p30 mb30 bgc-white position-relative">
-              <h4 class="form-title mb5">Schedule a tour</h4>
-              <p class="text">Choose your preferred day</p>
-              <div class="ps-navtab">
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-inperson" role="tabpanel" aria-labelledby="pills-inperson-tab">
-                    <form class="form-style1">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="mb20">
-                            <input type="text" class="form-control" placeholder="Time" />
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="mb20">
-                            <input type="text" class="form-control" placeholder="Name">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="mb20">
-                            <input type="text" class="form-control" placeholder="Phone">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mb20">
-                            <input type="email" class="form-control" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mb10">
-                            <textarea cols="30" rows="4" placeholder="Enter Your Messages"></textarea>
-                          </div>
-                        </div>
-                        <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                          <label class="custom_checkbox fz14 ff-heading">By submitting this form I agree to Terms of Use
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="d-grid">
-                            <a class="ud-btn btn-thm" href="page-contact.html">Submit a Tour Request<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="tab-pane fade" id="pills-videochat" role="tabpanel" aria-labelledby="pills-videochat-tab">
-                    <form class="form-style1">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="mb20">
-                            <input type="text" class="form-control" placeholder="Name">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="mb20">
-                            <input type="text" class="form-control" placeholder="Phone">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mb20">
-                            <input type="email" class="form-control" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="mb10">
-                            <textarea cols="30" rows="4" placeholder="Enter Your Messages"></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="d-grid">
-                            <a class="ud-btn btn-thm" href="page-contact.html">Submit a Tour Request<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+            <div class="overview-element d-flex align-items-center">
+              <div class="ml15">
+                <?php echo "<a href='accounts/booking?id=".$row["id"]."&title=".$row["title"]."&price=".$row["price"]."' class='ud-btn btn-dark mb25 me-4'>Book this room<i class='fal fa-arrow-right-long'></i></a>";?>
               </div>
-            </div>
+            </div><?php }?>
             <?php
               include 'listing_sidebar.php';
             ?>
@@ -511,7 +303,7 @@
                 <div class="list-news-style d-flex align-items-center mb20">
                   <div class="news-img flex-shrink-0"><img src="images/listings/ps-s-1.jpg" alt=""></div>
                   <div class="news-content flex-shrink-1 ms-3">
-                    <h5 class="title mb0">$<?php echo $row["price"];?> /<span class="fz15">mo</span></h5>
+                    <h5 class="title mb0">$<?php echo $row["price"];?> /<span class="fz15">day</span></h5>
                     <p class="new-text mb0 fz14"><?php echo $row["title"];?></p>
                     <div class="list-meta">
                       <a class="me-2" href=""><span class="flaticon-bed pe-1"></span><?php echo $row["no_bedroom"];?></a>
@@ -526,6 +318,32 @@
               <div class="widget-wrapper">
               </div>
               <div class="widget-wrapper">
+              </div>
+            </div>
+            <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <h4 class="title fz17 mb30">Get More Information</h4>
+              <div class="agent-single d-sm-flex align-items-center bdrb1 mb30 pb25">
+                <div class="single-img mb30-sm">
+                  <img class="w90" src="images/team/agent-3.png" alt="">
+                </div>
+
+                <?php
+                //SQL Query
+                $query = mysqli_query($server, "SELECT * FROM `agents` WHERE `id` = '$agent_id'") or die(mysqli_error($server));
+                ?>
+
+                <div class="single-contant ml30 ml0-xs">
+                  <h6 class="title mb-1"><?php echo $row["name"];?></h6>
+                  <div class="agent-meta mb10 d-md-flex align-items-center">
+                    <a class="text fz15 pe-2 bdrr1" href=""><i class="flaticon-call pe-1"></i><?php echo $row["tel"];?></a>
+                  </div>
+                  <div class="agent-social">
+                    <a class="mr20" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="mr20" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="mr20" href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -582,134 +400,9 @@
     </section>
 
     <!-- Our Footer --> 
-    <section class="footer-style1 pt60 pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
-              <div class="row mb-4 mb-lg-5">
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Total Free Customer Care</p>
-                    <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Nee Live Support?</p>
-                    <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="app-widget">
-                <h5 class="title text-white mb10">Apps</h5>
-                <div class="row mb-4 mb-lg-5">
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-apple fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Download on the</p>
-                          <h6 class="app-title text-white fz14">Apple Store</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-google-play fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Get in on</p>
-                          <h6 class="app-title text-white fz14">Google Play</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="social-widget">
-                <h6 class="text-white mb20">Follow us on social media</h6>
-                <div class="social-style1">
-                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <div class="mailchimp-widget mb-4 mb-lg-5">
-                <h6 class="title text-white mb20">Keep Yourself Up to Date</h6>
-                <div class="mailchimp-style1">
-                  <input type="email" class="form-control" placeholder="Your Email">
-                  <button type="submit">Subscribe</button>
-                </div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Popular Search</h6>
-                    <div class="link-list">
-                      <a href="">Apartment for Rent</a>
-                      <a href="">Apartment Low to hide</a>
-                      <a href="">Offices for Buy</a>
-                      <a href="">Offices for Rent</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Quick Links</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Terms of Use</a></li>
-                      <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Pricing Plans</a></li>
-                      <li><a href="">Our Services</a></li>
-                      <li><a href="">Contact Support</a></li>
-                      <li><a href="">Careers</a></li>
-                      <li><a href="">FAQs</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Discover</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Mombasa</a></li>
-                      <li><a href="">Nairobi</a></li>
-                      <li><a href="">Kisumu</a></li>
-                      <li><a href="">Naivasha</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container white-bdrt1 py-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="text-center text-lg-start">
-              <p class="copyright-text text-gray ff-heading">© Homez - All rights reserved</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="text-center text-lg-end">
-              <p class="footer-menu ff-heading text-gray"><a class="text-gray" href="#">Privacy</a> · <a class="text-gray" href="#">Terms</a> · <a class="text-gray" href="#">Sitemap</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php
+      include 'footer.php';
+    ?>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
 </div>

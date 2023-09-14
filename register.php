@@ -1,3 +1,8 @@
+<?php
+  include_once 'config/conn.php';
+  //session_destroy();
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -11,7 +16,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/ace-responsive-menu.css">
 <link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/fontawesome.css">
+<link rel="stylesheet" href="css/fontawesome.css"> 
 <link rel="stylesheet" href="css/flaticon.css">
 <link rel="stylesheet" href="css/bootstrap-select.min.css">
 <link rel="stylesheet" href="css/ud-custom-spacing.css">
@@ -43,39 +48,149 @@
   <!--div class="preloader"></div-->
 <?php
   include 'header_v2.php';
+
 ?>
+
+  <!-- Mobile Nav  -->
+  <div id="page" class="mobilie_header_nav stylehome1">
+    <div class="mobile-menu">
+      <div class="header innerpage-style">
+        <div class="menu_and_widgets">
+          <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
+            <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
+            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
+            <a href="login"><span class="icon fz18 far fa-user-circle"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.mobile-menu -->
+    <?php
+      include 'mobile_header.php';
+    ?>
+  </div>
+
+
+
+
+
+
+
 
   <div class="body_content">
     <!-- Our Compare Area -->
     <section class="our-compare pt60 pb60">
       <img src="images/icon/register-page-icon.svg" alt="" class="login-bg-icon wow fadeInLeft" data-wow-delay="300ms">
       <div class="container">
-        <form action="process_registration.php" method="POST">
+        <form method="POST">
         <div class="row wow fadeInRight" data-wow-delay="300ms">
           <div class="col-lg-6">
             <div class="log-reg-form form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
               <div class="text-center mb40">
                 <h2>Create account</h2>
-                <p class="text">Sign in with this account across the following sites.</p>
+<?php
+
+
+
+    if (isset($_POST['register'])) {
+
+
+    $name = $_POST["name"];
+    $role = $_POST["role"];
+    $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
+    $password = md5($_POST["password"]);
+    $cpassword = md5($_POST["cpassword"]);
+
+
+
+        //$date = addslashes(date("Y-m-d"));
+        //$time = addslashes(date("G:i:s"));
+    if ($password !== $cpassword) {          
+          echo'
+              <div class="message-alart-style1">
+                <div class="alert alart_style_three alert-dismissible fade show mb20" role="alert">Passwords do not much. Kindly try again.
+                  <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
+                </div>
+              </div>';
+    }else{
+
+        $duplicator_checker= mysqli_query($server, "SELECT * FROM `users` WHERE email='$email' ") or 
+        die(mysqli_error($server));
+        //check rows returned
+
+        $count=mysqli_num_rows($duplicator_checker);
+        if($count<1)
+        {
+            //$_SESSION['user']['email'] = $email;
+            //$_SESSION['user']['phone_no'] =$phone_no;
+            $insert2 = mysqli_query($server, "INSERT INTO users (name, email, password, role) VALUES ('$name', '$email', '$password', '$role')") or die(mysqli_error($server));
+                if ($insert2) {
+                    echo '<div class="message-alart-style1">
+                            <div class="alert alart_style_three alert-dismissible fade show mb20" role="alert">Successfully created account. Kindly <a data-toggle="modal" data-target="login"><u>login</u> to continue</a>
+                              <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
+                            </div>
+                          </div>';
+
+               
+                              //header( "refresh:2;url=login" );           
+                }else{
+         
+          echo'
+              <div class="message-alart-style1">
+                <div class="alert alart_style_three alert-dismissible fade show mb20" role="alert"><strong>Failed to create account</strong>. Try again.
+                  <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
+                </div>
+              </div>';
+
+
+                            ;
+                }
+        }else{
+
+          echo'
+              <div class="message-alart-style1">
+                <div class="alert alart_style_four alert-dismissible fade show mb20" role="alert"><strong>Seems like you <strong>have an account</strong>. Try signing in or resetting password.
+                  <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
+                </div>
+              </div>';
+                        ;
+        }
+  
+    }
+}
+
+
+?>
+
+
+                <p class="text">Sign in with after account creation</p>
+              </div>
+              <div class="mb25">
+                <label class="form-label fw600 dark-color">Register as</label>
+                <select id="role" name="role" class="form-control" required="">
+                  <option value="">Select option below</option>
+                  <option value="client">Looking for accomodation</option>
+                  <option value="owner">Property Owner</option>
+                </select>
               </div>
               <div class="mb25">
                 <label class="form-label fw600 dark-color">Username</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required="">
               </div>
               <div class="mb25">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" required="">
               </div>
               <div class="mb15">
                 <label class="form-label fw600 dark-color">Password</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" required="">
               </div>
               <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirm Password</label>
-                <input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Renter Password">
+                <input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Renter Password" required="">
               </div>
               <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
+                <button class="ud-btn btn-thm" type="submit" name="register">Sign in <i class="fal fa-arrow-right-long"></i></button>
               </div>
               <p class="dark-color text-center mb0 mt10">Already signed up? <a class="dark-color fw600" href="login">Go to Login</a></p>
             </div>

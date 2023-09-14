@@ -48,57 +48,7 @@
   <!-- Main Header Nav -->
   <?php
     include 'header_v2.php';
-  ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
+  ?> 
   <!-- Filter Content In Hiddn SideBar -->
   <div class="lefttside-hidden-bar">
     <div class="hsidebar-header">
@@ -120,7 +70,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -147,30 +97,30 @@
                   <div class="col-lg-12">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw600 mb10">First Name</label>
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input type="text" name="fname" class="form-control" placeholder="First Name">
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw600 mb10">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input type="text" name="lname" class="form-control" placeholder="Last Name">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw600 mb10">Email</label>
-                      <input type="email" class="form-control" placeholder="Your Name">
+                      <input type="email" name="email" class="form-control" placeholder="Your Email">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb10">
-                      <label class="heading-color ff-heading fw600 mb10">Textarea</label>
-                      <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
+                      <label class="heading-color ff-heading fw600 mb10">Message</label>
+                      <textarea cols="30" rows="4" placeholder="Enter your message"></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="d-grid">
-                      <a class="ud-btn btn-thm" href="page-contact.html">Submit<i class="fal fa-arrow-right-long"></i></a>
+                      <button type="submit" class="ud-btn btn-thm" name="submit">Submit<i class="fal fa-arrow-right-long"></i></button>
                     </div>
                   </div>
                 </div>
@@ -263,134 +213,9 @@
     </section>
 
     <!-- Our Footer --> 
-    <section class="footer-style1 pt60 pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
-              <div class="row mb-4 mb-lg-5">
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Total Free Customer Care</p>
-                    <h6 class="info-phone"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="contact-info">
-                    <p class="info-title">Nee Live Support?</p>
-                    <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="app-widget">
-                <h5 class="title text-white mb10">Apps</h5>
-                <div class="row mb-4 mb-lg-5">
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-apple fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Download on the</p>
-                          <h6 class="app-title text-white fz14">Apple Store</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-google-play fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Get in on</p>
-                          <h6 class="app-title text-white fz14">Google Play</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="social-widget">
-                <h6 class="text-white mb20">Follow us on social media</h6>
-                <div class="social-style1">
-                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="footer-widget mb-4 mb-lg-5">
-              <div class="mailchimp-widget mb-4 mb-lg-5">
-                <h6 class="title text-white mb20">Keep Yourself Up to Date</h6>
-                <div class="mailchimp-style1">
-                  <input type="email" class="form-control" placeholder="Your Email">
-                  <button type="submit">Subscribe</button>
-                </div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Popular Search</h6>
-                    <div class="link-list">
-                      <a href="">Apartment for Rent</a>
-                      <a href="">Apartment Low to hide</a>
-                      <a href="">Offices for Buy</a>
-                      <a href="">Offices for Rent</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Quick Links</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Terms of Use</a></li>
-                      <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Pricing Plans</a></li>
-                      <li><a href="">Our Services</a></li>
-                      <li><a href="">Contact Support</a></li>
-                      <li><a href="">Careers</a></li>
-                      <li><a href="">FAQs</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="link-style1 mb-3">
-                    <h6 class="text-white mb25">Discover</h6>
-                    <ul class="ps-0">
-                      <li><a href="">Mombasa</a></li>
-                      <li><a href="">Nairobi</a></li>
-                      <li><a href="">Kisumu</a></li>
-                      <li><a href="">Naivasha</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container white-bdrt1 py-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="text-center text-lg-start">
-              <p class="copyright-text text-gray ff-heading">© Homez - All rights reserved</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="text-center text-lg-end">
-              <p class="footer-menu ff-heading text-gray"><a class="text-gray" href="#">Privacy</a> · <a class="text-gray" href="#">Terms</a> · <a class="text-gray" href="#">Sitemap</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php
+      include 'footer.php';
+    ?>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
 </div>

@@ -58,56 +58,7 @@
   <?php
     include 'header_v4.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
+   
   <!-- Mobile Nav  -->
   <div id="page" class="mobilie_header_nav stylehome1">
     <div class="mobile-menu">
@@ -116,7 +67,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="../login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -175,9 +126,10 @@
                     <thead class="t-head">
                       <tr>
                         <th scope="col">Listing title</th>
+                        <th scope="col">From Date</th>
+                        <th scope="col">To Date</th>
                         <th scope="col">Date Booked</th>
                         <th scope="col">Status</th>
-                        <th scope="col">View</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
@@ -199,13 +151,13 @@
                               <img class="w-100" src="images/listings/list-1.jpg" alt="">
                             </div>
                             <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
-                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
-                              <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
-                              <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>day</span></a></div>
+                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["property_id"]."&title=".$row["property_name"]."'>".$row['property_name']."</a>"; ?></div>
                             </div>
                           </div>
                         </th>
-                        <td class="vam"><?php echo $row["date"];?></td>
+                        <td class="vam"><?php echo $row["init_date"];?></td>
+                        <td class="vam"><?php echo $row["end_date"];?></td>
+                        <td class="vam"><?php echo $row["date_booked"];?></td>
 
                           <?php
                           
@@ -219,7 +171,6 @@
                           
                           
                           ?>
-                        <td class="vam"><?php echo $row["date"];?></td>
                         <td class="vam">
                           <div class="d-flex">
                             <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>

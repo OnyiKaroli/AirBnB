@@ -58,56 +58,6 @@
   <?php
     include 'header_v4.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
   <!-- Mobile Nav  -->
   <div id="page" class="mobilie_header_nav stylehome1">
     <div class="mobile-menu">
@@ -116,7 +66,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="../login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -163,7 +113,7 @@
                     </select>
                   </div>
                 </div>
-                <a href="" class="ud-btn btn-thm">Add New Property<i class="fal fa-arrow-right-long"></i></a>
+                <a href="dashboard-add-property" class="ud-btn btn-thm">Add New Property<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -186,7 +136,7 @@
 
                       <?php
                         //SQL Query
-                        $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY RAND()") or die(mysqli_error($server));
+                        $query = mysqli_query($server, "SELECT * FROM `properties` ORDER BY `title` ASC") or die(mysqli_error($server));
                         $count=mysqli_num_rows($query);
                         if (mysqli_num_rows($query) > 0) {
                         // OUTPUT DATA OF EACH ROW
@@ -199,7 +149,7 @@
                               <img class="w-100" src="images/listings/list-1.jpg" alt="">
                             </div>
                             <div class="list-content py-0 p-0 mt-2 mt-xxl-0 ps-xxl-4">
-                              <div class="h6 list-title"><?php echo "<a href='property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
+                              <div class="h6 list-title"><?php echo "<a href='../property-single?id=".$row["id"]."&title=".$row["title"]."&agent_id=".$row["agent_id"]."'>".$row['title']."</a>"; ?></div>
                               <p class="list-text mb-0"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                               <div class="list-price"><a href=""><?php echo $row["price"];?>/<span>day</span></a></div>
                             </div>
@@ -220,12 +170,31 @@
                           
                           ?>
                         <td class="vam"><?php echo $row["date"];?></td>
-                        <td class="vam">
+                        <td class="vam"> 
                           <div class="d-flex">
-                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
-                            <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="flaticon-bin"></span></a>
+                            <?php echo "<a href='href='edit-property?id=".$row["id"]."' class='icon' data-bs-toggle='tooltip' data-bs-placement='top' title='Edit'><span class='fas fa-pen fa'></span></a>" ?>
+                            <button type="submit" name="delete" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="flaticon-bin"></span></button>
                           </div>
-                        </td><?php }}?>
+                        </td>
+                        <?php
+
+                          if(isset($_GET['delete'])) {
+                            $id = $servedby_email;
+                            $delete = mysqli_query($server, "DELETE FROM `properties` WHERE `id`='$id'");
+                            if ($delete) {
+                              echo "<div class='message-alart-style1'>
+                              <div class='alert alart_style_four alert-dismissible fade show mb20' role='alert'><strong>Success!</strong> Property deleted!
+                                <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+                              </div>
+                            </div>";
+                            }else {
+                              echo "<div class='message-alart-style1'>
+                                      <div class='alert alart_style_three alert-dismissible fade show mb20' role='alert'><strong>Failed:</strong> Try again.
+                                        <i class='far fa-xmark btn-close' data-bs-dismiss='alert' aria-label='Close'></i>
+                                      </div>
+                                    </div>";
+                                  }
+                               }}}?>
                     </tbody>
                   </table>
                   <div class="mbp_pagination text-center mt30">

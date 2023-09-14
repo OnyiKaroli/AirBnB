@@ -20,7 +20,7 @@
             <div class="d-flex align-items-center">
 
               <?php
-                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
+                echo "<a class='login-info d-flex align-items-center' href='dashboard-profile' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
               ?>
             </div>
           </div>

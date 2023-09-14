@@ -64,32 +64,7 @@
             <div class="log-reg-form form-style1 bgc-white p50 p30-sm default-box-shadow2 bdrs12">
               <div class="text-center mb40">
                 <h2>Sign in</h2>
-                <p class="text">Sign in with this account across the following sites.</p>
-              </div>
-              <div class="mb25">
-                <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
-              </div>
-              <div class="mb15">
-                <label class="form-label fw600 dark-color">Password</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
-              </div>
-              <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
-                <label class="custom_checkbox fz14 ff-heading">Remember me
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <a class="fz14 ff-heading" href="#">Lost your password?</a>
-              </div>
-              <div class="d-grid mb20">
-                <button class="ud-btn btn-thm" name="login" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
-              </div>
-              <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </form>
+
 
 <?php
 if(isset($_SESSION['user']['email'])) {
@@ -144,6 +119,35 @@ if (isset($_GET['logout'])) {
     }
   }
 ?>
+
+                
+                <p class="text">Sign in with this account across the following sites.</p>
+              </div>
+              <div class="mb25">
+                <label class="form-label fw600 dark-color">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="mb15">
+                <label class="form-label fw600 dark-color">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
+              </div>
+              <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb10">
+                <label class="custom_checkbox fz14 ff-heading">Remember me
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <a class="fz14 ff-heading" href="#">Lost your password?</a>
+              </div>
+              <div class="d-grid mb20">
+                <button class="ud-btn btn-thm" name="login" type="submit">Sign in <i class="fal fa-arrow-right-long"></i></button>
+              </div>
+              <p class="dark-color text-center mb0 mt10">Not signed up? <a class="dark-color fw600" href="register">Create an account.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+
 
     </section>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>

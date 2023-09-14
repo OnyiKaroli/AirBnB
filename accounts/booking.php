@@ -7,7 +7,7 @@
     header("location:../login");
   } else {
     $id = $_GET['id'];
-    $title = $_GET['title'];
+    $title_one = $_GET['title'];
     $price = $_GET['price'];
   }
 ?>
@@ -63,56 +63,6 @@
   <?php
     include 'header_v4.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Book your stay</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
   <!-- Mobile Nav  -->
   <div id="page" class="mobilie_header_nav stylehome1">
     <div class="mobile-menu">
@@ -121,7 +71,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="../login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -184,7 +134,7 @@
                         <div class="ui-content mb40">
                         <div class="form-style1">
                             <label class="form-label fw600 dark-color">Property</label>
-                            <?php echo "<input type='text' name='property' class='form-control' placeholder=".$title." readonly>"; ?>
+                            <?php echo "<input type='text' name='property' class='form-control' placeholder=".$title_one." readonly>"; ?>
                         </div>
                         </div>
                     </div>

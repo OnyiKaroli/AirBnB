@@ -9,91 +9,53 @@
           <input type="text" class="form-control" placeholder="What are you looking for?">
           <label><span class="flaticon-search"></span></label>
         </div>
-      </div>
-      <div class="widget-wrapper">
-        <h6 class="list-title">Listing Status</h6>
-        <div class="radio-element">
-          <div class="form-check d-flex align-items-center mb10">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-            <label class="form-check-label" for="flexRadioDefault4">Buy</label>
-          </div>
-          <div class="form-check d-flex align-items-center mb10">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked="checked">
-            <label class="form-check-label" for="flexRadioDefault5">Rent</label>
-          </div>
-          <div class="form-check d-flex align-items-center">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-            <label class="form-check-label" for="flexRadioDefault6">Sold</label>
-          </div>
-        </div>
-      </div>
-      <div class="widget-wrapper">
-        <h6 class="list-title">Property Type</h6>
-        <div class="checkbox-style1">
-          <label class="custom_checkbox">Houses
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-          <label class="custom_checkbox">Apartments
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-          <label class="custom_checkbox">Office
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-          <label class="custom_checkbox">Villa
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-          <label class="custom_checkbox">Townhome
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </div>
-      <div class="widget-wrapper">
-        <h6 class="list-title">Price Range</h6>
-        <!-- Range Slider Mobile Version -->
-        <div class="range-slider-style2">
-          <div class="range-wrapper">
-            <div class="mb30 mt35" id="slider"></div>
-            <div class="d-flex align-items-center">
-              <span id="slider-range-value1"></span><i class="fa-sharp fa-solid fa-minus mx-2 dark-color icon"></i>
-              <span id="slider-range-value2"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="widget-wrapper">
-        <h6 class="list-title">Bedrooms</h6>
-        <div class="d-flex">
-          <div class="selection">
-            <input id="any2" name="beds" type="radio" checked>
-            <label for="any2">any</label>
-          </div>
-          <div class="selection">
-            <input id="oneplus2" name="beds" type="radio">
-            <label for="oneplus2">1+</label>
-          </div>
-          <div class="selection">
-            <input id="twoplus2" name="beds" type="radio">
-            <label for="twoplus2">2+</label>
-          </div>
-          <div class="selection">
-            <input id="threeplus2" name="beds" type="radio">
-            <label for="threeplus2">3+</label>
-          </div>
-          <div class="selection">
-            <input id="fourplus2" name="beds" type="radio">
-            <label for="fourplus2">4+</label>
-          </div>
-          <div class="selection">
-            <input id="fiveplus2" name="beds" type="radio">
-            <label for="fiveplus2">5+</label>
-          </div>
-        </div>
-      </div>
+      </div> 
+      <div class="widget-wrapper advance-feature-modal">
+                <h6 class="list-title">Location</h6>
+                <div class="form-style2 input-group">
+                  <select name="location" class="selectpicker" required="" data-width="100%">
+                    <option>All Cities</option>
+                    <option value="County A">County A</option>
+                    <option value="County B">County B</option>
+                    <option value="County C">County C</option>
+                    <option value="County D">County D</option>
+                    <option value="County E">County E</option>
+                    <option value="County F">County F</option>
+                    <option value="County G">County G</option>
+                    <option value="County H">County H</option>
+                    <option value="County I">County I</option>
+                  </select>
+                </div>
+              </div>
+              <div class="widget-wrapper">
+                <div class="ui-content mb40">
+                <div class="form-style1">
+                  <label class="form-label fw600 dark-color">Check In</label>
+                  <input type="date" name="checkin" class="form-control" placeholder="Check In Date" required="">
+                </div>
+              </div>
+              </div>
+              <div class="widget-wrapper">
+                <div class="ui-content mb40">
+                <div class="form-style1">
+                  <label class="form-label fw600 dark-color">Check Out</label>
+                  <input type="date" name="checkout" class="form-control" placeholder="Check Out Date" required="">
+                </div>
+              </div>
+              </div>
+              <div class="widget-wrapper">
+                <h6 class="list-title">Guests</h6>
+                <div class="d-flex">
+                  <select class="selectpicker" required="" name="guest" data-width="100%" required="">
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                  </select>
+                 
+                </div>
+              </div>
       <div class="widget-wrapper">
         <h6 class="list-title">Bathrooms</h6>
         <div class="d-flex">

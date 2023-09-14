@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($password !== $cpassword) {
         die("Passwords do not match.");
-    }
+    } 
     
     // Check if the email already exists in the 'users' table
     $query = mysqli_query($server, "SELECT email FROM users WHERE email = '$email'") or die(mysqli_error($server));

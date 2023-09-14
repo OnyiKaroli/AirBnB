@@ -52,297 +52,6 @@
   <?php
     include 'header.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Need Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
-  <!-- Advance Feature Modal Start -->
-  <div class="advance-feature-modal">
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header pl30 pr30">
-            <h5 class="modal-title" id="exampleModalLabel">More Filter</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body pb-0">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Price Range</h6>
-                  <!-- Range Slider Mobile Version -->
-                  <div class="range-slider-style modal-version">
-                    <div class="range-wrapper">
-                      <div class="mb30 mt35" id="slider"></div>
-                      <div class="d-flex align-items-center">
-                        <span id="slider-range-value1"></span><i class="fa-sharp fa-solid fa-minus mx-2 dark-color icon"></i>
-                        <span id="slider-range-value2"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Type</h6>
-                  <div class="form-style2 input-group">
-                    <select class="selectpicker" data-live-search="true" data-width="100%">
-                      <option>Property</option>
-                      <option data-tokens="Apartments">Apartments</option>
-                      <option data-tokens="Bungalow">Bungalow</option>
-                      <option data-tokens="Houses">Houses</option>
-                      <option data-tokens="Loft">Loft</option>
-                      <option data-tokens="Office">Office</option>
-                      <option data-tokens="Townhome">Townhome</option>
-                      <option data-tokens="Villa">Villa</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Property ID</h6>
-                  <div class="form-style2">
-                    <input type="text" class="form-control" placeholder="RT04949213">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Bedrooms</h6>
-                  <div class="d-flex">
-                    <div class="selection">
-                      <input id="xany" name="xbeds" type="radio" checked>
-                      <label for="xany">any</label>
-                    </div>
-                    <div class="selection">
-                      <input id="xoneplus" name="xbeds" type="radio">
-                      <label for="xoneplus">1+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="xtwoplus" name="xbeds" type="radio">
-                      <label for="xtwoplus">2+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="xthreeplus" name="xbeds" type="radio">
-                      <label for="xthreeplus">3+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="xfourplus" name="xbeds" type="radio">
-                      <label for="xfourplus">4+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="xfiveplus" name="xbeds" type="radio">
-                      <label for="xfiveplus">5+</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Bathrooms</h6>
-                  <div class="d-flex">
-                    <div class="selection">
-                      <input id="yany" name="ybath" type="radio" checked>
-                      <label for="yany">any</label>
-                    </div>
-                    <div class="selection">
-                      <input id="yoneplus" name="ybath" type="radio">
-                      <label for="yoneplus">1+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="ytwoplus" name="ybath" type="radio">
-                      <label for="ytwoplus">2+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="ythreeplus" name="ybath" type="radio">
-                      <label for="ythreeplus">3+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="yfourplus" name="ybath" type="radio">
-                      <label for="yfourplus">4+</label>
-                    </div>
-                    <div class="selection">
-                      <input id="yfiveplus" name="ybath" type="radio">
-                      <label for="yfiveplus">5+</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Location</h6>
-                  <div class="form-style2 input-group">
-                    <select class="selectpicker" data-live-search="true" data-width="100%">
-                      <option>All Cities</option>
-                      <option data-tokens="California">California</option>
-                      <option data-tokens="Kisumu">Kisumu</option>
-                      <option data-tokens="LosAngeles">Nairobi</option>
-                      <option data-tokens="Manhattan">Manhattan</option>
-                      <option data-tokens="NewJersey">New Jersey</option>
-                      <option data-tokens="NewYork">Naivasha</option>
-                      <option data-tokens="SanDiego">San Diego</option>
-                      <option data-tokens="SanFrancisco">San Francisco</option>
-                      <option data-tokens="Texas">Texas</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="widget-wrapper">
-                  <h6 class="list-title">Square Feet</h6>
-                  <div class="space-area">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="form-style1">
-                        <input type="text" class="form-control" placeholder="Min.">
-                      </div>
-                      <span class="dark-color">-</span>
-                      <div class="form-style1">
-                        <input type="text" class="form-control" placeholder="Max">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="widget-wrapper mb0">
-                  <h6 class="list-title mb10">Amenities</h6>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="widget-wrapper mb20">
-                  <div class="checkbox-style1">
-                    <label class="custom_checkbox">Attic
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Basketball court
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Air Conditioning
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Lawn
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="widget-wrapper mb20">
-                  <div class="checkbox-style1">
-                    <label class="custom_checkbox">TV Cable
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Dryer
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Outdoor Shower
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Washer
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="widget-wrapper mb20">
-                  <div class="checkbox-style1">
-                    <label class="custom_checkbox">Lake view
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Wine cellar
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Front yard
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="custom_checkbox">Refrigerator
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <a class="reset-button" href="#"><span class="flaticon-turn-back"></span><u>Reset all filters</u></a>
-            <div class="btn-area">
-              <button class="ud-btn btn-thm"><span class="flaticon-search align-text-top pr10"></span>Search</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Advance Feature Modal End -->
 
   <div class="hiddenbar-body-ovelay"></div>
 
@@ -366,99 +75,89 @@
   </div>
 
   <div class="body_content">
-    <!-- Home Banner Style V1 -->
-    <section class="home-banner-style2 p0">
-      <div class="home-style2">
-        <div class="container maxw1600">
-          <div class="home2-hero-banner bdrs12"></div>
+    <!-- Home Banner Style V6 -->
+    <section class="home-banner-style6 p0" data-stellar-background-ratio="0.2">
+      <div class="home-style1">
+        <div class="container">
           <div class="row">
-            <div class="col-xl-10 mx-auto">
-              <div class="inner-banner-style2 text-center">
-                <div class="advance-style2 mt80 mt0-md mb60 mx-auto animate-up-1">
-                  <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Search House</button>
-                    </li>
-                  </ul>
+            <div class="col-xl-10">
+              <div class="inner-banner-style6">
+                <h2 class="hero-title text-white animate-up-1">Find the perfect place to <br class="d-none d-xl-block">Live with your family</h2>
+                <p class="hero-text text-white fz15 animate-up-2">Let’s find a home that’s perfect for you</p>
+                <div class="advance-search-tab mt60 mt30-md mb25 animate-up-3">
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                      <div class="advance-content-style2">
-                        <div class="row align-items-center justify-content-start justify-content-md-center">
-                          <div class="col-md-5 col-lg-6">
-                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
-                              <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
+                      <div class="advance-content-style1">
+                        <div class="row">
+                          <div class="col-md-8 col-lg-9">
+                            <div class="advance-search-field position-relative text-start">
+                              <form action="search_listing.php" method="POST" class="form-search position-relative" accept-charset="utf-8">
                                 <div class="box-search">
                                   <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
+                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
                                 </div>
                               </form>
                             </div>
                           </div>
-                          <div class="col-md-3 col-lg-3 ps-md-0">
-                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
-                              <div class="bootselect-multiselect">
-                                <select class="selectpicker" data-width="100%">
-                                  <option data-tokens="Apartments">Apartments</option>
-                                  <option data-tokens="Bungalow">Bungalow</option>
-                                  <option data-tokens="Houses">Houses</option>
-                                  <option data-tokens="Loft">Loft</option>
-                                  <option data-tokens="Office">Office</option>
-                                  <option data-tokens="TownHome">TownHome</option>
-                                  <option data-tokens="Villa">Villa</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
                           <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
-                              <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span><a href="listing"> Advanced</a></button>
-                              <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                              <button name="search" class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div class="advance-content-style2">
-                        <div class="row align-items-center justify-content-start justify-content-md-center">
-                          <div class="col-md-5 col-lg-6">
-                            <div class="advance-search-field position-relative text-start bdrr1 bdrrn-sm bb1-sm">
-                              <form action="#" method="get" class="form-search position-relative" accept-charset="utf-8">
+                      <div class="advance-content-style1">
+                        <div class="row">
+                          <div class="col-md-8 col-lg-9">
+                            <div class="advance-search-field position-relative text-start">
+                              <form action="search_listing.php" method="POST" class="form-search position-relative" accept-charset="utf-8">
                                 <div class="box-search">
                                   <span class="icon flaticon-home-1"></span>
-                                  <input class="form-control" type="text" name="search" placeholder="Enter Keyword">
+                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
                                 </div>
                               </form>
                             </div>
                           </div>
-                          <div class="col-md-3 col-lg-3 ps-md-0">
-                            <div class="bdrr1 bdrrn-sm pe-0 pe-lg-3 bb1-sm">
-                              <div class="bootselect-multiselect">
-                                <select class="selectpicker" data-width="100%">
-                                  <option data-tokens="Apartments">Apartments</option>
-                                  <option data-tokens="Bungalow">Bungalow</option>
-                                  <option data-tokens="Houses">Houses</option>
-                                  <option data-tokens="Loft">Loft</option>
-                                  <option data-tokens="Office">Office</option>
-                                  <option data-tokens="TownHome">TownHome</option>
-                                  <option data-tokens="Villa">Villa</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
                           <div class="col-md-4 col-lg-3">
-                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-2 mt-md-0">
-                              <button class="advance-search-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="flaticon-settings"></span> Advanced</button>
-                              <button class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                              <button name="search" class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                      <div class="advance-content-style1">
+                        <div class="row">
+                          <div class="col-md-8 col-lg-9">
+                            <div class="advance-search-field position-relative text-start">
+                              <form action="search_listing.php" method="POST" class="form-search position-relative" accept-charset="utf-8">
+                                <div class="box-search">
+                                  <span class="icon flaticon-home-1"></span>
+                                  <input class="form-control bgc-f7 bdrs12" type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <div class="d-flex align-items-center justify-content-start justify-content-md-center mt-3 mt-md-0">
+                              <button name="search" class="advance-search-icon ud-btn btn-thm ms-4" type="button"><span class="flaticon-search"></span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
                 </div>
-                <h2 class="hero-title animate-up-2">Find Your Dream Home</h2>
-                <p class="hero-text fz15 animate-up-3">Let’s find a home that’s perfect for you</p>
+                <p class="h6 fw600 text-white fz14 animate-up-4 my-3">Or browse featured categories:</p>
+                <div class="home4-icon-style mt20 d-none d-sm-flex animate-up-4">
+                  <?php echo '<a href="search-listing?category=house" class="d-flex align-items-center text-white ff-heading me-4"><i class="icon mr10 flaticon-home-1"></i> Houses</a>'?>
+                  <?php echo '<a href="search-listing?category=apartment" class="d-flex align-items-center text-white ff-heading me-4"><i class="icon mr10 flaticon-corporation"></i> Apartments</a>'?>
+                  <?php echo '<a href="search-listing?category=room" class="d-flex align-items-center text-white ff-heading me-4"><i class="icon mr10 flaticon-network"></i> Rooms</a>'?>
+                  <?php echo '<a href="search-listing?category=villa" class="d-flex align-items-center text-white ff-heading"><i class="icon mr10 flaticon-garden"></i> Villa</a>'?>
+                </div>
               </div>
             </div>
           </div>
@@ -469,98 +168,48 @@
     <!-- Explore Apartment -->
     <section class="pb90 pb30-md">
       <div class="container">
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-12">
-            <div class="dots_none nav_none slider-dib-sm slider-5-grid owl-theme owl-carousel">
-              <div class="item">
-                <a href="#">
-                  <div class="iconbox-style4">
-                    <span class="icon flaticon-home"></span>
-                    <div class="iconbox-content">
-                      <h6 class="title">Houses</h6>
-                      <?php
-                        // SQL query to count rows with "house" in the category column
-                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'house'") or die(mysqli_error($server));
-                        //check rows returned
-                        $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                      <p class="text mb-0"><?php echo $count;?> Properties</p>
-                    </div>
-                  </div>
-                </a>
+        <div class="row">
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="about-box2">
+              <h4 class="title">The New Way to Find <br class="d-none d-xl-block"> Your Home</h4>
+              <p class="text fz15">With our low and affordable rates <br class="d-none d-xl-block"> hop on to our exclusive listings.</p>
+              <a href="about" class="ud-btn btn-thm">More<i class="fal fa-arrow-right-long"></i></a>
+              <img class="img-1" src="images/about/home6-about-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay="300ms">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="iconbox-style6">
+                  <span class="icon flaticon-search-1"></span>
+                  <h3 class="title mb-1">01</h3>
+                  <h6 class="subtitle">Get on listing page</h6>
+                  <p class="iconbox-text">View the available houses posted on our site</p>
+                </div>
               </div>
-              <div class="item">
-                <a href="#">
-                  <div class="iconbox-style4">
-                    <span class="icon flaticon-corporation"></span>
-                    <div class="iconbox-content">
-                    <?php
-                        // SQL query to count rows with "house" in the category column
-                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'apartment'") or die(mysqli_error($server));
-                        //check rows returned
-                        $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                      <h6 class="title">Apartments</h6>
-                      <p class="text mb-0"><?php echo $count;?> Properties</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="col-sm-6">
+                <div class="iconbox-style6">
+                  <span class="icon flaticon-chat"></span>
+                  <h3 class="title mb-1">02</h3>
+                  <h6 class="subtitle">Refine your search</h6>
+                  <p class="iconbox-text">Our enhanced search is will enable you to hand pick the right details.</p>
+                </div>
               </div>
-              <div class="item">
-                <a href="#">
-                  <div class="iconbox-style4">
-                    <span class="icon flaticon-network"></span>
-                    <div class="iconbox-content">
-                    <?php
-                        // SQL query to count rows with "house" in the category column
-                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'office'") or die(mysqli_error($server));
-                        //check rows returned
-                        $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                      <h6 class="title">Office</h6>
-                      <p class="text mb-0"><?php echo $count;?> Properties</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="col-sm-6">
+                <div class="iconbox-style6">
+                  <span class="icon flaticon-bird-house"></span>
+                  <h3 class="title mb-1">03</h3>
+                  <h6 class="subtitle">Proceed to Booking</h6>
+                  <p class="iconbox-text">Select the house and you'll be transfered to your accounts page.</p>
+                </div>
               </div>
-              <div class="item">
-                <a href="#">
-                  <div class="iconbox-style4">
-                    <span class="icon flaticon-garden"></span>
-                    <div class="iconbox-content">
-                    <?php
-                        // SQL query to count rows with "house" in the category column
-                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'villa'") or die(mysqli_error($server));
-                        //check rows returned
-                        $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                      <h6 class="title">Villa</h6>
-                      <p class="text mb-0"><?php echo $count;?> Properties</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="iconbox-style4">
-                    <span class="icon flaticon-chat"></span>
-                    <div class="iconbox-content">
-                    <?php
-                        // SQL query to count rows with "house" in the category column
-                        $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `category` = 'townhome'") or die(mysqli_error($server));
-                        //check rows returned
-                        $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                      <h6 class="title">Townhome</h6>
-                      <p class="text mb-0"><?php echo $count;?> Properties</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="col-sm-6">
+                <div class="iconbox-style6">
+                  <span class="icon flaticon-house-1"></span>
+                  <h3 class="title mb-1">04</h3>
+                  <h6 class="subtitle">Confirmed!</h6>
+                  <p class="iconbox-text">After submitting the necessary details, you'll contacted shortly</p>
+                </div>
               </div>
             </div>
           </div>
@@ -655,7 +304,6 @@
               ?> 
 
               <div class="item">
-                <a href="page-grid-default-v1.html">
                   <div class="feature-style2 mb30">
                     <div class="feature-img"><img class="w-100" src="images/listings/city-listing-1.jpg" alt=""></div>
                     <div class="feature-content pt20">
@@ -663,7 +311,6 @@
                       <p class="text fz15"><?php $row["total_properties"]; ?> Properties</p>
                     </div>
                   </div>
-                </a>
               </div><?php }}?>
             </div>
           </div>
@@ -810,40 +457,35 @@
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">Our stay at Aveden was absolutely fantastic! The host was incredibly welcoming, the apartment was spotless, and the location couldn't have been better. We'll definitely be coming back!</h4>
-                      <h6 class="name">Ali Tufan</h6>
-                      <p class="design">Product Manager, Apple Inc</p>
+                      <h6 class="name">Mery Mwangi</h6>
                     </div>
                   </div>
                   <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">I can't say enough good things about Aveden experience. From the breathtaking views to the cozy decor, it felt like a home away from home. We had an unforgettable time, and we'll be recommending this place to all our friends!</h4>
-                      <h6 class="name">Ali Tufan</h6>
-                      <p class="design">Product Manager, Apple Inc</p>
+                      <h6 class="name">Fay Teresa</h6>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">Staying at Aveden was a dream come true. The host went above and beyond to make our stay comfortable, and the attention to detail in the design of the space was impressive. We can't wait to return!</h4>
-                      <h6 class="name">Ali Tufan</h6>
-                      <p class="design">Product Manager, Apple Inc</p>
+                      <h6 class="name">Tessie Moh</h6>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">We had the most amazing weekend getaway at Aveden. The cottage was charming, and the garden was a serene oasis. It was the perfect escape from the city, and we can't wait to return for another relaxing stay.</h4>
-                      <h6 class="name">Ali Tufan</h6>
-                      <p class="design">Product Manager, Apple Inc</p>
+                      <h6 class="name">John Evans</h6>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
                     <div class="testi-content text-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">Our family had an incredible vacation thanks to Aveden. The location was perfect for exploring the area, and the amenities provided made our stay stress-free. We'll cherish the memories we made here forever.</h4>
-                      <h6 class="name">Ali Tufan</h6>
-                      <p class="design">Product Manager, Apple Inc</p>
+                      <h6 class="name">Ignatious Onyango</h6>
                     </div>
                   </div>
                 </div>
@@ -976,7 +618,7 @@
 
     <!-- Our Footer --> 
     <?php
-      include 'footer_v2.php';
+      include 'footer.php';
     ?>
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>

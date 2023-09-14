@@ -58,56 +58,6 @@
   <?php
     include 'header_v4.php';
   ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Need Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
   <!-- Mobile Nav  -->
   <div id="page" class="mobilie_header_nav stylehome1">
     <div class="mobile-menu">
@@ -115,8 +65,8 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
-            <a class="mobile_logo" href="#"><img src="images/header-logo.png" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a class="mobile_logo" href="../index"><img src="images/header-logo.png" alt=""></a>
+            <a href="dashboard-profile"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -136,57 +86,14 @@
         <div class="dashboard__content bgc-f7">
           <?php
             include 'sidebar.php';
+
+            if ($servedby_role == "client") {
+              include 'client.php';
+            } else {
+              include 'admin.php';
+            }
+            
           ?>
-          <div class="row">
-            <div class="col-sm-6 col-xxl-4">
-            <?php
-              // SQL query to count rows with "house" in the category column
-              $checkout_count= mysqli_query($server, "SELECT * FROM `properties`") or die(mysqli_error($server));
-              //check rows returned
-              $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-              <div class="d-flex justify-content-between statistics_funfact">
-                <div class="details">
-                  <div class="text fz25">All Properties</div>
-                  <div class="title"><?php echo $count; ?></div>
-                </div>
-                <div class="icon text-center"><i class="flaticon-home"></i></div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xxl-4">
-            <?php
-              // SQL query to count rows with "house" in the category column
-              $checkout_count= mysqli_query($server, "SELECT * FROM `properties` WHERE `listed_in` = 'For sale'") or die(mysqli_error($server));
-              //check rows returned
-              $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-              <div class="d-flex justify-content-between statistics_funfact">
-                <div class="details">
-                  <div class="text fz25">For Sale</div>
-                  <div class="title"><?php echo $count; ?></div>
-                </div>
-                <div class="icon text-center"><i class="flaticon-search-chart"></i></div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xxl-4">
-              <div class="d-flex justify-content-between statistics_funfact">
-              <?php
-              // SQL query to count rows with "house" in the category column
-              $checkout_count= mysqli_query($server, "SELECT * FROM `agents`") or die(mysqli_error($server));
-              //check rows returned
-              $count=mysqli_num_rows($checkout_count);
-                        
-                      ?>
-                <div class="details">
-                  <div class="text fz25">Sales Agents</div>
-                  <div class="title"><?php echo $count; ?></div>
-                </div>
-                <div class="icon text-center"><i class="flaticon-review"></i></div>
-              </div>
-            </div>
-          </div>
           <div class="row">
             <div class="col-xl-8">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">

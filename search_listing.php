@@ -2,11 +2,15 @@
     include 'config/conn.php';
 
     if (isset($_POST['search'])) {
+      $location = $_POST['location'];
+      $checkin = $_POST['checkin'];
+      $checkout = $_POST['checkout'];
+      $guest = $_POST['guest'];
       $min_amount = $_POST['min_amount'];
       $max_amount = $_POST['max_amount'];
       $bedrooms = $_POST['bedrooms'];
       $bathrooms = $_POST['bathrooms'];
-      $location = $_POST['location'];    
+      $category = $_POST['category'];
     }
 ?>
 <!DOCTYPE html>
@@ -58,57 +62,7 @@
   <!-- Main Header Nav -->
   <?php
     include 'header_v2.php';
-  ?>
-  <!-- Menu In Hiddn SideBar -->
-  <div class="rightside-hidden-bar">
-    <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="far fa-times"></span></div>
-      <h4 class="title">Welcome to Aveden</h4>
-    </div>
-    <div class="hsidebar-content">
-      <div class="hiddenbar_navbar_content">
-        <div class="hiddenbar_navbar_menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Apartments</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Bungalow</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Houses</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Loft</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Office</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Townhome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="" role="button">Villa</a></li>
-          </ul>
-        </div>
-        <div class="hiddenbar_footer position-relative bdrt1">
-          <div class="row pt45 pb30 pl30">
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-              </div>
-            </div>
-          </div>
-          <div class="row pt30 pb30 bdrt1">
-            <div class="col-auto">
-              <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Menu In Hiddn SideBar --> 
+  ?> 
   <!-- Filter Content In Hiddn SideBar -->
   <?php
     include 'listing_sidebar.php';
@@ -125,7 +79,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="images/header-logo2.svg" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="login"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -181,7 +135,7 @@
 
               <?php
                 //SQL Query
-                $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `price`>='$min_amount' AND `price`<='$max_amount' AND `no_bedroom`='$bedrooms' AND `no_bathroom`='$bathrooms' AND `county` LIKE '%$location%' ORDER BY RAND()") or die(mysqli_error($server));
+                $query = mysqli_query($server, "SELECT * FROM `properties` WHERE `price`>='$min_amount' AND `price`<='$max_amount' AND `no_bedroom`='$bedrooms' AND `no_bathroom`='$bathrooms' AND `county` LIKE '%$location%' AND `guest`='$guest' ORDER BY RAND()") or die(mysqli_error($server));
                 //$result = mysqli_query($conn, $query);
 
                 if (mysqli_num_rows($query) > 0) {
@@ -193,11 +147,11 @@
                 <div class="listing-style1">
                   <div class="list-thumb">
                     <img class="w-100" src="images/listings/g1-2.jpg" alt="">
-                    <div class="list-price"><?php echo $row["price"];?> / <span>mo</span></div>
+                    <div class="list-price"><?php echo $row["price"];?> / <span>day</span></div>
                   </div>
                   <div class="list-content">
                     <h6 class="list-title"><a href="#"><?php echo $row["title"];?></a></h6>
-                    <p class="list-text">Nairobi City, CA, Kenya</p>
+                    <p class="list-text"><?php echo $row["street"], $row["city"], $row["county"];?></p>
                     <div class="list-meta d-flex align-items-center">
                       <a href=""><span class="flaticon-bed"></span><?php echo $row["no_bedroom"];?> bed</a>
                       <a href=""><span class="flaticon-shower"></span><?php echo $row["no_bathroom"];?> bath</a>

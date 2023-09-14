@@ -35,7 +35,6 @@
                   echo "<a class='ud-btn btn-transparent add-property bdrs60 mx-2 mx-xl-4' href='dashboard-add-property'>Add Property<i class='fal fa-arrow-right-long'></i></a>";
                 }
               ?>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="images/dark-nav-icon.svg" alt=""></a>
             </div>
           </div>
         </div>

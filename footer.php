@@ -13,49 +13,17 @@
                 </div>
                 <div class="col-auto">
                   <div class="contact-info">
-                    <p class="info-title">Nee Live Support?</p>
+                    <p class="info-title">Need Live Support?</p>
                     <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="app-widget">
-                <h5 class="title text-white mb10">Apps</h5>
-                <div class="row mb-4 mb-lg-5">
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-apple fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Download on the</p>
-                          <h6 class="app-title text-white fz14">Apple Store</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-auto">
-                    <a href="">
-                      <div class="app-info d-flex align-items-center mb10">
-                        <div class="flex-shrink-0">
-                          <i class="fab fa-google-play fz30 text-white"></i>
-                        </div>
-                        <div class="flex-grow-1 ml20">
-                          <p class="app-text fz13 mb0">Get in on</p>
-                          <h6 class="app-title text-white fz14">Google Play</h6>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
               </div>
               <div class="social-widget">
                 <h6 class="text-white mb20">Follow us on social media</h6>
                 <div class="social-style1">
-                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+                  <a href="facebook.com" target="_blank"><i class="fab fa-facebook-f list-inline-item"></i></a>
+                  <a href="twitter.com" target="_blank"><i class="fab fa-twitter list-inline-item"></i></a>
+                  <a href="instagram.com" target="_blank"><i class="fab fa-instagram list-inline-item"></i></a>
                 </div>
               </div>
             </div>
@@ -76,8 +44,8 @@
                     <div class="link-list">
                       <a href="">Apartment for Rent</a>
                       <a href="">Apartment Low to hide</a>
-                      <a href="">Offices for Buy</a>
-                      <a href="">Offices for Rent</a>
+                      <a href="">Villas</a>
+                      <a href="">Townhome</a>
                     </div>
                   </div>
                 </div>
@@ -87,10 +55,8 @@
                     <ul class="ps-0">
                       <li><a href="">Terms of Use</a></li>
                       <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Pricing Plans</a></li>
-                      <li><a href="">Our Services</a></li>
-                      <li><a href="">Contact Support</a></li>
-                      <li><a href="">Careers</a></li>
+                      <li><a href="listing">Our Listings</a></li>
+                      <li><a href="contact">Contact Support</a></li>
                       <li><a href="">FAQs</a></li>
                     </ul>
                   </div>

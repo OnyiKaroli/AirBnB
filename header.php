@@ -1,7 +1,7 @@
 <header class="header-nav nav-homepage-style at-home2 stricky main-menu">
     <!-- Ace Responsive Menu -->
     <nav class="posr"> 
-      <div class="container maxw1600 posr">
+      <div class="container maxw1600 posr"> 
         <div class="row align-items-center justify-content-between">
           <div class="col-auto">
             <div class="d-flex align-items-center justify-content-between">
@@ -15,7 +15,6 @@
                 <li class="visible_list"><a class="list-item" href="listing"><span class="title">Listing</span></a></li>
                 <li class="visible_list"><a class="list-item" href="agents"><span class="title">Agents</span></a></li>
                 <li class="visible_list"><a class="list-item" href="about"><span class="title">About Us</span></a></li>
-                <li class="visible_list"><a class="list-item" href="contact"><span class="title">Contact Us</span></a></li>
               </ul>
             </div>
           </div>
@@ -25,7 +24,8 @@
               <?php
               
               if(!isset($_SESSION['user']['email'])) {
-                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>Login / Register</span></a>";
+                echo "<a class='login-info d-flex align-items-center' href='login' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>Login</span></a>";
+                echo '<a class="ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4" href="contact">Contact Us<i class="fal fa-arrow-right-long"></i></a>';
               } else {
                 echo "<a class='login-info d-flex align-items-center' href='accounts/index.php' role='button'><i class='far fa-user-circle fz16 me-2'></i> <span class='d-none d-xl-block'>$servedby_name</span></a>";
               }
@@ -38,7 +38,6 @@
                   echo "<a class='ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4' href='dashboard-add-property'>Add Property<i class='fal fa-arrow-right-long'></i></a>";
                 }
               ?>
-              <a class="sidemenu-btn filter-btn-right" href="#"><img class="img-1" src="images/icon/nav-icon-white.svg" alt=""><img class="img-2" src="images/icon/nav-icon-dark.svg" alt=""></a>
             </div>
           </div>
         </div>
