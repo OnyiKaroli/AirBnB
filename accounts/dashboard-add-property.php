@@ -188,13 +188,17 @@
                               <div class="icon mb30"><span class="flaticon-upload"></span></div>
                               <h4 class="title fz17 mb10">Upload photos of your property</h4>
                               <p class="text mb25">Photos must be JPEG or PNG format and least 2048x768</p>
-                              <a class="ud-btn btn-white" href="">Browse Files<i class="fal fa-arrow-right-long"></i></a>
+                              <input type="file" name="file[]" multiple="" class="ud-btn btn-white">
                             </div>
                           </div>
                           <div class="col-lg-5">
                             <div class="profile-box position-relative d-md-flex align-items-end mb50">
                               <div class="profile-img position-relative overflow-hidden bdrs12 mb20-sm">
                                 <img class="w-100" src="images/listings/profile-1.jpg" alt="">
+                                <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
+                              </div>
+                              <div class="profile-img position-relative overflow-hidden bdrs12 ml20 ml0-sm">
+                                <img class="w-100" src="images/listings/profile-2.jpg" alt="">
                                 <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
                               </div>
                               <div class="profile-img position-relative overflow-hidden bdrs12 ml20 ml0-sm">
@@ -437,8 +441,105 @@
                             $featured = mysqli_real_escape_string($server, $_POST['featured']);
                             $agent_id = mysqli_real_escape_string($server, $_POST['agent_id']);
 
-                            $insert = mysqli_query($server, "INSERT INTO `properties`(`title`, `description`, `category`, `listed_in`, `price`, `address`, `county`, `city`, `guest`, `street`, `room_size`, `no_room`, `no_bedroom`, `no_bathroom`, `garage_size`, `structure_type`, `featured`, `agent_id`) 
-                              VALUES ('$title', '$description', '$category', '$listed_in', '$price', '$address', '$county', '$city', '$guest', '$street', '$room_size', '$no_room', '$no_bedroom', '$no_bathroom', '$garage_size', '$structure_type', 0, '$agent_id')") or die(mysqli_error($server));
+                            // Count total uploaded files
+  $totalfiles = count($_FILES['file']['name']);
+  if ($totalfiles > 3) {
+    echo '
+        <div class="alert alart_style_three alert-dismissible fade show mb20" role="alert">Error: Ensure you upload at least 3 images
+        <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
+        </div>';
+  }else{
+
+      // Compress image
+      function compressImage($source, $destination, $quality) {
+
+        $info = getimagesize($source);
+
+        if ($info['mime'] == 'image/jpeg') 
+          $image = imagecreatefromjpeg($source);
+
+        elseif ($info['mime'] == 'image/gif') 
+          $image = imagecreatefromgif($source);
+
+        elseif ($info['mime'] == 'image/png') 
+          $image = imagecreatefrompng($source);
+
+        imagejpeg($image, $destination, $quality);
+
+      }
+
+      //loop starts
+      for($i=0;$i<$totalfiles;$i++){
+
+        // Getting file name
+        $filename = $_FILES["file"]["name"][$i];
+        //rename here
+           //get name of each
+        $temp = explode(".", $filename);
+        //rename
+        $newfilename = round(microtime(true)) .'-'.$i.'.' . end($temp);
+        //end rename   
+
+
+
+
+        // Valid extension
+        $valid_ext = array('png','jpeg','jpg');
+
+        // Location
+        $location = "../images/properties/".$newfilename;
+
+
+        // file extension
+        $file_extension = pathinfo($location, PATHINFO_EXTENSION);
+        $file_extension = strtolower($file_extension);
+
+        // Check extension
+        if(in_array($file_extension,$valid_ext)){
+
+            //get image size
+            $image_size = $_FILES["file"]["size"];
+
+            $image_size = $image_size[0];
+
+            if($image_size > 5242880){
+              echo "Ensure images uploaded are less than 5 MBs";
+            }elseif (($image_size < 5242880) && ($image_size > 4194304)) {
+                     // Compress Image
+              compressImage($_FILES['file']['tmp_name'][$i],$location,12);
+            }elseif (($image_size < 4194304) && ($image_size > 3145728)) {
+              // Compress Image
+              compressImage($_FILES['file']['tmp_name'][$i],$location,16);
+            }elseif (($image_size < 3145728) && ($image_size > 2097152)) {
+              // Compress Image
+              compressImage($_FILES['file']['tmp_name'][$i],$location,25);
+            }elseif (($image_size < 2097152) && ($image_size > 1048576)) {
+              // Compress Image
+              compressImage($_FILES['file']['tmp_name'][$i],$location,50);
+            }else{
+              // Compress Image
+              compressImage($_FILES['file']['tmp_name'][$i],$location,60);
+            }
+
+
+
+          $db_name = $_SESSION['filename'] .= $newfilename.", ";
+
+
+        }else{
+          echo "Invalid file type.";
+        }
+
+
+
+      }
+      //loop ends
+
+      $file = $_SESSION['filename'];
+    //upload image end
+
+                            $insert = mysqli_query($server, "INSERT INTO `properties`(`title`, `description`, `category`, `listed_in`, `price`, `gallery`, `address`, `county`, `city`, `guest`, `street`, `room_size`, `no_room`, `no_bedroom`, `no_bathroom`, `garage_size`, `structure_type`, `featured`, `agent_id`) 
+                              VALUES ('$title', '$description', '$category', '$listed_in', '$price', '$file', '$address', '$county', '$city', '$guest', '$street', '$room_size', '$no_room', '$no_bedroom', '$no_bathroom', '$garage_size', '$structure_type', 0, '$agent_id')") or die(mysqli_error($server));
                             if ($insert) {
                               header("location:dashboard-properties");
                             }else {
@@ -448,7 +549,7 @@
                                       </div>
                                     </div>";
                                   }
-                                }
+                                }}
                         ?>
                   </form>
                   </div>
@@ -463,7 +564,7 @@
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© <a href="windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
+                  <p class="text">© <a href="https://windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">

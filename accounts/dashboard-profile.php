@@ -310,7 +310,7 @@ if (isset($_POST['password'])) {
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© <a href="windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
+                  <p class="text">© <a href="https://windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">

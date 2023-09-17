@@ -3,7 +3,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="footer-widget mb-4 mb-lg-5">
-              <a class="footer-logo" href="index.html"><img class="mb40" src="images/header-logo.png" alt=""></a>
+              <a class="footer-logo" href="index"><img class="mb40" src="images/header-logo.png" alt=""></a>
               <div class="row mb-4 mb-lg-5">
                 <div class="col-auto">
                   <div class="contact-info">
@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-auto">
                   <div class="contact-info">
-                    <p class="info-title">Nee Live Support?</p>
+                    <p class="info-title">Need Live Support?</p>
                     <h6 class="info-mail"><a href="mailto:hi@aveden.com">hi@aveden.com</a></h6>
                   </div>
                 </div>
@@ -21,10 +21,9 @@
               <div class="social-widget">
                 <h6 class="text-white mb20">Follow us on social media</h6>
                 <div class="social-style1">
-                  <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f list-inline-item"></i></a>
+                  <a href="https://www.x.com" target="_blank"><i class="fab fa-twitter list-inline-item"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram list-inline-item"></i></a>
                 </div>
               </div>
             </div>
@@ -43,10 +42,10 @@
                   <div class="link-style1 mb-3">
                     <h6 class="text-white mb25">Popular Search</h6>
                     <div class="link-list">
-                      <a href="">Apartment for Rent</a>
-                      <a href="">Apartment Low to hide</a>
-                      <a href="">Offices for Buy</a>
-                      <a href="">Offices for Rent</a>
+                      <a href="">Apartment</a>
+                      <a href="">Villas</a>
+                      <a href="">Townhome</a>
+                      <a href="">Rooms</a>
                     </div>
                   </div>
                 </div>
@@ -56,10 +55,8 @@
                     <ul class="ps-0">
                       <li><a href="">Terms of Use</a></li>
                       <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Pricing Plans</a></li>
                       <li><a href="">Our Services</a></li>
-                      <li><a href="">Contact Support</a></li>
-                      <li><a href="">Careers</a></li>
+                      <li><a href="">Contact Us</a></li>
                       <li><a href="">FAQs</a></li>
                     </ul>
                   </div>
@@ -84,7 +81,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="text-center text-lg-start">
-              <p class="copyright-text text-gray ff-heading">© <a class="text-gray" href="windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
+              <p class="copyright-text text-gray ff-heading">© <a class="text-gray" href="https://windand.co.ke" target="_blank">Windand</a> - All rights reserved</p>
             </div>
           </div>
           <div class="col-sm-6">
